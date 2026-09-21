@@ -1,4 +1,4 @@
-# Projly v20260922
+# Projly
 
 > **Now open source.** Both AWAF and Projly have been open sourced. Some functionality had to be removed to do this, so you may hit bugs where something depended on a part that was taken out.
 >
@@ -42,6 +42,7 @@ Everything is built from metadata. Forms, lists, menus, permissions and products
 - [Entity layer](#entity-layer)
   - [Web service function names](#web-service-function-names)
   - [Tables per entity](#tables-per-entity)
+  - [Extended entities: schema changes on huge tables](#extended-entities-schema-changes-on-huge-tables)
   - [Permissions by naming](#permissions-by-naming)
   - [Every write is tenant-scoped and transactional](#every-write-is-tenant-scoped-and-transactional)
   - [Form data options](#form-data-options)
@@ -358,6 +359,21 @@ Creating an entity creates its tables; deleting it drops them:
 Deleting an entity also removes its operations, the permissions for those operations (and their links to profiles), and its form layouts and their history.
 
 When a form layout is saved, its searchable fields are exposed as real columns and the values are copied out of `jsondata` into those columns for every existing row (in the background for extended entities).
+
+### Extended entities: schema changes on huge tables
+
+In MySQL, adding or dropping a column on a table with millions of rows takes hours. With regular schema changes that turns into weeks of waiting.
+
+Extended entities avoid this. The full record always lives in `jsondata` on the main table, and the searchable columns live in a separate **extension table**. To change the columns:
+
+1. Truncate the extension table.
+2. Recreate its skeleton with the new columns. On an empty table this is instant.
+3. Mark the rows as not yet exposed (`is_exposed`).
+4. A cron / batch job copies the values out of each row's `jsondata` into the extension table until every row is done.
+
+The main table is never altered, so the schema change itself takes seconds, not hours. This is the hybrid design referred to as *BigData architecture support* in the [comparison](#comparison): the JSON documents are the data, and the relational columns are a rebuildable index over them.
+
+Turn it on per entity with `ISEXTENDED` on the Entity form.
 
 ### Permissions by naming
 
