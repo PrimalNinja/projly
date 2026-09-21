@@ -94,7 +94,7 @@ function abnLookup( $strABN_a)
 }
 
 
-//define('ABNLOOKUPGUID', '1dac19fb-5087-4056-bce4-6eff3059658b');
+//define('ABNLOOKUPGUID', 'STICKYOURABNGUIDINHERE');
 //$x = abnLookup('7101');
 //print_r($x);
 

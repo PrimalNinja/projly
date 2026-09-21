@@ -79,7 +79,7 @@ define('DEFAULT_REGISTRATIONTYPE', 'DEFAULT');
 define('ESB_TIMEOUT', '300'); // 300 = 5 minutes timeout
 
 // abn lookup service
-define('ABNLOOKUPGUID', '1dac19fb-5087-4056-bce4-6eff3059658b');
+define('ABNLOOKUPGUID', 'STICKYOURABNGUIDINHERE');
 
 // debugging
 define('DEBUG_PARAMETER_OUTPUT', 'FALSE');		// is additional debug info turned on, no good for APPLEs XML Parser (echos)
