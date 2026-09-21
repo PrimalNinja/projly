@@ -1,0 +1,13 @@
+﻿// Projly v20260922 =============================================================================
+// Copyright (C) 2024 Projly Pty Ltd. Released under the MIT License.
+//
+// ==============================================================================================
+// AWAF v20260922 ===============================================================================
+// Copyright (C) 2012-2024 Mitsukibo Pty Ltd, Julian Cassin & Francis Weston. Released under the MIT License.
+
+/*jsl:ignore*/
+function widgetprintertray_wgtPrinter(q,r,w){function g(){b.enableServerEventQueue("printer");h=!1}function s(a){b.dialogAlert("Attention: Print System Error "+a,function(){})}function k(){g()}function x(a){d.setPrinter(c.printer);a=a.page;try{if("RECEIPT"===c.documenttype.toUpperCase()||"RECEIPTS"===c.documenttype.toUpperCase()){var e=getGUID();b.element(f,".ge-content").html('<iframe width="100%" height="100%" id="'+e+'" name="'+e+'"></iframe>');b.element(f,"#"+e).contents().find("body").html(a);
+window.frames[e].print();b.element(f,".ge-content").html("");d.readyToPrint()}}catch(l){alert(l),s(1)}}function y(a){g();b.broadcast(d,"printer",c.documenttype+"printed");t()}function z(a){var b="";m=[];processArray(a,function(a){b=a.printjob_id;0<b.length&&m.push(a)});u()}function t(){var a=b.ajaxRequestCreate("print_printjobfetchnext",[]);b.ajaxCall(URL_WEBSERVICE,a,z,b.ajaxError,k,!1,!0)}function u(){c=m.shift();if(null!==c&&void 0!==c){var a=b.ajaxRequestCreate("print_fetchpage",[{name:"documentid",
+value:c.documentid},{name:"pagename",value:c.filename}]);b.ajaxCall(URL_WEBSERVICE,a,x,b.ajaxError,k,!1,!0)}else g()}var b=q,d=this,f=r,n=[],h=!1,c=null,A=new hostdriver(q,r,w),m=[],p="",v="";this.donePrinting=function(){if(c.page==c.pages){var a=b.ajaxRequestCreate("print_printjobcompleted",[{name:"printjob_id",value:c.printjob_id}]);b.ajaxCall(URL_WEBSERVICE,a,y,b.ajaxError,k,!1,!0)}else u()};this.Form_allowMultipleInstances=function(){return!1};this.Form_onBroadcast=function(a,c){"printer"===a&&
+(c===ENTITY_PRINTJOB&&b.isPrinterRegistered()&&!1===h)&&(h=!0,b.disableServerEventQueue("printer"),t())};this.Form_onPermissionCheck=function(){return!0};this.Form_onLoad=function(){A.InitialisePrinting(function(a,c,l){v=a;p=c;n=l;b.registerPrinter("QZ-Tray "+a,d);b.registerServerEvent("printer",f)})};this.getDefaultPrinter=function(){return p};this.getPrinters=function(){return n};this.getVersion=function(){return v};this.readyToPrint=function(){try{("RECEIPT"===c.documenttype.toUpperCase()||"RECEIPTS"===
+c.documenttype.toUpperCase())&&d.donePrinting()}catch(a){alert(a),s(2)}};this.setPrinter=function(a){var b=a;0===b.length&&(b=p);var c=0;processArray(n,function(a){a.description.toUpperCase();b.toUpperCase();c++})}};

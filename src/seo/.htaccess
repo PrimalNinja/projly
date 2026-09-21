@@ -1,0 +1,9 @@
+Options +FollowSymLinks
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	#Replace url_handler.php for your filename
+	#that will handle the redirections.
+	RewriteCond %{REQUEST_FILENAME} !-s 
+	Rewriterule (.*) url_handler.php
+</IfModule>

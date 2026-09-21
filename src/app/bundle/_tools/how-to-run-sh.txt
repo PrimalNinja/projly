@@ -1,0 +1,18 @@
+
+sh or shell is the equivalent of batch files.
+
+shell can be run in osx, unix and linux.
+
+Converted by Jhun Tiballa
+
+
+How to run in OSX
+
+- in terminal go to the directory. (this directory)
+
+- run using sudo but specifiy your username (Your account name when you log in to your mac)
+
+sudo -u [username] bash ./createbundles-runme.sh
+
+if prompted for password. enter it.
+

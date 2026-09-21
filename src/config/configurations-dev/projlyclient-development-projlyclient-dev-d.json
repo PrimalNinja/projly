@@ -1,0 +1,213 @@
+{
+	"code": "projlyclient-development-projlyclient-dev-d",
+	"description": "Projly Client Development D Drive (localhost/projly-dev)",
+
+	"files": [
+		{
+			"source": "template/inc-app-projlyclient.php",
+			"destination": "inc-app-projlyclient.php",
+			"settings": {
+                "app_name" : "Projly",
+                "app_short_name" : "Projly",
+                
+				"link_instagram": "",
+				"link_facebook": "",
+				"link_twitter": "",
+				"link_snapchat": "",
+				"link_wechat": "",
+
+                "clientmodules" : "core,dash,entity,leaflet,widgetclock,widgetdesktopsizer,widgetdock,widgetformbuilder,widgetspeech,widgetterm,widgettube"
+			}
+		},
+		{
+			"source": "template/inc-constants.php",
+			"destination": "inc-constants.php",
+			"settings": {
+				"url_2dbarcode_generator": "http://localhost/projly-dev/generatebarcode.php"
+			}
+		},
+		{
+			"source": "template/inc-env.php",
+			"destination": "inc-env.php",
+			"settings": {
+				"app_code": "projlyclient",
+				"app_home": "/projly-dev",
+				"app_domain_path": "http://localhost/projly-dev/",
+				"dynamic_app_dir_php": "app",
+				"dynamic_app_dir_url": "app",
+				"dynamic_css_dir_php": "css",
+				"server_temp_dir": "d:/dev/projly-dev/ws/temp/",
+				"developer": "TRUE",
+				"enable_developer_notes": "FALSE",
+				"enable_saveandclose": "TRUE",
+				"enable_session_cookies": "FALSE",
+				
+				"enable_xdevice" : "FALSE",
+				
+				"debug_js": "TRUE",
+				"debug_source": "TRUE"
+			}
+		},
+		{
+			"source": "template/inc-settings.php",
+			"destination": "inc-settings.php",
+			"settings": {
+				"enable_register" : "FALSE",
+                "immediate_registration" : "TRUE",
+                
+                "paypal_enable" : "TRUE",
+                "paypal_sandbox" : "STICKYOURSANDBOXIDHERE",
+                "paypal_production" : "demo_production_client_id",
+                "paypal_currency" : "AUD",
+                "paypal_country" : "AU",
+                
+                "ccprovider_enable" : "TRUE"
+			}
+		},
+		{
+			"source": "template/ws/inc-app-projlyclient.php",
+			"destination": "ws/inc-app-projlyclient.php",
+			"settings": {
+                "appname" : "Projly",
+                "app_name" : "Projly",
+                "app_short_name" : "Projly"
+			}
+		},
+		{
+			"source": "template/ws/inc-constants.php",
+			"destination": "ws/inc-constants.php",
+			"settings": {
+				"servermodules" : "cart,core,dash,developer,docs,entity,esb,import,integration,msg,process,projly,public,report,security,setting,system,utils"
+			}
+		},
+		{
+			"source": "template/ws/inc-env.php",
+			"destination": "ws/inc-env.php",
+			"settings": {
+				"app_code": "projlyclient",
+				"app_path": "d:/dev/projly-dev/",
+				"dynamic_app_dir": "app",
+				"url_website": "https://projly.com.au/",
+				"url_app_path": "http://localhost/projly-dev/",
+
+				"url_pwdconfirm_path": "http://localhost/projly-dev/#!core.frmPasswordConfirmation",
+				"url_pwdfail_path": "http://localhost/projly-dev/#!core.frmPasswordFailed",
+				
+				"url_regconfirm_path": "http://localhost/projly-dev/#!core.frmRegisterConfirmation",
+				"url_regfail_path": "http://localhost/projly-dev/#!core.frmRegisterFailed",
+				
+				"url_verconfirm_path": "",
+				"url_verfail_path": "",
+				
+				"url_2dbarcode_generator": "http://localhost/projly-dev/generatebarcode.php",
+				"systemowner_client": "owner",
+                "replyto_systemowneruser" : "admin",
+				
+				"paymentprovider_description": "Test Dummy",
+				"paymentprovider": "paymentPlugin_DummyGateway",
+				"eway_default_customer_id": "1234567890",
+				"eway_uselive": "FALSE",
+				"eway_default_live_gateway": "FALSE",
+				"eway_default_payment_method": "REAL_TIME",
+				"nabtransact_live_url": "https://transact.nab.com.au/live/xmlapi/payment",
+				"nabtransact_live_merchantid": "",
+				"nabtransact_live_merchantpwd": "",
+				"nabtransact_test_url": "https://demo.transact.nab.com.au/xmlapi/payment",
+				"nabtransact_test_merchantid": "ABC123",
+				"nabtransact_test_merchantpwd": "1234567890",
+
+				"enable_clientdatabases": "FALSE",
+
+				"enable_2fa": "FALSE",
+				"type_2fa": "GOOGLE",
+				"barcodeurl_2fa": "https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=%%CODE%%"
+			}
+		},
+		{
+			"source": "template/ws/inc-settings.php",
+			"destination": "ws/inc-settings.php",
+			"settings": {
+                "enable_email" : "FALSE",
+                "use_php_mail" : "FALSE",
+				"use_sendgrid" : "FALSE",
+                "phpmailer_hosts" : "",
+                "phpmailer_auth" : "FALSE",
+                "phpmailer_login" : "",
+                "phpmailer_password" : "",
+                "phpmailer_security" : "",
+                "failure_emails_enabled" : "FALSE",
+                "fail_email_domain" : "projly.com.au",
+                "fail_email_address" : "contact@projly.com.au",
+                "fail_email_addressto" : "contact@projly.com.au",
+                "fail_email_fromname" : "Projly",
+                "general_email_domain" : "projly.com.au",
+                "general_email_address" : "contact@projly.com.au",
+                "general_email_fromname" : "Projly",
+                
+                "immediate_registration" : "TRUE",
+                "sendverificationemail" : "TRUE",
+                "confirmation_url" : "http://localhost/projly-dev/confirm.php?confirm=~TOKEN~",
+                
+				"debug_log": "TRUE",
+				"debug_log_sessioninfo": "TRUE",
+				"debug_phpconsole": "TRUE"
+			}
+		},
+		{
+			"source": "template/ws/inc-dbsettings-client.php",
+			"destination": "ws/inc-dbsettings-client.php",
+			"settings": {
+				"dbclient_requiredschemaversion": "5",
+				"dbclient_createdrop": "TRUE",
+				"dbclient_filesize": "TRUE",
+				"dbclient_loaddata": "TRUE",
+				"dbclient_localinfile": "FALSE",
+				"dbclient_simulatedlocaloutfile": "FALSE",
+				"dbclient_englishname": "Development",
+
+                "dbclientmain_hostname": "localhost",
+				"dbclientmain_login": "root",
+				"dbclientmain_password": "STICKYOURPASSWORDINHERE",
+				"dbclientmain_databasename": "projly_clientmain",
+                
+                "dbclienthistory_hostname": "localhost",
+				"dbclienthistory_login": "root",
+				"dbclienthistory_password": "STICKYOURPASSWORDINHERE",
+				"dbclienthistory_databasename": "projly_clienthistory",
+
+                "dbclienttemp_hostname": "localhost",
+				"dbclienttemp_login": "root",
+				"dbclienttemp_password": "STICKYOURPASSWORDINHERE",
+                "dbclienttemp_databasename": "projly_clienttemp"
+			}
+		},
+		{
+			"source": "template/ws/inc-dbsettings-system.php",
+			"destination": "ws/inc-dbsettings-system.php",
+			"settings": {
+				"dbsystem_requiredschemaversion": "5",
+				"dbsystem_createdrop": "TRUE",
+				"dbsystem_filesize": "TRUE",
+				"dbsystem_loaddata": "TRUE",
+				"dbsystem_localinfile": "FALSE",
+				"dbsystem_simulatedlocaloutfile": "FALSE",
+				"dbsystem_englishname": "Development",
+
+				"dbsystemmain_hostname": "localhost",
+				"dbsystemmain_login": "root",
+				"dbsystemmain_password": "STICKYOURPASSWORDINHERE",
+				"dbsystemmain_databasename": "projly_systemmain",
+                
+                "dbsystemhistory_hostname": "localhost",
+				"dbsystemhistory_login": "root",
+				"dbsystemhistory_password": "STICKYOURPASSWORDINHERE",
+				"dbsystemhistory_databasename": "projly_systemhistory",
+                
+				"dbsystemtemp_hostname": "localhost",
+				"dbsystemtemp_login": "root",
+				"dbsystemtemp_password": "STICKYOURPASSWORDINHERE",
+                "dbsystemtemp_databasename": "projly_systemtemp"
+			}
+		}
+	]
+}

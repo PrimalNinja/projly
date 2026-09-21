@@ -1,0 +1,119 @@
+b
+{
+	font: 14px 'arial';
+	font-weight: bold;
+}
+
+body, td, input
+{
+	font: 14px 'arial';
+}
+
+button:focus 
+{
+    outline: none;
+}
+
+h2
+{
+	font: 20px 'arial';
+	font-weight: bold;
+}
+
+h3
+{
+	font: 16px 'arial';
+	font-weight: bold;
+}
+
+.gs-alert
+{
+	color: red;
+	font: 14px 'arial';
+	font-weight: bold;
+}
+
+.gb-button
+{
+	cursor:pointer;
+	border-radius: 4px;
+	float:left;
+}
+
+.gb-button-text
+{
+	color: white;
+	font-weight: bold;
+	font: 13px/1.6 'arial';
+	padding-top: 16px;
+	text-align: center;
+}
+
+.gs-cell-xxx
+{
+	xborder:1px solid black;
+	padding:0px;
+	text-align:left;
+	vertical-align:top;
+	position:absolute;
+	display:block;
+	float: left;
+}
+
+.gs-cell-125x62-xxx 			{ width:125px; height:62px; }
+.gs-cellcontent-125x62-xxx 		{ width:115px; height:52px; }
+
+.gs-cell-content-xxx
+{
+	margin-top:5px;
+	margin-left:5px;
+	margin-right:5px;
+	position:relative;
+}
+
+.gs-blue-background-colour
+{
+	background-color:blue;
+}
+
+.gs-green-background-colour
+{
+	background: #008000;
+}
+
+.gs-red-background-colour
+{
+	background-color:red;
+}
+
+.gs-glow-focusborder
+{
+	border: 1px solid #ddd;
+	outline: none;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	transition: all 0.30s ease-in-out;
+}
+	
+.gs-glow-focusborder:focus
+{
+	border: 1px solid #ddd;
+	border-color: #83b4db;
+	box-shadow: 0 0 20px #0000ff; /* #8fbfe6 */
+	-moz-box-shadow: 0 0 20px #0000ff; /* #8fbfe6 */
+	-webkit-box-shadow: 0 0 20px #0000ff; /* #8fbfe6 */
+}
+
+.gs-header 
+{
+	vertical-align: middle;
+	background: #003399;
+	height: 85px;
+}
+
+.gb-hidden
+{
+	display:none;
+}

@@ -1,0 +1,456 @@
+/* 3rd party overrides -------------------------------------------------- */
+
+/* grid related -------------------------------------------------- */
+
+#contextMenu 
+{
+	background: #e1efc7;
+	border: 1px solid gray;
+	display: inline-block;
+	min-width: 100px;
+	padding: 2px;
+	z-index: 99999;
+	-moz-box-shadow: 2px 2px 2px silver;
+	-webkit-box-shadow: 2px 2px 2px silver;
+}
+
+#contextMenu li 
+{
+	background: url("../slickgrid/images/arrow_right_peppermint.png") no-repeat center left;
+	cursor: pointer;
+	list-style: none;
+	padding: 4px 4px 4px 14px;
+}
+
+#contextMenu li:hover 
+{
+	background-color: white;
+}
+
+/* Individual cell styles */
+.percent-complete-bar 
+{
+	display: inline-block;
+	height: 6px;
+
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.slick-cell
+{
+	margin: 0px;
+}
+
+.slick-cell.task-name 
+{
+	font-weight: bold;
+	text-align: right;
+}
+
+.slick-cell.task-percent 
+{
+	text-align: right;
+}
+
+.slick-row .cell-actions 
+{
+	text-align: left;
+}
+
+.slick-row.complete 
+{
+	background-color: #DFD;
+	color: #555;
+}
+
+/* Slick.Editors.Text, Slick.Editors.Date */
+input.editor-text 
+{
+	background: transparent;
+	border: 0;
+	height: 100%;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	width: 100%;
+}
+
+/* Slick.Editors.PercentComplete */
+input.editor-percentcomplete 
+{
+	background: transparent;
+	border: 0;
+	float: left;
+	height: 100%;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.editor-percentcomplete-buttons 
+{
+	float: right;
+}
+
+.editor-percentcomplete-buttons button 
+{
+	width: 80px;
+}
+
+.editor-percentcomplete-helper 
+{
+	background: url("../../../slickgrid/images/editor-helper-bg.gif") no-repeat top left;
+	border: 0 solid gray;
+	display: none;
+	height: 140px;
+	left: -9px;
+	overflow: visible;
+	padding-left: 9px;
+	position: absolute;
+	top: -2px;
+	width: 120px;
+}
+
+.editor-percentcomplete-helper:hover 
+{
+	display: block;
+}
+
+.editor-percentcomplete-picker 
+{
+	background: url("../../../slickgrid/images/pencil.gif") no-repeat center center;
+	display: inline-block;
+	float: right;
+	height: 100%;
+	overflow: visible;
+	position: relative;
+	width: 16px;
+	z-index: 1000;
+}
+
+.editor-percentcomplete-picker:hover .editor-percentcomplete-helper 
+{
+	display: block;
+}
+
+.editor-percentcomplete-slider 
+{
+	float: left;
+}
+
+.editor-percentcomplete-wrapper 
+{
+	background: beige;
+	border: 1px solid gray;
+	border-left: 0;
+	height: 98px;
+	padding: 20px 8px;
+	width: 100%;
+}
+
+.ui-datepicker-trigger 
+{
+	margin-top: 2px;
+	padding: 0;
+	vertical-align: top;
+}
+
+/* Slick.Editors.YesNoSelect */
+select.editor-yesno 
+{
+	margin: 0;
+	vertical-align: middle;
+	width: 100%;
+}
+
+/* Slick.Editors.Checkbox */
+input.editor-checkbox 
+{
+	border: 0;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.slick-row.selected .gs-gridcell-selection 
+{
+	background-color: transparent; /* show default selected row background */
+}
+
+.select2-container 
+{
+	top: -3px;
+	left: -3px;
+}
+
+.select2-container .select2-selection--single 
+{
+	height: 26px;
+}
+  
+/* other styles -------------------------------------------------- */
+
+.form-control
+{
+	font: 12pt/1.6 'arial';
+}
+
+#carousel-example-generic 
+{
+    margin: 20px auto;
+    width: 100%;
+}
+
+#carousel-custom 
+{
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+#carousel-custom .carousel-indicators 
+{
+    margin: 10px 0 0;
+    overflow: auto;
+    position: static;
+    text-align: left;
+    white-space: nowrap;
+    width: 100%;
+}
+
+#carousel-custom .carousel-indicators li 
+{
+    background-color: transparent;
+    border-radius: 0;
+    display: inline-block;
+    height: auto;
+    margin: 0 !important;
+    width: auto;
+	
+    -webkit-border-radius: 0;
+}
+
+#carousel-custom .carousel-indicators li img 
+{
+    display: block;
+    opacity: 0.5;
+}
+
+#carousel-custom .carousel-indicators li.active img 
+{
+    opacity: 1;
+}
+
+#carousel-custom .carousel-indicators li:hover img 
+{
+    opacity: 0.75;
+}
+
+#carousel-custom .carousel-outer 
+{
+    position: relative;
+}
+
+.btn.btn-disabled  { 
+    background-color: #f3f3f3;
+    color: #737373;
+    border-color: #ccc;
+}
+
+ .btn-group > .btn.btn-disabled:hover { 
+    z-index: 0;
+ }
+
+/* datatables reorder*/
+table.dt-rowReorder-float{position:absolute !important;opacity:0.8;table-layout:fixed;outline:2px solid #888;outline-offset:-2px;z-index:2001}tr.dt-rowReorder-moving{outline:2px solid #555;outline-offset:-2px}body.dt-rowReorder-noOverflow{overflow-x:hidden}table.dataTable td.reorder{text-align:center;cursor:move}
+
+/* wiki -------------------------------------------------- */
+
+.gscw-bold 
+{
+	font-family: arial;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+.gscw-code 
+{
+	background-color: #f0f0f0;
+	border: 1px solid #ccc;
+	font-family: monospace;
+	font-size: 16px;
+	padding: 10px;
+}
+
+.gscw-container 
+{
+	background-color: gray;
+	height: 100vh;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.gscw-container-rounder 
+{
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	height: 90vh;
+	margin: 3vh auto;
+	padding: 20px 0;
+	overflow: hidden;
+	width: 94%;
+}
+
+.gscw-container-scroller 
+{
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	top: 0;
+}
+
+.gscw-content 
+{
+	font-family: arial;
+	min-height: calc(100% - 40px); /* Stretch scroller minus its padding */
+	padding: 0 20px; /* Horizontal padding for content */
+	white-space: pre-line;
+	word-wrap: break-word;
+}
+
+.gscw-heading 
+{
+	font-family: arial;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+.gscw-hr 
+{
+	margin: 0;
+	padding: 0;
+}
+
+.gscw-image 
+{
+	color: gray;
+	font-style: italic;
+}
+
+.gscw-internallink
+{
+	color: blue;
+	cursor: pointer;
+	font-family: arial;
+	text-decoration: none;
+}
+
+.gscw-internallink:hover 
+{
+	color: blue;
+	font-family: arial;
+	text-decoration: underline;
+}
+
+.gscw-internallink:visited 
+{
+	color: blue;
+}
+
+.gscw-link 
+{
+	color: blue;
+	cursor: pointer;
+	font-family: arial;
+	text-decoration: none;
+}
+
+.gscw-link:hover 
+{
+	color: blue;
+	font-family: arial;
+	text-decoration: underline;
+}
+
+.gscw-link:visited 
+{
+	color: blue;
+}
+
+.gscw-list 
+{
+	font-family: arial;
+	list-style-position: inside;
+	margin: 10px 0 0 20px;
+	padding: 0;
+}
+
+.gscw-subheading 
+{
+	font-family: arial;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+.gscw-subsubheading 
+{
+	font-family: arial;
+	font-size: 18px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+.gscw-subsubsubheading 
+{
+	font-family: arial;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
+
+table.gscw-table
+{
+	border-collapse: collapse;
+	border: 1px solid #ddd;
+	font-family: arial;
+	margin-bottom: 30px;
+	width: 100%;
+}
+
+table.gscw-table td 
+{
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+}
+
+table.gscw-table th 
+{
+	background-color: #f0f0f0;
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+}
+
+table.gscw-table tr:nth-child(even) 
+{
+	background-color: #f9f9f9;
+}
+
+table.gscw-table tr:hover 
+{
+	background-color: #ddd;
+}
+

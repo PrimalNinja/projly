@@ -1,0 +1,27 @@
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Jun 15", "Jun 16", "Jun 17", "Jun 18", "Jun 19", "Jun 20", "Jun 21", "Jun 22", "Jun 23", "Jun 24", "Jun 25", "Jun 26", "Jun 27", "Jun 28"],
+    "datasets": [{
+      "label": "Failed Logins",
+      "data": [5, 3, 2, 10, 8, 4, 6, 12, 15, 8, 5, 3, 2, 1],
+      "backgroundColor": "#FF6384"
+    }]
+  },
+  "options": {
+    "responsive": true,
+    "maintainAspectRatio": false,
+	"aspectRatio": 1,
+    "title": {
+      "display": true,
+      "text": "Failed Logins Past 2 Weeks"
+    },
+    "scales": {
+      "yAxes": [{
+        "ticks": {
+          "beginAtZero": true
+        }
+      }]
+    }
+  }
+}

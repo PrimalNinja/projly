@@ -1,0 +1,2 @@
+<link rel="stylesheet" type="text/css" media="screen" href="<?php echo(DYNAMIC_APP_DIR_URL); ?>modules/widgetformbuilder/assets/css/form-builder.css">
+<link rel="stylesheet" type="text/css" media="screen" href="<?php echo(DYNAMIC_APP_DIR_URL); ?>modules/widgetformbuilder/assets/css/form-render.min.css">

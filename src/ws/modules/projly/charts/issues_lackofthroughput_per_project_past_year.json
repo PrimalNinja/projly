@@ -1,0 +1,27 @@
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Project A", "Project B", "Project C", "Project D"],
+    "datasets": [{
+      "label": "Lack of Throughput",
+      "data": [8, 12, 5, 9],
+      "backgroundColor": ["#36A2EB", "#FF6384", "#FFCE56", "#4BC0C0"]
+    }]
+  },
+  "options": {
+    "responsive": true,
+    "maintainAspectRatio": false,
+    "aspectRatio": 1,
+    "title": {
+      "display": true,
+      "text": "Lack of Throughput per Project Past Year"
+    },
+    "scales": {
+      "yAxes": [{
+        "ticks": {
+          "beginAtZero": true
+        }
+      }]
+    }
+  }
+}

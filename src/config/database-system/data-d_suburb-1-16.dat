@@ -1,0 +1,1000 @@
+1,4,2,113,0200,AUSTRALIAN NATIONAL UNIVERSITY,Y,4,[{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncodetemp":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Form Header"\,"sectiontype":"FORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"ENTITY"\,"p_label":"Data Group Name"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control  ge-dataformgroup-field"}\,{"p_datatype":"d_version"\,"p_name":"FORMVERSION"\,"p_label":"Form Version"\,"p_value":5\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"CODE"\,"p_label":"Code"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"DESCRIPTION"\,"p_label":"Description"\,"p_value":"Suburb"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"40"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_yesno"\,"p_name":"ISENABLED"\,"p_label":"Enabled"\,"p_value":"Y"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"undefined"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"d_yesno"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncodetemp":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Data Header"\,"sectiontype":"DATAHEADER"\,"fields":[{"p_datatype":"d_version"\,"p_name":"DATAVERSION"\,"p_label":"Data Version"\,"p_value":"1"\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"INTERNALUSEFORMHEADER"\,"sectioncodetemp":"INTERNALUSEFORMHEADER"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Internal Use Form header"\,"sectiontype":"INTERNALUSEFORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"SUBMITTEDDATETIME"\,"p_label":"Submitted Date Time"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYCLIENT"\,"p_label":"Submitted By Client"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYUSER"\,"p_label":"Submitted By User"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncodetemp":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Suburb"\,"sectiontype":"DATA"\,"fields":[{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Suburb"\,"p_length":""\,"p_lines":""\,"p_name":"SUBURB"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"AUSTRALIAN NATIONAL UNIVERSITY"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"State"\,"p_length":""\,"p_lines":""\,"p_name":"STATE"\,"p_quantity":""\,"p_readonly":""\,"p_required":""\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"ACT"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Postcode"\,"p_length":""\,"p_lines":""\,"p_name":"POSTCODE"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"0200"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Country"\,"p_length":""\,"p_lines":""\,"p_name":"COUNTRY"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"AUSTRALIA"\,"p_valuedescription":""}]}],default,2017-03-09 11:11:11,AUSTRALIAN NATIONAL UNIVERSITY,ACT,0200,AUSTRALIA
+2,4,2,113,0800,DARWIN,Y,4,[{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncodetemp":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Form Header"\,"sectiontype":"FORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"ENTITY"\,"p_label":"Data Group Name"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control  ge-dataformgroup-field"}\,{"p_datatype":"d_version"\,"p_name":"FORMVERSION"\,"p_label":"Form Version"\,"p_value":5\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"CODE"\,"p_label":"Code"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"DESCRIPTION"\,"p_label":"Description"\,"p_value":"Suburb"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"40"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_yesno"\,"p_name":"ISENABLED"\,"p_label":"Enabled"\,"p_value":"Y"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"undefined"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"d_yesno"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncodetemp":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Data Header"\,"sectiontype":"DATAHEADER"\,"fields":[{"p_datatype":"d_version"\,"p_name":"DATAVERSION"\,"p_label":"Data Version"\,"p_value":"1"\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"INTERNALUSEFORMHEADER"\,"sectioncodetemp":"INTERNALUSEFORMHEADER"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Internal Use Form header"\,"sectiontype":"INTERNALUSEFORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"SUBMITTEDDATETIME"\,"p_label":"Submitted Date Time"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYCLIENT"\,"p_label":"Submitted By Client"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYUSER"\,"p_label":"Submitted By User"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncodetemp":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Suburb"\,"sectiontype":"DATA"\,"fields":[{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Suburb"\,"p_length":""\,"p_lines":""\,"p_name":"SUBURB"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"DARWIN"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"State"\,"p_length":""\,"p_lines":""\,"p_name":"STATE"\,"p_quantity":""\,"p_readonly":""\,"p_required":""\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"NT"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Postcode"\,"p_length":""\,"p_lines":""\,"p_name":"POSTCODE"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"0800"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Country"\,"p_length":""\,"p_lines":""\,"p_name":"COUNTRY"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"AUSTRALIA"\,"p_valuedescription":""}]}],sysadmin,2017-03-09 22:25:28,DARWIN,NT,0800,AUSTRALIA
+3,4,2,113,0801,DARWIN,Y,4,[{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncodetemp":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Form Header"\,"sectiontype":"FORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"ENTITY"\,"p_label":"Data Group Name"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control  ge-dataformgroup-field"}\,{"p_datatype":"d_version"\,"p_name":"FORMVERSION"\,"p_label":"Form Version"\,"p_value":5\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"CODE"\,"p_label":"Code"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"DESCRIPTION"\,"p_label":"Description"\,"p_value":"Suburb"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"40"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_yesno"\,"p_name":"ISENABLED"\,"p_label":"Enabled"\,"p_value":"Y"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"undefined"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"d_yesno"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncodetemp":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Data Header"\,"sectiontype":"DATAHEADER"\,"fields":[{"p_datatype":"d_version"\,"p_name":"DATAVERSION"\,"p_label":"Data Version"\,"p_value":"1"\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"INTERNALUSEFORMHEADER"\,"sectioncodetemp":"INTERNALUSEFORMHEADER"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Internal Use Form header"\,"sectiontype":"INTERNALUSEFORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"SUBMITTEDDATETIME"\,"p_label":"Submitted Date Time"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYCLIENT"\,"p_label":"Submitted By Client"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYUSER"\,"p_label":"Submitted By User"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncodetemp":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Suburb"\,"sectiontype":"DATA"\,"fields":[{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Suburb"\,"p_length":""\,"p_lines":""\,"p_name":"SUBURB"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"DARWIN"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"State"\,"p_length":""\,"p_lines":""\,"p_name":"STATE"\,"p_quantity":""\,"p_readonly":""\,"p_required":""\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"NT"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Postcode"\,"p_length":""\,"p_lines":""\,"p_name":"POSTCODE"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"0801"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Country"\,"p_length":""\,"p_lines":""\,"p_name":"COUNTRY"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"AUSTRALIA"\,"p_valuedescription":""}]}],default,2017-03-09 11:11:11,DARWIN,NT,0801,AUSTRALIA
+4,4,2,113,0804,PARAP,Y,4,[{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncodetemp":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Form Header"\,"sectiontype":"FORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"ENTITY"\,"p_label":"Data Group Name"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control  ge-dataformgroup-field"}\,{"p_datatype":"d_version"\,"p_name":"FORMVERSION"\,"p_label":"Form Version"\,"p_value":5\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"CODE"\,"p_label":"Code"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"DESCRIPTION"\,"p_label":"Description"\,"p_value":"Suburb"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"40"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_yesno"\,"p_name":"ISENABLED"\,"p_label":"Enabled"\,"p_value":"Y"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"undefined"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"d_yesno"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncodetemp":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Data Header"\,"sectiontype":"DATAHEADER"\,"fields":[{"p_datatype":"d_version"\,"p_name":"DATAVERSION"\,"p_label":"Data Version"\,"p_value":"1"\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"INTERNALUSEFORMHEADER"\,"sectioncodetemp":"INTERNALUSEFORMHEADER"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Internal Use Form header"\,"sectiontype":"INTERNALUSEFORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"SUBMITTEDDATETIME"\,"p_label":"Submitted Date Time"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYCLIENT"\,"p_label":"Submitted By Client"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYUSER"\,"p_label":"Submitted By User"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncodetemp":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Suburb"\,"sectiontype":"DATA"\,"fields":[{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Suburb"\,"p_length":""\,"p_lines":""\,"p_name":"SUBURB"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"PARAP"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"State"\,"p_length":""\,"p_lines":""\,"p_name":"STATE"\,"p_quantity":""\,"p_readonly":""\,"p_required":""\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"NT"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Postcode"\,"p_length":""\,"p_lines":""\,"p_name":"POSTCODE"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"0804"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Country"\,"p_length":""\,"p_lines":""\,"p_name":"COUNTRY"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"AUSTRALIA"\,"p_valuedescription":""}]}],default,2017-03-09 11:11:11,PARAP,NT,0804,AUSTRALIA
+5,4,2,113,0810,ALAWA,Y,4,[{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncodetemp":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Form Header"\,"sectiontype":"FORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"ENTITY"\,"p_label":"Data Group Name"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control  ge-dataformgroup-field"}\,{"p_datatype":"d_version"\,"p_name":"FORMVERSION"\,"p_label":"Form Version"\,"p_value":5\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"CODE"\,"p_label":"Code"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"DESCRIPTION"\,"p_label":"Description"\,"p_value":"Suburb"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"40"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_yesno"\,"p_name":"ISENABLED"\,"p_label":"Enabled"\,"p_value":"Y"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"undefined"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"d_yesno"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncodetemp":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Data Header"\,"sectiontype":"DATAHEADER"\,"fields":[{"p_datatype":"d_version"\,"p_name":"DATAVERSION"\,"p_label":"Data Version"\,"p_value":"1"\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"INTERNALUSEFORMHEADER"\,"sectioncodetemp":"INTERNALUSEFORMHEADER"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Internal Use Form header"\,"sectiontype":"INTERNALUSEFORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"SUBMITTEDDATETIME"\,"p_label":"Submitted Date Time"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYCLIENT"\,"p_label":"Submitted By Client"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYUSER"\,"p_label":"Submitted By User"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncodetemp":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Suburb"\,"sectiontype":"DATA"\,"fields":[{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Suburb"\,"p_length":""\,"p_lines":""\,"p_name":"SUBURB"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"ALAWA"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"State"\,"p_length":""\,"p_lines":""\,"p_name":"STATE"\,"p_quantity":""\,"p_readonly":""\,"p_required":""\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"NT"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Postcode"\,"p_length":""\,"p_lines":""\,"p_name":"POSTCODE"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"0810"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Country"\,"p_length":""\,"p_lines":""\,"p_name":"COUNTRY"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"AUSTRALIA"\,"p_valuedescription":""}]}],default,2017-03-09 11:11:11,ALAWA,NT,0810,AUSTRALIA
+6,4,2,113,0810,BRINKIN,Y,4,[{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncodetemp":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Form Header"\,"sectiontype":"FORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"ENTITY"\,"p_label":"Data Group Name"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control  ge-dataformgroup-field"}\,{"p_datatype":"d_version"\,"p_name":"FORMVERSION"\,"p_label":"Form Version"\,"p_value":5\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"CODE"\,"p_label":"Code"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"DESCRIPTION"\,"p_label":"Description"\,"p_value":"Suburb"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"40"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_yesno"\,"p_name":"ISENABLED"\,"p_label":"Enabled"\,"p_value":"Y"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"undefined"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"d_yesno"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncodetemp":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Data Header"\,"sectiontype":"DATAHEADER"\,"fields":[{"p_datatype":"d_version"\,"p_name":"DATAVERSION"\,"p_label":"Data Version"\,"p_value":"1"\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"INTERNALUSEFORMHEADER"\,"sectioncodetemp":"INTERNALUSEFORMHEADER"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Internal Use Form header"\,"sectiontype":"INTERNALUSEFORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"SUBMITTEDDATETIME"\,"p_label":"Submitted Date Time"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYCLIENT"\,"p_label":"Submitted By Client"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYUSER"\,"p_label":"Submitted By User"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncodetemp":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Suburb"\,"sectiontype":"DATA"\,"fields":[{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Suburb"\,"p_length":""\,"p_lines":""\,"p_name":"SUBURB"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"BRINKIN"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"State"\,"p_length":""\,"p_lines":""\,"p_name":"STATE"\,"p_quantity":""\,"p_readonly":""\,"p_required":""\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"NT"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Postcode"\,"p_length":""\,"p_lines":""\,"p_name":"POSTCODE"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"0810"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Country"\,"p_length":""\,"p_lines":""\,"p_name":"COUNTRY"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"AUSTRALIA"\,"p_valuedescription":""}]}],default,2017-03-09 11:11:11,BRINKIN,NT,0810,AUSTRALIA
+7,4,2,113,0810,CASUARINA,Y,4,[{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncodetemp":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Form Header"\,"sectiontype":"FORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"ENTITY"\,"p_label":"Data Group Name"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control  ge-dataformgroup-field"}\,{"p_datatype":"d_version"\,"p_name":"FORMVERSION"\,"p_label":"Form Version"\,"p_value":5\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"CODE"\,"p_label":"Code"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"DESCRIPTION"\,"p_label":"Description"\,"p_value":"Suburb"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"40"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_yesno"\,"p_name":"ISENABLED"\,"p_label":"Enabled"\,"p_value":"Y"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"undefined"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"d_yesno"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncodetemp":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Data Header"\,"sectiontype":"DATAHEADER"\,"fields":[{"p_datatype":"d_version"\,"p_name":"DATAVERSION"\,"p_label":"Data Version"\,"p_value":"1"\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"INTERNALUSEFORMHEADER"\,"sectioncodetemp":"INTERNALUSEFORMHEADER"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Internal Use Form header"\,"sectiontype":"INTERNALUSEFORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"SUBMITTEDDATETIME"\,"p_label":"Submitted Date Time"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYCLIENT"\,"p_label":"Submitted By Client"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYUSER"\,"p_label":"Submitted By User"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncodetemp":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Suburb"\,"sectiontype":"DATA"\,"fields":[{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Suburb"\,"p_length":""\,"p_lines":""\,"p_name":"SUBURB"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"CASUARINA"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"State"\,"p_length":""\,"p_lines":""\,"p_name":"STATE"\,"p_quantity":""\,"p_readonly":""\,"p_required":""\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"NT"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Postcode"\,"p_length":""\,"p_lines":""\,"p_name":"POSTCODE"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"0810"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Country"\,"p_length":""\,"p_lines":""\,"p_name":"COUNTRY"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"AUSTRALIA"\,"p_valuedescription":""}]}],default,2017-03-09 11:11:11,CASUARINA,NT,0810,AUSTRALIA
+8,4,2,113,0810,COCONUT GROVE,Y,4,\N,default,2017-03-09 11:11:11,COCONUT GROVE,NT,0810,AUSTRALIA
+9,4,2,113,0810,JINGILI,Y,4,[{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncodetemp":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Form Header"\,"sectiontype":"FORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"ENTITY"\,"p_label":"Data Group Name"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control  ge-dataformgroup-field"}\,{"p_datatype":"d_version"\,"p_name":"FORMVERSION"\,"p_label":"Form Version"\,"p_value":5\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"CODE"\,"p_label":"Code"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"DESCRIPTION"\,"p_label":"Description"\,"p_value":"Suburb"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"40"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_yesno"\,"p_name":"ISENABLED"\,"p_label":"Enabled"\,"p_value":"Y"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"undefined"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"d_yesno"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncodetemp":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Data Header"\,"sectiontype":"DATAHEADER"\,"fields":[{"p_datatype":"d_version"\,"p_name":"DATAVERSION"\,"p_label":"Data Version"\,"p_value":"1"\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"INTERNALUSEFORMHEADER"\,"sectioncodetemp":"INTERNALUSEFORMHEADER"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Internal Use Form header"\,"sectiontype":"INTERNALUSEFORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"SUBMITTEDDATETIME"\,"p_label":"Submitted Date Time"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYCLIENT"\,"p_label":"Submitted By Client"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYUSER"\,"p_label":"Submitted By User"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncodetemp":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Suburb"\,"sectiontype":"DATA"\,"fields":[{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Suburb"\,"p_length":""\,"p_lines":""\,"p_name":"SUBURB"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"JINGILI"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"State"\,"p_length":""\,"p_lines":""\,"p_name":"STATE"\,"p_quantity":""\,"p_readonly":""\,"p_required":""\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"NT"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Postcode"\,"p_length":""\,"p_lines":""\,"p_name":"POSTCODE"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"0810"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Country"\,"p_length":""\,"p_lines":""\,"p_name":"COUNTRY"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"AUSTRALIA"\,"p_valuedescription":""}]}],default,2017-03-09 11:11:11,JINGILI,NT,0810,AUSTRALIA
+10,4,2,113,0810,LEE POINT,Y,4,\N,default,2017-03-09 11:11:11,LEE POINT,NT,0810,AUSTRALIA
+11,4,2,113,0810,LYONS,Y,4,[{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncodetemp":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Form Header"\,"sectiontype":"FORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"ENTITY"\,"p_label":"Data Group Name"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control  ge-dataformgroup-field"}\,{"p_datatype":"d_version"\,"p_name":"FORMVERSION"\,"p_label":"Form Version"\,"p_value":5\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"CODE"\,"p_label":"Code"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"DESCRIPTION"\,"p_label":"Description"\,"p_value":"Suburb"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"40"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_yesno"\,"p_name":"ISENABLED"\,"p_label":"Enabled"\,"p_value":"Y"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"undefined"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"d_yesno"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncodetemp":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Data Header"\,"sectiontype":"DATAHEADER"\,"fields":[{"p_datatype":"d_version"\,"p_name":"DATAVERSION"\,"p_label":"Data Version"\,"p_value":"1"\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"INTERNALUSEFORMHEADER"\,"sectioncodetemp":"INTERNALUSEFORMHEADER"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Internal Use Form header"\,"sectiontype":"INTERNALUSEFORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"SUBMITTEDDATETIME"\,"p_label":"Submitted Date Time"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYCLIENT"\,"p_label":"Submitted By Client"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYUSER"\,"p_label":"Submitted By User"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncodetemp":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Suburb"\,"sectiontype":"DATA"\,"fields":[{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Suburb"\,"p_length":""\,"p_lines":""\,"p_name":"SUBURB"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"LYONS"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"State"\,"p_length":""\,"p_lines":""\,"p_name":"STATE"\,"p_quantity":""\,"p_readonly":""\,"p_required":""\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"NT"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Postcode"\,"p_length":""\,"p_lines":""\,"p_name":"POSTCODE"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"0810"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Country"\,"p_length":""\,"p_lines":""\,"p_name":"COUNTRY"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"AUSTRALIA"\,"p_valuedescription":""}]}],default,2017-03-09 11:11:11,LYONS,NT,0810,AUSTRALIA
+12,4,2,113,0810,MILLNER,Y,4,\N,default,2017-03-09 11:11:11,MILLNER,NT,0810,AUSTRALIA
+13,4,2,113,0810,MOIL,Y,4,\N,default,2017-03-09 11:11:11,MOIL,NT,0810,AUSTRALIA
+14,4,2,113,0810,MUIRHEAD,Y,4,\N,default,2017-03-09 11:11:11,MUIRHEAD,NT,0810,AUSTRALIA
+15,4,2,113,0810,NAKARA,Y,4,\N,default,2017-03-09 11:11:11,NAKARA,NT,0810,AUSTRALIA
+16,4,2,113,0810,NIGHTCLIFF,Y,4,[{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncodetemp":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Form Header"\,"sectiontype":"FORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"ENTITY"\,"p_label":"Data Group Name"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control  ge-dataformgroup-field"}\,{"p_datatype":"d_version"\,"p_name":"FORMVERSION"\,"p_label":"Form Version"\,"p_value":5\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"CODE"\,"p_label":"Code"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"DESCRIPTION"\,"p_label":"Description"\,"p_value":"Suburb"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"40"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_yesno"\,"p_name":"ISENABLED"\,"p_label":"Enabled"\,"p_value":"Y"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"undefined"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"d_yesno"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncodetemp":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Data Header"\,"sectiontype":"DATAHEADER"\,"fields":[{"p_datatype":"d_version"\,"p_name":"DATAVERSION"\,"p_label":"Data Version"\,"p_value":"1"\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"INTERNALUSEFORMHEADER"\,"sectioncodetemp":"INTERNALUSEFORMHEADER"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Internal Use Form header"\,"sectiontype":"INTERNALUSEFORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"SUBMITTEDDATETIME"\,"p_label":"Submitted Date Time"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYCLIENT"\,"p_label":"Submitted By Client"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYUSER"\,"p_label":"Submitted By User"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncodetemp":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Suburb"\,"sectiontype":"DATA"\,"fields":[{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Suburb"\,"p_length":""\,"p_lines":""\,"p_name":"SUBURB"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"NIGHTCLIFF"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"State"\,"p_length":""\,"p_lines":""\,"p_name":"STATE"\,"p_quantity":""\,"p_readonly":""\,"p_required":""\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"NT"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Postcode"\,"p_length":""\,"p_lines":""\,"p_name":"POSTCODE"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"0810"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Country"\,"p_length":""\,"p_lines":""\,"p_name":"COUNTRY"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"AUSTRALIA"\,"p_valuedescription":""}]}],default,2017-03-09 11:11:11,NIGHTCLIFF,NT,0810,AUSTRALIA
+17,4,2,113,0810,RAPID CREEK,Y,4,\N,default,2017-03-09 11:11:11,RAPID CREEK,NT,0810,AUSTRALIA
+18,4,2,113,0810,TIWI,Y,4,\N,default,2017-03-09 11:11:11,TIWI,NT,0810,AUSTRALIA
+19,4,2,113,0810,WAGAMAN,Y,4,\N,default,2017-03-09 11:11:11,WAGAMAN,NT,0810,AUSTRALIA
+20,4,2,113,0810,WANGURI,Y,4,\N,default,2017-03-09 11:11:11,WANGURI,NT,0810,AUSTRALIA
+21,4,2,113,0811,CASUARINA,Y,4,\N,default,2017-03-09 11:11:11,CASUARINA,NT,0811,AUSTRALIA
+22,4,2,113,0812,ANULA,Y,4,\N,default,2017-03-09 11:11:11,ANULA,NT,0812,AUSTRALIA
+23,4,2,113,0812,KARAMA,Y,4,\N,default,2017-03-09 11:11:11,KARAMA,NT,0812,AUSTRALIA
+24,4,2,113,0812,LEANYER,Y,4,\N,default,2017-03-09 11:11:11,LEANYER,NT,0812,AUSTRALIA
+25,4,2,113,0812,MALAK,Y,4,\N,default,2017-03-09 11:11:11,MALAK,NT,0812,AUSTRALIA
+26,4,2,113,0812,MARRARA,Y,4,\N,default,2017-03-09 11:11:11,MARRARA,NT,0812,AUSTRALIA
+27,4,2,113,0812,WULAGI,Y,4,\N,default,2017-03-09 11:11:11,WULAGI,NT,0812,AUSTRALIA
+28,4,2,113,0813,KARAMA,Y,4,\N,default,2017-03-09 11:11:11,KARAMA,NT,0813,AUSTRALIA
+29,4,2,113,0814,NIGHTCLIFF,Y,4,\N,default,2017-03-09 11:11:11,NIGHTCLIFF,NT,0814,AUSTRALIA
+30,4,2,113,0815,CHARLES DARWIN UNIVERSITY,Y,4,\N,default,2017-03-09 11:11:11,CHARLES DARWIN UNIVERSITY,NT,0815,AUSTRALIA
+31,4,2,113,0820,BAGOT,Y,4,\N,default,2017-03-09 11:11:11,BAGOT,NT,0820,AUSTRALIA
+32,4,2,113,0820,BAYVIEW,Y,4,\N,default,2017-03-09 11:11:11,BAYVIEW,NT,0820,AUSTRALIA
+33,4,2,113,0820,COONAWARRA,Y,4,\N,default,2017-03-09 11:11:11,COONAWARRA,NT,0820,AUSTRALIA
+34,4,2,113,0820,EAST POINT,Y,4,\N,default,2017-03-09 11:11:11,EAST POINT,NT,0820,AUSTRALIA
+35,4,2,113,0820,EATON,Y,4,\N,default,2017-03-09 11:11:11,EATON,NT,0820,AUSTRALIA
+36,4,2,113,0820,FANNIE BAY,Y,4,\N,default,2017-03-09 11:11:11,FANNIE BAY,NT,0820,AUSTRALIA
+37,4,2,113,0820,LARRAKEYAH,Y,4,\N,default,2017-03-09 11:11:11,LARRAKEYAH,NT,0820,AUSTRALIA
+38,4,2,113,0820,LUDMILLA,Y,4,\N,default,2017-03-09 11:11:11,LUDMILLA,NT,0820,AUSTRALIA
+39,4,2,113,0820,PARAP,Y,4,\N,default,2017-03-09 11:11:11,PARAP,NT,0820,AUSTRALIA
+40,4,2,113,0820,STUART PARK,Y,4,\N,default,2017-03-09 11:11:11,STUART PARK,NT,0820,AUSTRALIA
+41,4,2,113,0820,THE GARDENS,Y,4,\N,default,2017-03-09 11:11:11,THE GARDENS,NT,0820,AUSTRALIA
+42,4,2,113,0820,THE NARROWS,Y,4,\N,default,2017-03-09 11:11:11,THE NARROWS,NT,0820,AUSTRALIA
+43,4,2,113,0820,WINNELLIE,Y,4,\N,default,2017-03-09 11:11:11,WINNELLIE,NT,0820,AUSTRALIA
+44,4,2,113,0820,WOOLNER,Y,4,\N,default,2017-03-09 11:11:11,WOOLNER,NT,0820,AUSTRALIA
+45,4,2,113,0821,WINNELLIE,Y,4,\N,default,2017-03-09 11:11:11,WINNELLIE,NT,0821,AUSTRALIA
+46,4,2,113,0822,ANGURUGU,Y,4,[{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncodetemp":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncolour":""\,"sectionref":""\,"sectiontitle":"Form Header"\,"sectiontype":"FORMHEADER"\,"sectionquantity":""\,"fields":[{"p_datatype":"d_text"\,"p_name":"ENTITY"\,"p_label":"Data Group Name"\,"p_colour":""\,"p_value":"SUBURB"\,"p_length":"20"\,"p_tooltip":""\,"p_quantity":"1"\,"p_style":""\,"p_required":"Y"\,"p_readonly":"Y"\,"p_searchable":"Y"\,"p_info":""\,"p_lines":"undefined"\,"p_valuedescription":""\,"p_source":""\,"p_selection":""\,"p_classes":"form-control  ge-dataformgroup-field"}\,{"p_datatype":"d_version"\,"p_classes":"form-control"\,"p_colour":""\,"p_info":""\,"p_label":"Form Version"\,"p_length":""\,"p_name":"FORMVERSION"\,"p_quantity":"1"\,"p_readonly":"Y"\,"p_required":"Y"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_source":""\,"p_style":""\,"p_value":8}\,{"p_datatype":"d_text"\,"p_name":"CODE"\,"p_label":"Code"\,"p_colour":""\,"p_value":"SUBURB"\,"p_length":"20"\,"p_tooltip":""\,"p_quantity":"1"\,"p_style":""\,"p_required":"Y"\,"p_readonly":"Y"\,"p_searchable":"Y"\,"p_info":""\,"p_lines":"undefined"\,"p_valuedescription":""\,"p_source":""\,"p_selection":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"DESCRIPTION"\,"p_label":"Description"\,"p_colour":""\,"p_value":"Suburb"\,"p_length":"40"\,"p_tooltip":""\,"p_quantity":"1"\,"p_style":""\,"p_required":"Y"\,"p_readonly":"Y"\,"p_searchable":"Y"\,"p_info":""\,"p_lines":"undefined"\,"p_valuedescription":""\,"p_source":""\,"p_selection":""\,"p_classes":"form-control"}\,{"p_datatype":"d_yesno"\,"p_name":"ISENABLED"\,"p_label":"Enabled"\,"p_colour":""\,"p_value":"Y"\,"p_tooltip":""\,"p_quantity":"1"\,"p_style":""\,"p_readonly":"Y"\,"p_searchable":"Y"\,"p_info":""\,"p_lines":"undefined"\,"p_valuedescription":""\,"p_source":""\,"p_selection":""\,"p_classes":"d_yesno"\,"p_required":"Y"\,"p_length":"undefined"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncodetemp":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncolour":""\,"sectionref":""\,"sectiontitle":"Data Header"\,"sectiontype":"DATAHEADER"\,"sectionquantity":""\,"fields":[{"p_datatype":"d_version"\,"p_classes":"form-control"\,"p_colour":""\,"p_info":""\,"p_label":"Data Version"\,"p_length":""\,"p_name":"DATAVERSION"\,"p_quantity":"1"\,"p_readonly":"Y"\,"p_required":"N"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_source":""\,"p_style":""\,"p_value":"1"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"INTERNALUSEFORMHEADER"\,"sectioncodetemp":"INTERNALUSEFORMHEADER"\,"sectioncolour":""\,"sectionref":""\,"sectiontitle":"Internal Use Form header"\,"sectiontype":"INTERNALUSEFORMHEADER"\,"sectionquantity":""\,"fields":[{"p_datatype":"d_text"\,"p_name":"SUBMITTEDDATETIME"\,"p_label":"Submitted Date Time"\,"p_colour":""\,"p_value":""\,"p_length":"20"\,"p_tooltip":""\,"p_quantity":"1"\,"p_style":""\,"p_required":"N"\,"p_readonly":"N"\,"p_searchable":"N"\,"p_info":""\,"p_lines":""\,"p_valuedescription":""\,"p_source":""\,"p_selection":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYCLIENT"\,"p_label":"Submitted By Client"\,"p_colour":""\,"p_value":""\,"p_length":"20"\,"p_tooltip":""\,"p_quantity":"1"\,"p_style":""\,"p_required":"N"\,"p_readonly":"N"\,"p_searchable":"N"\,"p_info":""\,"p_lines":""\,"p_valuedescription":""\,"p_source":""\,"p_selection":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYUSER"\,"p_label":"Submitted By User"\,"p_colour":""\,"p_value":""\,"p_length":"20"\,"p_tooltip":""\,"p_quantity":"1"\,"p_style":""\,"p_required":"N"\,"p_readonly":"N"\,"p_searchable":"N"\,"p_info":""\,"p_lines":""\,"p_valuedescription":""\,"p_source":""\,"p_selection":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncodetemp":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncolour":""\,"sectionref":""\,"sectiontitle":"Suburb"\,"sectiontype":"DATA"\,"sectionquantity":""\,"fields":[{"p_datatype":"d_text"\,"p_name":"SUBURB"\,"p_label":"Suburb"\,"p_colour":""\,"p_value":"ANGURUGU"\,"p_length":""\,"p_tooltip":""\,"p_quantity":""\,"p_style":""\,"p_required":"Y"\,"p_readonly":""\,"p_searchable":""\,"p_info":""\,"p_lines":""\,"p_valuedescription":""\,"p_source":""\,"p_selection":""\,"p_classes":"form-control d_text-input"}\,{"p_datatype":"d_text"\,"p_name":"STATE"\,"p_label":"State"\,"p_colour":""\,"p_value":"NT"\,"p_length":""\,"p_tooltip":""\,"p_quantity":""\,"p_style":""\,"p_required":""\,"p_readonly":""\,"p_searchable":""\,"p_info":""\,"p_lines":""\,"p_valuedescription":""\,"p_source":""\,"p_selection":""\,"p_classes":"form-control d_text-input"}\,{"p_datatype":"d_text"\,"p_name":"POSTCODE"\,"p_label":"Postcode"\,"p_colour":""\,"p_value":"0822"\,"p_length":""\,"p_tooltip":""\,"p_quantity":""\,"p_style":""\,"p_required":"Y"\,"p_readonly":""\,"p_searchable":""\,"p_info":""\,"p_lines":""\,"p_valuedescription":""\,"p_source":""\,"p_selection":""\,"p_classes":"form-control d_text-input"}\,{"p_datatype":"d_text"\,"p_name":"COUNTRY"\,"p_label":"Country"\,"p_colour":""\,"p_value":"AUSTRALIA"\,"p_length":""\,"p_tooltip":""\,"p_quantity":""\,"p_style":""\,"p_required":"Y"\,"p_readonly":""\,"p_searchable":""\,"p_info":""\,"p_lines":""\,"p_valuedescription":""\,"p_source":""\,"p_selection":""\,"p_classes":"form-control d_text-input"}]}],default,2017-03-09 11:11:11,ANGURUGU,NT,0822,AUSTRALIA
+47,4,2,113,0822,CROKER ISLAND,Y,4,\N,default,2017-03-09 11:11:11,CROKER ISLAND,NT,0822,AUSTRALIA
+48,4,2,113,0822,DALY RIVER,Y,4,\N,default,2017-03-09 11:11:11,DALY RIVER,NT,0822,AUSTRALIA
+49,4,2,113,0822,DARWIN MC,Y,4,\N,default,2017-03-09 11:11:11,DARWIN MC,NT,0822,AUSTRALIA
+50,4,2,113,0822,DELISSAVILLE,Y,4,\N,default,2017-03-09 11:11:11,DELISSAVILLE,NT,0822,AUSTRALIA
+51,4,2,113,0822,GALIWINKU,Y,4,\N,default,2017-03-09 11:11:11,GALIWINKU,NT,0822,AUSTRALIA
+52,4,2,113,0822,GOULBURN ISLAND,Y,4,\N,default,2017-03-09 11:11:11,GOULBURN ISLAND,NT,0822,AUSTRALIA
+53,4,2,113,0822,MANINGRIDA,Y,4,\N,default,2017-03-09 11:11:11,MANINGRIDA,NT,0822,AUSTRALIA
+54,4,2,113,0822,MILINGIMBI,Y,4,\N,default,2017-03-09 11:11:11,MILINGIMBI,NT,0822,AUSTRALIA
+55,4,2,113,0822,MINJILANG,Y,4,\N,default,2017-03-09 11:11:11,MINJILANG,NT,0822,AUSTRALIA
+56,4,2,113,0822,NUMBULWAR,Y,4,\N,default,2017-03-09 11:11:11,NUMBULWAR,NT,0822,AUSTRALIA
+57,4,2,113,0822,OENPELLI,Y,4,\N,default,2017-03-09 11:11:11,OENPELLI,NT,0822,AUSTRALIA
+58,4,2,113,0822,PULARUMPI,Y,4,\N,default,2017-03-09 11:11:11,PULARUMPI,NT,0822,AUSTRALIA
+59,4,2,113,0822,RAMINGINING,Y,4,\N,default,2017-03-09 11:11:11,RAMINGINING,NT,0822,AUSTRALIA
+60,4,2,113,0822,UMBAKUMBA,Y,4,\N,default,2017-03-09 11:11:11,UMBAKUMBA,NT,0822,AUSTRALIA
+61,4,2,113,0822,WADEYE,Y,4,\N,default,2017-03-09 11:11:11,WADEYE,NT,0822,AUSTRALIA
+62,4,2,113,0822,WINNELLIE,Y,4,\N,default,2017-03-09 11:11:11,WINNELLIE,NT,0822,AUSTRALIA
+63,4,2,113,0822,WURRUMIYANGA,Y,4,\N,default,2017-03-09 11:11:11,WURRUMIYANGA,NT,0822,AUSTRALIA
+64,4,2,113,0828,BERRIMAH,Y,4,\N,default,2017-03-09 11:11:11,BERRIMAH,NT,0828,AUSTRALIA
+65,4,2,113,0829,PINELANDS,Y,4,\N,default,2017-03-09 11:11:11,PINELANDS,NT,0829,AUSTRALIA
+66,4,2,113,0830,ARCHER,Y,4,[{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncodetemp":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Form Header"\,"sectiontype":"FORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"ENTITY"\,"p_label":"Data Group Name"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control  ge-dataformgroup-field"}\,{"p_datatype":"d_version"\,"p_name":"FORMVERSION"\,"p_label":"Form Version"\,"p_value":5\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"CODE"\,"p_label":"Code"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"DESCRIPTION"\,"p_label":"Description"\,"p_value":"Suburb"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"40"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_yesno"\,"p_name":"ISENABLED"\,"p_label":"Enabled"\,"p_value":"Y"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"undefined"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"d_yesno"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncodetemp":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Data Header"\,"sectiontype":"DATAHEADER"\,"fields":[{"p_datatype":"d_version"\,"p_name":"DATAVERSION"\,"p_label":"Data Version"\,"p_value":"1"\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"INTERNALUSEFORMHEADER"\,"sectioncodetemp":"INTERNALUSEFORMHEADER"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Internal Use Form header"\,"sectiontype":"INTERNALUSEFORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"SUBMITTEDDATETIME"\,"p_label":"Submitted Date Time"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYCLIENT"\,"p_label":"Submitted By Client"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYUSER"\,"p_label":"Submitted By User"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncodetemp":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Suburb"\,"sectiontype":"DATA"\,"fields":[{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Suburb"\,"p_length":""\,"p_lines":""\,"p_name":"SUBURB"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"ARCHER"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"State"\,"p_length":""\,"p_lines":""\,"p_name":"STATE"\,"p_quantity":""\,"p_readonly":""\,"p_required":""\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"NT"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Postcode"\,"p_length":""\,"p_lines":""\,"p_name":"POSTCODE"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"0830"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Country"\,"p_length":""\,"p_lines":""\,"p_name":"COUNTRY"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"AUSTRALIA"\,"p_valuedescription":""}]}],default,2017-03-09 11:11:11,ARCHER,NT,0830,AUSTRALIA
+67,4,2,113,0830,DRIVER,Y,4,[{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncodetemp":"6baa2f84-b6c1-4de9-9200-4560c2f3694a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Form Header"\,"sectiontype":"FORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"ENTITY"\,"p_label":"Data Group Name"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control  ge-dataformgroup-field"}\,{"p_datatype":"d_version"\,"p_name":"FORMVERSION"\,"p_label":"Form Version"\,"p_value":5\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"CODE"\,"p_label":"Code"\,"p_value":"SUBURB"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"20"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"DESCRIPTION"\,"p_label":"Description"\,"p_value":"Suburb"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"40"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_yesno"\,"p_name":"ISENABLED"\,"p_label":"Enabled"\,"p_value":"Y"\,"p_quantity":"1"\,"p_required":"Y"\,"p_readonly":"Y"\,"p_info":""\,"p_length":"undefined"\,"p_selection":""\,"p_lines":"undefined"\,"p_searchable":"Y"\,"p_sortable":"Y"\,"p_style":""\,"p_source":""\,"p_classes":"d_yesno"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncodetemp":"b65f2052-f37d-40ce-8bb7-81edb3eb876d"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Data Header"\,"sectiontype":"DATAHEADER"\,"fields":[{"p_datatype":"d_version"\,"p_name":"DATAVERSION"\,"p_label":"Data Version"\,"p_value":"1"\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"Y"\,"p_info":""\,"p_length":""\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"INTERNALUSEFORMHEADER"\,"sectioncodetemp":"INTERNALUSEFORMHEADER"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Internal Use Form header"\,"sectiontype":"INTERNALUSEFORMHEADER"\,"fields":[{"p_datatype":"d_text"\,"p_name":"SUBMITTEDDATETIME"\,"p_label":"Submitted Date Time"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYCLIENT"\,"p_label":"Submitted By Client"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}\,{"p_datatype":"d_text"\,"p_name":"SUBMITTEDBYUSER"\,"p_label":"Submitted By User"\,"p_value":""\,"p_quantity":"1"\,"p_required":"N"\,"p_readonly":"N"\,"p_info":""\,"p_length":"20"\,"p_searchable":"N"\,"p_sortable":"N"\,"p_style":""\,"p_source":""\,"p_classes":"form-control"}]}\,{"sectionclasses":"btn btn-default fb-section-button"\,"sectioncode":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncodetemp":"f33f67299-5383-4cd3-8455-89e470fb519a"\,"sectioncolour":""\,"sectionquantity":""\,"sectionref":""\,"sectiontitle":"Suburb"\,"sectiontype":"DATA"\,"fields":[{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Suburb"\,"p_length":""\,"p_lines":""\,"p_name":"SUBURB"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"DRIVER"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"State"\,"p_length":""\,"p_lines":""\,"p_name":"STATE"\,"p_quantity":""\,"p_readonly":""\,"p_required":""\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"NT"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Postcode"\,"p_length":""\,"p_lines":""\,"p_name":"POSTCODE"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"0830"\,"p_valuedescription":""}\,{"p_classes":"form-control d_text-input"\,"p_colour":""\,"p_datatype":"d_text"\,"p_info":""\,"p_label":"Country"\,"p_length":""\,"p_lines":""\,"p_name":"COUNTRY"\,"p_quantity":""\,"p_readonly":""\,"p_required":"Y"\,"p_searchable":""\,"p_selection":""\,"p_sortable":""\,"p_source":""\,"p_style":""\,"p_value":"AUSTRALIA"\,"p_valuedescription":""}]}],default,2017-03-09 11:11:11,DRIVER,NT,0830,AUSTRALIA
+68,4,2,113,0830,DURACK,Y,4,\N,default,2017-03-09 11:11:11,DURACK,NT,0830,AUSTRALIA
+69,4,2,113,0830,FARRAR,Y,4,\N,default,2017-03-09 11:11:11,FARRAR,NT,0830,AUSTRALIA
+70,4,2,113,0830,GRAY,Y,4,\N,default,2017-03-09 11:11:11,GRAY,NT,0830,AUSTRALIA
+71,4,2,113,0830,MARLOW LAGOON,Y,4,\N,default,2017-03-09 11:11:11,MARLOW LAGOON,NT,0830,AUSTRALIA
+72,4,2,113,0830,MOULDEN,Y,4,\N,default,2017-03-09 11:11:11,MOULDEN,NT,0830,AUSTRALIA
+73,4,2,113,0830,PALMERSTON,Y,4,\N,default,2017-03-09 11:11:11,PALMERSTON,NT,0830,AUSTRALIA
+74,4,2,113,0830,WOODROFFE,Y,4,\N,default,2017-03-09 11:11:11,WOODROFFE,NT,0830,AUSTRALIA
+75,4,2,113,0830,YARRAWONGA,Y,4,\N,default,2017-03-09 11:11:11,YARRAWONGA,NT,0830,AUSTRALIA
+76,4,2,113,0831,PALMERSTON,Y,4,\N,default,2017-03-09 11:11:11,PALMERSTON,NT,0831,AUSTRALIA
+77,4,2,113,0832,BAKEWELL,Y,4,\N,default,2017-03-09 11:11:11,BAKEWELL,NT,0832,AUSTRALIA
+78,4,2,113,0832,BELLAMACK,Y,4,\N,default,2017-03-09 11:11:11,BELLAMACK,NT,0832,AUSTRALIA
+79,4,2,113,0832,GUNN,Y,4,\N,default,2017-03-09 11:11:11,GUNN,NT,0832,AUSTRALIA
+80,4,2,113,0832,JOHNSTON,Y,4,\N,default,2017-03-09 11:11:11,JOHNSTON,NT,0832,AUSTRALIA
+81,4,2,113,0832,MITCHELL,Y,4,\N,default,2017-03-09 11:11:11,MITCHELL,NT,0832,AUSTRALIA
+82,4,2,113,0832,ROSEBERY,Y,4,\N,default,2017-03-09 11:11:11,ROSEBERY,NT,0832,AUSTRALIA
+83,4,2,113,0834,VIRGINIA,Y,4,\N,default,2017-03-09 11:11:11,VIRGINIA,NT,0834,AUSTRALIA
+84,4,2,113,0835,HOWARD SPRINGS,Y,4,\N,default,2017-03-09 11:11:11,HOWARD SPRINGS,NT,0835,AUSTRALIA
+85,4,2,113,0836,HUMPTY DOO,Y,4,\N,default,2017-03-09 11:11:11,HUMPTY DOO,NT,0836,AUSTRALIA
+86,4,2,113,0837,NOONAMAH,Y,4,\N,default,2017-03-09 11:11:11,NOONAMAH,NT,0837,AUSTRALIA
+87,4,2,113,0838,BERRY SPRINGS,Y,4,\N,default,2017-03-09 11:11:11,BERRY SPRINGS,NT,0838,AUSTRALIA
+88,4,2,113,0839,COOLALINGA,Y,4,\N,default,2017-03-09 11:11:11,COOLALINGA,NT,0839,AUSTRALIA
+89,4,2,113,0840,DUNDEE BEACH,Y,4,\N,default,2017-03-09 11:11:11,DUNDEE BEACH,NT,0840,AUSTRALIA
+90,4,2,113,0845,BATCHELOR,Y,4,\N,default,2017-03-09 11:11:11,BATCHELOR,NT,0845,AUSTRALIA
+91,4,2,113,0846,ADELAIDE RIVER,Y,4,\N,default,2017-03-09 11:11:11,ADELAIDE RIVER,NT,0846,AUSTRALIA
+92,4,2,113,0847,PINE CREEK,Y,4,\N,default,2017-03-09 11:11:11,PINE CREEK,NT,0847,AUSTRALIA
+93,4,2,113,0850,COSSACK,Y,4,\N,default,2017-03-09 11:11:11,COSSACK,NT,0850,AUSTRALIA
+94,4,2,113,0850,EMUNGALAN,Y,4,\N,default,2017-03-09 11:11:11,EMUNGALAN,NT,0850,AUSTRALIA
+95,4,2,113,0850,KATHERINE,Y,4,\N,default,2017-03-09 11:11:11,KATHERINE,NT,0850,AUSTRALIA
+96,4,2,113,0850,KATHERINE EAST,Y,4,\N,default,2017-03-09 11:11:11,KATHERINE EAST,NT,0850,AUSTRALIA
+97,4,2,113,0850,KATHERINE SOUTH,Y,4,\N,default,2017-03-09 11:11:11,KATHERINE SOUTH,NT,0850,AUSTRALIA
+98,4,2,113,0851,KATHERINE,Y,4,\N,default,2017-03-09 11:11:11,KATHERINE,NT,0851,AUSTRALIA
+99,4,2,113,0852,DALY WATERS,Y,4,\N,default,2017-03-09 11:11:11,DALY WATERS,NT,0852,AUSTRALIA
+100,4,2,113,0852,KATHERINE,Y,4,\N,default,2017-03-09 11:11:11,KATHERINE,NT,0852,AUSTRALIA
+101,4,2,113,0852,LAJAMANU,Y,4,\N,default,2017-03-09 11:11:11,LAJAMANU,NT,0852,AUSTRALIA
+102,4,2,113,0852,LARRIMAH,Y,4,\N,default,2017-03-09 11:11:11,LARRIMAH,NT,0852,AUSTRALIA
+103,4,2,113,0852,MARANBOY,Y,4,\N,default,2017-03-09 11:11:11,MARANBOY,NT,0852,AUSTRALIA
+104,4,2,113,0852,MATARANKA,Y,4,\N,default,2017-03-09 11:11:11,MATARANKA,NT,0852,AUSTRALIA
+105,4,2,113,0852,NGUKURR,Y,4,\N,default,2017-03-09 11:11:11,NGUKURR,NT,0852,AUSTRALIA
+106,4,2,113,0852,VICTORIA RIVER DOWNS,Y,4,\N,default,2017-03-09 11:11:11,VICTORIA RIVER DOWNS,NT,0852,AUSTRALIA
+107,4,2,113,0853,TINDAL,Y,4,\N,default,2017-03-09 11:11:11,TINDAL,NT,0853,AUSTRALIA
+108,4,2,113,0854,BORROLOOLA,Y,4,\N,default,2017-03-09 11:11:11,BORROLOOLA,NT,0854,AUSTRALIA
+109,4,2,113,0860,TENNANT CREEK,Y,4,\N,default,2017-03-09 11:11:11,TENNANT CREEK,NT,0860,AUSTRALIA
+110,4,2,113,0861,TENNANT CREEK,Y,4,\N,default,2017-03-09 11:11:11,TENNANT CREEK,NT,0861,AUSTRALIA
+111,4,2,113,0862,ELLIOTT,Y,4,\N,default,2017-03-09 11:11:11,ELLIOTT,NT,0862,AUSTRALIA
+112,4,2,113,0862,NEWCASTLE WATERS,Y,4,\N,default,2017-03-09 11:11:11,NEWCASTLE WATERS,NT,0862,AUSTRALIA
+113,4,2,113,0862,TENNANT CREEK,Y,4,\N,default,2017-03-09 11:11:11,TENNANT CREEK,NT,0862,AUSTRALIA
+114,4,2,113,0862,WARREGO,Y,4,\N,default,2017-03-09 11:11:11,WARREGO,NT,0862,AUSTRALIA
+115,4,2,113,0870,ALICE SPRINGS,Y,4,\N,default,2017-03-09 11:11:11,ALICE SPRINGS,NT,0870,AUSTRALIA
+116,4,2,113,0870,ARALUEN,Y,4,\N,default,2017-03-09 11:11:11,ARALUEN,NT,0870,AUSTRALIA
+117,4,2,113,0870,ARUMBERA,Y,4,\N,default,2017-03-09 11:11:11,ARUMBERA,NT,0870,AUSTRALIA
+118,4,2,113,0870,BRAITLING,Y,4,\N,default,2017-03-09 11:11:11,BRAITLING,NT,0870,AUSTRALIA
+119,4,2,113,0870,CICCONE,Y,4,\N,default,2017-03-09 11:11:11,CICCONE,NT,0870,AUSTRALIA
+120,4,2,113,0870,CONNELLAN,Y,4,\N,default,2017-03-09 11:11:11,CONNELLAN,NT,0870,AUSTRALIA
+121,4,2,113,0870,DESERT SPRINGS,Y,4,\N,default,2017-03-09 11:11:11,DESERT SPRINGS,NT,0870,AUSTRALIA
+122,4,2,113,0870,EAST SIDE,Y,4,\N,default,2017-03-09 11:11:11,EAST SIDE,NT,0870,AUSTRALIA
+123,4,2,113,0870,FLYNN,Y,4,\N,default,2017-03-09 11:11:11,FLYNN,NT,0870,AUSTRALIA
+124,4,2,113,0870,GILLEN,Y,4,\N,default,2017-03-09 11:11:11,GILLEN,NT,0870,AUSTRALIA
+125,4,2,113,0870,ILPARPA,Y,4,\N,default,2017-03-09 11:11:11,ILPARPA,NT,0870,AUSTRALIA
+126,4,2,113,0870,IRLPME,Y,4,\N,default,2017-03-09 11:11:11,IRLPME,NT,0870,AUSTRALIA
+127,4,2,113,0870,LARAPINTA,Y,4,\N,default,2017-03-09 11:11:11,LARAPINTA,NT,0870,AUSTRALIA
+128,4,2,113,0870,MOUNT JOHNS,Y,4,\N,default,2017-03-09 11:11:11,MOUNT JOHNS,NT,0870,AUSTRALIA
+129,4,2,113,0870,SADADEEN,Y,4,\N,default,2017-03-09 11:11:11,SADADEEN,NT,0870,AUSTRALIA
+130,4,2,113,0870,STUART,Y,4,\N,default,2017-03-09 11:11:11,STUART,NT,0870,AUSTRALIA
+131,4,2,113,0870,THE GAP,Y,4,\N,default,2017-03-09 11:11:11,THE GAP,NT,0870,AUSTRALIA
+132,4,2,113,0870,UNDOOLYA,Y,4,\N,default,2017-03-09 11:11:11,UNDOOLYA,NT,0870,AUSTRALIA
+133,4,2,113,0870,WHITE GUMS,Y,4,\N,default,2017-03-09 11:11:11,WHITE GUMS,NT,0870,AUSTRALIA
+134,4,2,113,0871,ALICE SPRINGS,Y,4,\N,default,2017-03-09 11:11:11,ALICE SPRINGS,NT,0871,AUSTRALIA
+135,4,2,113,0872,ALI CURUNG,Y,4,\N,default,2017-03-09 11:11:11,ALI CURUNG,NT,0872,AUSTRALIA
+136,4,2,113,0872,ALICE SPRINGS,Y,4,\N,default,2017-03-09 11:11:11,ALICE SPRINGS,NT,0872,AUSTRALIA
+137,4,2,113,0872,AREYONGA,Y,4,\N,default,2017-03-09 11:11:11,AREYONGA,NT,0872,AUSTRALIA
+138,4,2,113,0872,BARROW CREEK,Y,4,\N,default,2017-03-09 11:11:11,BARROW CREEK,NT,0872,AUSTRALIA
+139,4,2,113,0872,ERNABELLA,Y,4,\N,default,2017-03-09 11:11:11,ERNABELLA,SA,0872,AUSTRALIA
+140,4,2,113,0872,FINKE,Y,4,\N,default,2017-03-09 11:11:11,FINKE,NT,0872,AUSTRALIA
+141,4,2,113,0872,FREGON,Y,4,\N,default,2017-03-09 11:11:11,FREGON,SA,0872,AUSTRALIA
+142,4,2,113,0872,HAASTS BLUFF,Y,4,\N,default,2017-03-09 11:11:11,HAASTS BLUFF,NT,0872,AUSTRALIA
+143,4,2,113,0872,HERMANNSBURG,Y,4,\N,default,2017-03-09 11:11:11,HERMANNSBURG,NT,0872,AUSTRALIA
+144,4,2,113,0872,KALTUKATJARA,Y,4,\N,default,2017-03-09 11:11:11,KALTUKATJARA,NT,0872,AUSTRALIA
+145,4,2,113,0872,KINTORE,Y,4,\N,default,2017-03-09 11:11:11,KINTORE,NT,0872,AUSTRALIA
+146,4,2,113,0872,NYIRRIPI,Y,4,\N,default,2017-03-09 11:11:11,NYIRRIPI,NT,0872,AUSTRALIA
+147,4,2,113,0872,PAPUNYA,Y,4,\N,default,2017-03-09 11:11:11,PAPUNYA,NT,0872,AUSTRALIA
+148,4,2,113,0872,SANTA TERESA,Y,4,\N,default,2017-03-09 11:11:11,SANTA TERESA,NT,0872,AUSTRALIA
+149,4,2,113,0872,TI TREE,Y,4,\N,default,2017-03-09 11:11:11,TI TREE,NT,0872,AUSTRALIA
+150,4,2,113,0872,YUENDUMU,Y,4,\N,default,2017-03-09 11:11:11,YUENDUMU,NT,0872,AUSTRALIA
+151,4,2,113,0872,YULARA,Y,4,\N,default,2017-03-09 11:11:11,YULARA,NT,0872,AUSTRALIA
+152,4,2,113,0873,HEAVITREE GAP CPA,Y,4,\N,default,2017-03-09 11:11:11,HEAVITREE GAP CPA,NT,0873,AUSTRALIA
+153,4,2,113,0880,NHULUNBUY,Y,4,\N,default,2017-03-09 11:11:11,NHULUNBUY,NT,0880,AUSTRALIA
+154,4,2,113,0880,YIRRKALA,Y,4,\N,default,2017-03-09 11:11:11,YIRRKALA,NT,0880,AUSTRALIA
+155,4,2,113,0881,NHULUNBUY,Y,4,\N,default,2017-03-09 11:11:11,NHULUNBUY,NT,0881,AUSTRALIA
+156,4,2,113,0885,ALYANGULA,Y,4,\N,default,2017-03-09 11:11:11,ALYANGULA,NT,0885,AUSTRALIA
+157,4,2,113,0886,JABIRU,Y,4,\N,default,2017-03-09 11:11:11,JABIRU,NT,0886,AUSTRALIA
+158,4,2,113,0909,CHARLES DARWIN UNIVERSITY,Y,4,\N,default,2017-03-09 11:11:11,CHARLES DARWIN UNIVERSITY,NT,0909,AUSTRALIA
+159,4,2,113,1215,AUSTRALIA SQUARE,Y,4,\N,default,2017-03-09 11:11:11,AUSTRALIA SQUARE,NSW,1215,AUSTRALIA
+160,4,2,113,1220,GROSVENOR PLACE,Y,4,\N,default,2017-03-09 11:11:11,GROSVENOR PLACE,NSW,1220,AUSTRALIA
+161,4,2,113,1225,ROYAL EXCHANGE,Y,4,\N,default,2017-03-09 11:11:11,ROYAL EXCHANGE,NSW,1225,AUSTRALIA
+162,4,2,113,1230,QUEEN VICTORIA BUILDING,Y,4,\N,default,2017-03-09 11:11:11,QUEEN VICTORIA BUILDING,NSW,1230,AUSTRALIA
+163,4,2,113,1235,SYDNEY SOUTH,Y,4,\N,default,2017-03-09 11:11:11,SYDNEY SOUTH,NSW,1235,AUSTRALIA
+164,4,2,113,1240,HAYMARKET,Y,4,\N,default,2017-03-09 11:11:11,HAYMARKET,NSW,1240,AUSTRALIA
+165,4,2,113,1300,DARLINGHURST,Y,4,\N,default,2017-03-09 11:11:11,DARLINGHURST,NSW,1300,AUSTRALIA
+166,4,2,113,1335,POTTS POINT,Y,4,\N,default,2017-03-09 11:11:11,POTTS POINT,NSW,1335,AUSTRALIA
+167,4,2,113,1340,KINGS CROSS,Y,4,\N,default,2017-03-09 11:11:11,KINGS CROSS,NSW,1340,AUSTRALIA
+168,4,2,113,1350,WOOLLAHRA,Y,4,\N,default,2017-03-09 11:11:11,WOOLLAHRA,NSW,1350,AUSTRALIA
+169,4,2,113,1355,BONDI JUNCTION,Y,4,\N,default,2017-03-09 11:11:11,BONDI JUNCTION,NSW,1355,AUSTRALIA
+170,4,2,113,1360,DOUBLE BAY,Y,4,\N,default,2017-03-09 11:11:11,DOUBLE BAY,NSW,1360,AUSTRALIA
+171,4,2,113,1435,ALEXANDRIA,Y,4,\N,default,2017-03-09 11:11:11,ALEXANDRIA,NSW,1435,AUSTRALIA
+172,4,2,113,1445,ROSEBERY,Y,4,\N,default,2017-03-09 11:11:11,ROSEBERY,NSW,1445,AUSTRALIA
+173,4,2,113,1450,CAMPERDOWN,Y,4,\N,default,2017-03-09 11:11:11,CAMPERDOWN,NSW,1450,AUSTRALIA
+174,4,2,113,1455,BOTANY,Y,4,\N,default,2017-03-09 11:11:11,BOTANY,NSW,1455,AUSTRALIA
+175,4,2,113,1460,MASCOT,Y,4,\N,default,2017-03-09 11:11:11,MASCOT,NSW,1460,AUSTRALIA
+176,4,2,113,1465,KENSINGTON,Y,4,\N,default,2017-03-09 11:11:11,KENSINGTON,NSW,1465,AUSTRALIA
+177,4,2,113,1466,UNSW SYDNEY,Y,4,\N,default,2017-03-09 11:11:11,UNSW SYDNEY,NSW,1466,AUSTRALIA
+178,4,2,113,1470,DRUMMOYNE,Y,4,\N,default,2017-03-09 11:11:11,DRUMMOYNE,NSW,1470,AUSTRALIA
+179,4,2,113,1475,MARRICKVILLE,Y,4,\N,default,2017-03-09 11:11:11,MARRICKVILLE,NSW,1475,AUSTRALIA
+180,4,2,113,1480,KINGSGROVE,Y,4,\N,default,2017-03-09 11:11:11,KINGSGROVE,NSW,1480,AUSTRALIA
+181,4,2,113,1481,HURSTVILLE BC,Y,4,\N,default,2017-03-09 11:11:11,HURSTVILLE BC,NSW,1481,AUSTRALIA
+182,4,2,113,1485,KOGARAH,Y,4,\N,default,2017-03-09 11:11:11,KOGARAH,NSW,1485,AUSTRALIA
+183,4,2,113,1490,MIRANDA,Y,4,\N,default,2017-03-09 11:11:11,MIRANDA,NSW,1490,AUSTRALIA
+184,4,2,113,1495,CARINGBAH,Y,4,\N,default,2017-03-09 11:11:11,CARINGBAH,NSW,1495,AUSTRALIA
+185,4,2,113,1499,SUTHERLAND,Y,4,\N,default,2017-03-09 11:11:11,SUTHERLAND,NSW,1499,AUSTRALIA
+186,4,2,113,1515,WEST CHATSWOOD,Y,4,\N,default,2017-03-09 11:11:11,WEST CHATSWOOD,NSW,1515,AUSTRALIA
+187,4,2,113,1560,NORTHBRIDGE,Y,4,\N,default,2017-03-09 11:11:11,NORTHBRIDGE,NSW,1560,AUSTRALIA
+188,4,2,113,1565,MILSONS POINT,Y,4,\N,default,2017-03-09 11:11:11,MILSONS POINT,NSW,1565,AUSTRALIA
+189,4,2,113,1570,ARTARMON,Y,4,\N,default,2017-03-09 11:11:11,ARTARMON,NSW,1570,AUSTRALIA
+190,4,2,113,1585,CROWS NEST,Y,4,\N,default,2017-03-09 11:11:11,CROWS NEST,NSW,1585,AUSTRALIA
+191,4,2,113,1590,ST LEONARDS,Y,4,\N,default,2017-03-09 11:11:11,ST LEONARDS,NSW,1590,AUSTRALIA
+192,4,2,113,1595,LANE COVE,Y,4,\N,default,2017-03-09 11:11:11,LANE COVE,NSW,1595,AUSTRALIA
+193,4,2,113,1630,HORNSBY,Y,4,\N,default,2017-03-09 11:11:11,HORNSBY,NSW,1630,AUSTRALIA
+194,4,2,113,1635,HORNSBY WESTFIELD,Y,4,\N,default,2017-03-09 11:11:11,HORNSBY WESTFIELD,NSW,1635,AUSTRALIA
+195,4,2,113,1640,FRENCHS FOREST,Y,4,\N,default,2017-03-09 11:11:11,FRENCHS FOREST,NSW,1640,AUSTRALIA
+196,4,2,113,1655,MANLY,Y,4,\N,default,2017-03-09 11:11:11,MANLY,NSW,1655,AUSTRALIA
+197,4,2,113,1660,MONA VALE,Y,4,\N,default,2017-03-09 11:11:11,MONA VALE,NSW,1660,AUSTRALIA
+198,4,2,113,1670,NORTH RYDE BC,Y,4,\N,default,2017-03-09 11:11:11,NORTH RYDE BC,NSW,1670,AUSTRALIA
+199,4,2,113,1675,GLADESVILLE,Y,4,\N,default,2017-03-09 11:11:11,GLADESVILLE,NSW,1675,AUSTRALIA
+200,4,2,113,1680,RYDE,Y,4,\N,default,2017-03-09 11:11:11,RYDE,NSW,1680,AUSTRALIA
+201,4,2,113,1685,WEST RYDE,Y,4,\N,default,2017-03-09 11:11:11,WEST RYDE,NSW,1685,AUSTRALIA
+202,4,2,113,1700,ERMINGTON,Y,4,\N,default,2017-03-09 11:11:11,ERMINGTON,NSW,1700,AUSTRALIA
+203,4,2,113,1701,RYDALMERE BC,Y,4,\N,default,2017-03-09 11:11:11,RYDALMERE BC,NSW,1701,AUSTRALIA
+204,4,2,113,1710,EPPING,Y,4,\N,default,2017-03-09 11:11:11,EPPING,NSW,1710,AUSTRALIA
+205,4,2,113,1715,PENNANT HILLS,Y,4,\N,default,2017-03-09 11:11:11,PENNANT HILLS,NSW,1715,AUSTRALIA
+206,4,2,113,1730,SEVEN HILLS,Y,4,\N,default,2017-03-09 11:11:11,SEVEN HILLS,NSW,1730,AUSTRALIA
+207,4,2,113,1750,NORTH PARRAMATTA,Y,4,\N,default,2017-03-09 11:11:11,NORTH PARRAMATTA,NSW,1750,AUSTRALIA
+208,4,2,113,1755,BAULKHAM HILLS,Y,4,\N,default,2017-03-09 11:11:11,BAULKHAM HILLS,NSW,1755,AUSTRALIA
+209,4,2,113,1765,CASTLE HILL,Y,4,\N,default,2017-03-09 11:11:11,CASTLE HILL,NSW,1765,AUSTRALIA
+210,4,2,113,1790,ST MARYS,Y,4,\N,default,2017-03-09 11:11:11,ST MARYS,NSW,1790,AUSTRALIA
+211,4,2,113,1800,ASHFIELD,Y,4,\N,default,2017-03-09 11:11:11,ASHFIELD,NSW,1800,AUSTRALIA
+212,4,2,113,1805,BURWOOD,Y,4,\N,default,2017-03-09 11:11:11,BURWOOD,NSW,1805,AUSTRALIA
+213,4,2,113,1811,SILVERWATER,Y,4,\N,default,2017-03-09 11:11:11,SILVERWATER,NSW,1811,AUSTRALIA
+214,4,2,113,1825,LIDCOMBE,Y,4,\N,default,2017-03-09 11:11:11,LIDCOMBE,NSW,1825,AUSTRALIA
+215,4,2,113,1835,AUBURN,Y,4,\N,default,2017-03-09 11:11:11,AUBURN,NSW,1835,AUSTRALIA
+216,4,2,113,1851,WETHERILL PARK DC,Y,4,\N,default,2017-03-09 11:11:11,WETHERILL PARK DC,NSW,1851,AUSTRALIA
+217,4,2,113,1860,FAIRFIELD,Y,4,\N,default,2017-03-09 11:11:11,FAIRFIELD,NSW,1860,AUSTRALIA
+218,4,2,113,1871,LIVERPOOL,Y,4,\N,default,2017-03-09 11:11:11,LIVERPOOL,NSW,1871,AUSTRALIA
+219,4,2,113,1875,MOOREBANK,Y,4,\N,default,2017-03-09 11:11:11,MOOREBANK,NSW,1875,AUSTRALIA
+220,4,2,113,1885,BANKSTOWN,Y,4,\N,default,2017-03-09 11:11:11,BANKSTOWN,NSW,1885,AUSTRALIA
+221,4,2,113,1890,INGLEBURN,Y,4,\N,default,2017-03-09 11:11:11,INGLEBURN,NSW,1890,AUSTRALIA
+222,4,2,113,1891,MILPERRA,Y,4,\N,default,2017-03-09 11:11:11,MILPERRA,NSW,1891,AUSTRALIA
+223,4,2,113,2000,BARANGAROO,Y,4,\N,default,2017-03-09 11:11:11,BARANGAROO,NSW,2000,AUSTRALIA
+224,4,2,113,2000,DAWES POINT,Y,4,\N,default,2017-03-09 11:11:11,DAWES POINT,NSW,2000,AUSTRALIA
+225,4,2,113,2000,HAYMARKET,Y,4,\N,default,2017-03-09 11:11:11,HAYMARKET,NSW,2000,AUSTRALIA
+226,4,2,113,2000,MILLERS POINT,Y,4,\N,default,2017-03-09 11:11:11,MILLERS POINT,NSW,2000,AUSTRALIA
+227,4,2,113,2000,SYDNEY,Y,4,\N,default,2017-03-09 11:11:11,SYDNEY,NSW,2000,AUSTRALIA
+228,4,2,113,2000,THE ROCKS,Y,4,\N,default,2017-03-09 11:11:11,THE ROCKS,NSW,2000,AUSTRALIA
+229,4,2,113,2001,SYDNEY,Y,4,\N,default,2017-03-09 11:11:11,SYDNEY,NSW,2001,AUSTRALIA
+230,4,2,113,2002,WORLD SQUARE,Y,4,\N,default,2017-03-09 11:11:11,WORLD SQUARE,NSW,2002,AUSTRALIA
+231,4,2,113,2004,EASTERN SUBURBS MC,Y,4,\N,default,2017-03-09 11:11:11,EASTERN SUBURBS MC,NSW,2004,AUSTRALIA
+232,4,2,113,2006,THE UNIVERSITY OF SYDNEY,Y,4,\N,default,2017-03-09 11:11:11,THE UNIVERSITY OF SYDNEY,NSW,2006,AUSTRALIA
+233,4,2,113,2007,BROADWAY,Y,4,\N,default,2017-03-09 11:11:11,BROADWAY,NSW,2007,AUSTRALIA
+234,4,2,113,2007,ULTIMO,Y,4,\N,default,2017-03-09 11:11:11,ULTIMO,NSW,2007,AUSTRALIA
+235,4,2,113,2008,CHIPPENDALE,Y,4,\N,default,2017-03-09 11:11:11,CHIPPENDALE,NSW,2008,AUSTRALIA
+236,4,2,113,2008,DARLINGTON,Y,4,\N,default,2017-03-09 11:11:11,DARLINGTON,NSW,2008,AUSTRALIA
+237,4,2,113,2009,PYRMONT,Y,4,\N,default,2017-03-09 11:11:11,PYRMONT,NSW,2009,AUSTRALIA
+238,4,2,113,2010,DARLINGHURST,Y,4,\N,default,2017-03-09 11:11:11,DARLINGHURST,NSW,2010,AUSTRALIA
+239,4,2,113,2010,SURRY HILLS,Y,4,\N,default,2017-03-09 11:11:11,SURRY HILLS,NSW,2010,AUSTRALIA
+240,4,2,113,2011,ELIZABETH BAY,Y,4,\N,default,2017-03-09 11:11:11,ELIZABETH BAY,NSW,2011,AUSTRALIA
+241,4,2,113,2011,POTTS POINT,Y,4,\N,default,2017-03-09 11:11:11,POTTS POINT,NSW,2011,AUSTRALIA
+242,4,2,113,2011,RUSHCUTTERS BAY,Y,4,\N,default,2017-03-09 11:11:11,RUSHCUTTERS BAY,NSW,2011,AUSTRALIA
+243,4,2,113,2011,WOOLLOOMOOLOO,Y,4,\N,default,2017-03-09 11:11:11,WOOLLOOMOOLOO,NSW,2011,AUSTRALIA
+244,4,2,113,2012,STRAWBERRY HILLS,Y,4,\N,default,2017-03-09 11:11:11,STRAWBERRY HILLS,NSW,2012,AUSTRALIA
+245,4,2,113,2015,ALEXANDRIA,Y,4,\N,default,2017-03-09 11:11:11,ALEXANDRIA,NSW,2015,AUSTRALIA
+246,4,2,113,2015,BEACONSFIELD,Y,4,\N,default,2017-03-09 11:11:11,BEACONSFIELD,NSW,2015,AUSTRALIA
+247,4,2,113,2015,EVELEIGH,Y,4,\N,default,2017-03-09 11:11:11,EVELEIGH,NSW,2015,AUSTRALIA
+248,4,2,113,2016,REDFERN,Y,4,\N,default,2017-03-09 11:11:11,REDFERN,NSW,2016,AUSTRALIA
+249,4,2,113,2017,WATERLOO,Y,4,\N,default,2017-03-09 11:11:11,WATERLOO,NSW,2017,AUSTRALIA
+250,4,2,113,2017,ZETLAND,Y,4,\N,default,2017-03-09 11:11:11,ZETLAND,NSW,2017,AUSTRALIA
+251,4,2,113,2018,EASTLAKES,Y,4,\N,default,2017-03-09 11:11:11,EASTLAKES,NSW,2018,AUSTRALIA
+252,4,2,113,2018,ROSEBERY,Y,4,\N,default,2017-03-09 11:11:11,ROSEBERY,NSW,2018,AUSTRALIA
+253,4,2,113,2019,BANKSMEADOW,Y,4,\N,default,2017-03-09 11:11:11,BANKSMEADOW,NSW,2019,AUSTRALIA
+254,4,2,113,2019,BOTANY,Y,4,\N,default,2017-03-09 11:11:11,BOTANY,NSW,2019,AUSTRALIA
+255,4,2,113,2020,MASCOT,Y,4,\N,default,2017-03-09 11:11:11,MASCOT,NSW,2020,AUSTRALIA
+256,4,2,113,2020,SYDNEY DOMESTIC AIRPORT,Y,4,\N,default,2017-03-09 11:11:11,SYDNEY DOMESTIC AIRPORT,NSW,2020,AUSTRALIA
+257,4,2,113,2020,SYDNEY INTERNATIONAL AIRPORT,Y,4,\N,default,2017-03-09 11:11:11,SYDNEY INTERNATIONAL AIRPORT,NSW,2020,AUSTRALIA
+258,4,2,113,2021,CENTENNIAL PARK,Y,4,\N,default,2017-03-09 11:11:11,CENTENNIAL PARK,NSW,2021,AUSTRALIA
+259,4,2,113,2021,MOORE PARK,Y,4,\N,default,2017-03-09 11:11:11,MOORE PARK,NSW,2021,AUSTRALIA
+260,4,2,113,2021,PADDINGTON,Y,4,\N,default,2017-03-09 11:11:11,PADDINGTON,NSW,2021,AUSTRALIA
+261,4,2,113,2022,BONDI JUNCTION,Y,4,\N,default,2017-03-09 11:11:11,BONDI JUNCTION,NSW,2022,AUSTRALIA
+262,4,2,113,2022,QUEENS PARK,Y,4,\N,default,2017-03-09 11:11:11,QUEENS PARK,NSW,2022,AUSTRALIA
+263,4,2,113,2023,BELLEVUE HILL,Y,4,\N,default,2017-03-09 11:11:11,BELLEVUE HILL,NSW,2023,AUSTRALIA
+264,4,2,113,2024,BRONTE,Y,4,\N,default,2017-03-09 11:11:11,BRONTE,NSW,2024,AUSTRALIA
+265,4,2,113,2024,WAVERLEY,Y,4,\N,default,2017-03-09 11:11:11,WAVERLEY,NSW,2024,AUSTRALIA
+266,4,2,113,2025,WOOLLAHRA,Y,4,\N,default,2017-03-09 11:11:11,WOOLLAHRA,NSW,2025,AUSTRALIA
+267,4,2,113,2026,BONDI,Y,4,\N,default,2017-03-09 11:11:11,BONDI,NSW,2026,AUSTRALIA
+268,4,2,113,2026,BONDI BEACH,Y,4,\N,default,2017-03-09 11:11:11,BONDI BEACH,NSW,2026,AUSTRALIA
+269,4,2,113,2026,NORTH BONDI,Y,4,\N,default,2017-03-09 11:11:11,NORTH BONDI,NSW,2026,AUSTRALIA
+270,4,2,113,2026,TAMARAMA,Y,4,\N,default,2017-03-09 11:11:11,TAMARAMA,NSW,2026,AUSTRALIA
+271,4,2,113,2027,DARLING POINT,Y,4,\N,default,2017-03-09 11:11:11,DARLING POINT,NSW,2027,AUSTRALIA
+272,4,2,113,2027,EDGECLIFF,Y,4,\N,default,2017-03-09 11:11:11,EDGECLIFF,NSW,2027,AUSTRALIA
+273,4,2,113,2027,POINT PIPER,Y,4,\N,default,2017-03-09 11:11:11,POINT PIPER,NSW,2027,AUSTRALIA
+274,4,2,113,2028,DOUBLE BAY,Y,4,\N,default,2017-03-09 11:11:11,DOUBLE BAY,NSW,2028,AUSTRALIA
+275,4,2,113,2029,ROSE BAY,Y,4,\N,default,2017-03-09 11:11:11,ROSE BAY,NSW,2029,AUSTRALIA
+276,4,2,113,2030,DOVER HEIGHTS,Y,4,\N,default,2017-03-09 11:11:11,DOVER HEIGHTS,NSW,2030,AUSTRALIA
+277,4,2,113,2030,ROSE BAY NORTH,Y,4,\N,default,2017-03-09 11:11:11,ROSE BAY NORTH,NSW,2030,AUSTRALIA
+278,4,2,113,2030,VAUCLUSE,Y,4,\N,default,2017-03-09 11:11:11,VAUCLUSE,NSW,2030,AUSTRALIA
+279,4,2,113,2030,WATSONS BAY,Y,4,\N,default,2017-03-09 11:11:11,WATSONS BAY,NSW,2030,AUSTRALIA
+280,4,2,113,2031,CLOVELLY,Y,4,\N,default,2017-03-09 11:11:11,CLOVELLY,NSW,2031,AUSTRALIA
+281,4,2,113,2031,CLOVELLY WEST,Y,4,\N,default,2017-03-09 11:11:11,CLOVELLY WEST,NSW,2031,AUSTRALIA
+282,4,2,113,2031,RANDWICK,Y,4,\N,default,2017-03-09 11:11:11,RANDWICK,NSW,2031,AUSTRALIA
+283,4,2,113,2031,ST PAULS,Y,4,\N,default,2017-03-09 11:11:11,ST PAULS,NSW,2031,AUSTRALIA
+284,4,2,113,2032,DACEYVILLE,Y,4,\N,default,2017-03-09 11:11:11,DACEYVILLE,NSW,2032,AUSTRALIA
+285,4,2,113,2032,KINGSFORD,Y,4,\N,default,2017-03-09 11:11:11,KINGSFORD,NSW,2032,AUSTRALIA
+286,4,2,113,2033,KENSINGTON,Y,4,\N,default,2017-03-09 11:11:11,KENSINGTON,NSW,2033,AUSTRALIA
+287,4,2,113,2034,COOGEE,Y,4,\N,default,2017-03-09 11:11:11,COOGEE,NSW,2034,AUSTRALIA
+288,4,2,113,2034,SOUTH COOGEE,Y,4,\N,default,2017-03-09 11:11:11,SOUTH COOGEE,NSW,2034,AUSTRALIA
+289,4,2,113,2035,MAROUBRA,Y,4,\N,default,2017-03-09 11:11:11,MAROUBRA,NSW,2035,AUSTRALIA
+290,4,2,113,2035,MAROUBRA SOUTH,Y,4,\N,default,2017-03-09 11:11:11,MAROUBRA SOUTH,NSW,2035,AUSTRALIA
+291,4,2,113,2035,PAGEWOOD,Y,4,\N,default,2017-03-09 11:11:11,PAGEWOOD,NSW,2035,AUSTRALIA
+292,4,2,113,2036,CHIFLEY,Y,4,\N,default,2017-03-09 11:11:11,CHIFLEY,NSW,2036,AUSTRALIA
+293,4,2,113,2036,EASTGARDENS,Y,4,\N,default,2017-03-09 11:11:11,EASTGARDENS,NSW,2036,AUSTRALIA
+294,4,2,113,2036,HILLSDALE,Y,4,\N,default,2017-03-09 11:11:11,HILLSDALE,NSW,2036,AUSTRALIA
+295,4,2,113,2036,LA PEROUSE,Y,4,\N,default,2017-03-09 11:11:11,LA PEROUSE,NSW,2036,AUSTRALIA
+296,4,2,113,2036,LITTLE BAY,Y,4,\N,default,2017-03-09 11:11:11,LITTLE BAY,NSW,2036,AUSTRALIA
+297,4,2,113,2036,MALABAR,Y,4,\N,default,2017-03-09 11:11:11,MALABAR,NSW,2036,AUSTRALIA
+298,4,2,113,2036,MATRAVILLE,Y,4,\N,default,2017-03-09 11:11:11,MATRAVILLE,NSW,2036,AUSTRALIA
+299,4,2,113,2036,PHILLIP BAY,Y,4,\N,default,2017-03-09 11:11:11,PHILLIP BAY,NSW,2036,AUSTRALIA
+300,4,2,113,2036,PORT BOTANY,Y,4,\N,default,2017-03-09 11:11:11,PORT BOTANY,NSW,2036,AUSTRALIA
+301,4,2,113,2037,FOREST LODGE,Y,4,\N,default,2017-03-09 11:11:11,FOREST LODGE,NSW,2037,AUSTRALIA
+302,4,2,113,2037,GLEBE,Y,4,\N,default,2017-03-09 11:11:11,GLEBE,NSW,2037,AUSTRALIA
+303,4,2,113,2038,ANNANDALE,Y,4,\N,default,2017-03-09 11:11:11,ANNANDALE,NSW,2038,AUSTRALIA
+304,4,2,113,2039,ROZELLE,Y,4,\N,default,2017-03-09 11:11:11,ROZELLE,NSW,2039,AUSTRALIA
+305,4,2,113,2040,LEICHHARDT,Y,4,\N,default,2017-03-09 11:11:11,LEICHHARDT,NSW,2040,AUSTRALIA
+306,4,2,113,2040,LILYFIELD,Y,4,\N,default,2017-03-09 11:11:11,LILYFIELD,NSW,2040,AUSTRALIA
+307,4,2,113,2041,BALMAIN,Y,4,\N,default,2017-03-09 11:11:11,BALMAIN,NSW,2041,AUSTRALIA
+308,4,2,113,2041,BALMAIN EAST,Y,4,\N,default,2017-03-09 11:11:11,BALMAIN EAST,NSW,2041,AUSTRALIA
+309,4,2,113,2041,BIRCHGROVE,Y,4,\N,default,2017-03-09 11:11:11,BIRCHGROVE,NSW,2041,AUSTRALIA
+310,4,2,113,2042,ENMORE,Y,4,\N,default,2017-03-09 11:11:11,ENMORE,NSW,2042,AUSTRALIA
+311,4,2,113,2042,NEWTOWN,Y,4,\N,default,2017-03-09 11:11:11,NEWTOWN,NSW,2042,AUSTRALIA
+312,4,2,113,2043,ERSKINEVILLE,Y,4,\N,default,2017-03-09 11:11:11,ERSKINEVILLE,NSW,2043,AUSTRALIA
+313,4,2,113,2044,ST PETERS,Y,4,\N,default,2017-03-09 11:11:11,ST PETERS,NSW,2044,AUSTRALIA
+314,4,2,113,2044,SYDENHAM,Y,4,\N,default,2017-03-09 11:11:11,SYDENHAM,NSW,2044,AUSTRALIA
+315,4,2,113,2044,TEMPE,Y,4,\N,default,2017-03-09 11:11:11,TEMPE,NSW,2044,AUSTRALIA
+316,4,2,113,2045,HABERFIELD,Y,4,\N,default,2017-03-09 11:11:11,HABERFIELD,NSW,2045,AUSTRALIA
+317,4,2,113,2046,ABBOTSFORD,Y,4,\N,default,2017-03-09 11:11:11,ABBOTSFORD,NSW,2046,AUSTRALIA
+318,4,2,113,2046,CANADA BAY,Y,4,\N,default,2017-03-09 11:11:11,CANADA BAY,NSW,2046,AUSTRALIA
+319,4,2,113,2046,CHISWICK,Y,4,\N,default,2017-03-09 11:11:11,CHISWICK,NSW,2046,AUSTRALIA
+320,4,2,113,2046,FIVE DOCK,Y,4,\N,default,2017-03-09 11:11:11,FIVE DOCK,NSW,2046,AUSTRALIA
+321,4,2,113,2046,RODD POINT,Y,4,\N,default,2017-03-09 11:11:11,RODD POINT,NSW,2046,AUSTRALIA
+322,4,2,113,2046,RUSSELL LEA,Y,4,\N,default,2017-03-09 11:11:11,RUSSELL LEA,NSW,2046,AUSTRALIA
+323,4,2,113,2046,WAREEMBA,Y,4,\N,default,2017-03-09 11:11:11,WAREEMBA,NSW,2046,AUSTRALIA
+324,4,2,113,2047,DRUMMOYNE,Y,4,\N,default,2017-03-09 11:11:11,DRUMMOYNE,NSW,2047,AUSTRALIA
+325,4,2,113,2048,STANMORE,Y,4,\N,default,2017-03-09 11:11:11,STANMORE,NSW,2048,AUSTRALIA
+326,4,2,113,2048,WESTGATE,Y,4,\N,default,2017-03-09 11:11:11,WESTGATE,NSW,2048,AUSTRALIA
+327,4,2,113,2049,LEWISHAM,Y,4,\N,default,2017-03-09 11:11:11,LEWISHAM,NSW,2049,AUSTRALIA
+328,4,2,113,2049,PETERSHAM,Y,4,\N,default,2017-03-09 11:11:11,PETERSHAM,NSW,2049,AUSTRALIA
+329,4,2,113,2049,PETERSHAM NORTH,Y,4,\N,default,2017-03-09 11:11:11,PETERSHAM NORTH,NSW,2049,AUSTRALIA
+330,4,2,113,2050,CAMPERDOWN,Y,4,\N,default,2017-03-09 11:11:11,CAMPERDOWN,NSW,2050,AUSTRALIA
+331,4,2,113,2050,MISSENDEN ROAD,Y,4,\N,default,2017-03-09 11:11:11,MISSENDEN ROAD,NSW,2050,AUSTRALIA
+332,4,2,113,2052,UNSW SYDNEY,Y,4,\N,default,2017-03-09 11:11:11,UNSW SYDNEY,NSW,2052,AUSTRALIA
+333,4,2,113,2057,CHATSWOOD,Y,4,\N,default,2017-03-09 11:11:11,CHATSWOOD,NSW,2057,AUSTRALIA
+334,4,2,113,2059,NORTH SYDNEY,Y,4,\N,default,2017-03-09 11:11:11,NORTH SYDNEY,NSW,2059,AUSTRALIA
+335,4,2,113,2060,LAVENDER BAY,Y,4,\N,default,2017-03-09 11:11:11,LAVENDER BAY,NSW,2060,AUSTRALIA
+336,4,2,113,2060,MCMAHONS POINT,Y,4,\N,default,2017-03-09 11:11:11,MCMAHONS POINT,NSW,2060,AUSTRALIA
+337,4,2,113,2060,NORTH SYDNEY,Y,4,\N,default,2017-03-09 11:11:11,NORTH SYDNEY,NSW,2060,AUSTRALIA
+338,4,2,113,2060,NORTH SYDNEY SHOPPINGWORLD,Y,4,\N,default,2017-03-09 11:11:11,NORTH SYDNEY SHOPPINGWORLD,NSW,2060,AUSTRALIA
+339,4,2,113,2060,WAVERTON,Y,4,\N,default,2017-03-09 11:11:11,WAVERTON,NSW,2060,AUSTRALIA
+340,4,2,113,2061,KIRRIBILLI,Y,4,\N,default,2017-03-09 11:11:11,KIRRIBILLI,NSW,2061,AUSTRALIA
+341,4,2,113,2061,MILSONS POINT,Y,4,\N,default,2017-03-09 11:11:11,MILSONS POINT,NSW,2061,AUSTRALIA
+342,4,2,113,2062,CAMMERAY,Y,4,\N,default,2017-03-09 11:11:11,CAMMERAY,NSW,2062,AUSTRALIA
+343,4,2,113,2063,NORTHBRIDGE,Y,4,\N,default,2017-03-09 11:11:11,NORTHBRIDGE,NSW,2063,AUSTRALIA
+344,4,2,113,2064,ARTARMON,Y,4,\N,default,2017-03-09 11:11:11,ARTARMON,NSW,2064,AUSTRALIA
+345,4,2,113,2065,CROWS NEST,Y,4,\N,default,2017-03-09 11:11:11,CROWS NEST,NSW,2065,AUSTRALIA
+346,4,2,113,2065,GREENWICH,Y,4,\N,default,2017-03-09 11:11:11,GREENWICH,NSW,2065,AUSTRALIA
+347,4,2,113,2065,NAREMBURN,Y,4,\N,default,2017-03-09 11:11:11,NAREMBURN,NSW,2065,AUSTRALIA
+348,4,2,113,2065,ROYAL NORTH SHORE HOSPITAL,Y,4,\N,default,2017-03-09 11:11:11,ROYAL NORTH SHORE HOSPITAL,NSW,2065,AUSTRALIA
+349,4,2,113,2065,ST LEONARDS,Y,4,\N,default,2017-03-09 11:11:11,ST LEONARDS,NSW,2065,AUSTRALIA
+350,4,2,113,2065,WOLLSTONECRAFT,Y,4,\N,default,2017-03-09 11:11:11,WOLLSTONECRAFT,NSW,2065,AUSTRALIA
+351,4,2,113,2066,LANE COVE,Y,4,\N,default,2017-03-09 11:11:11,LANE COVE,NSW,2066,AUSTRALIA
+352,4,2,113,2066,LANE COVE NORTH,Y,4,\N,default,2017-03-09 11:11:11,LANE COVE NORTH,NSW,2066,AUSTRALIA
+353,4,2,113,2066,LANE COVE WEST,Y,4,\N,default,2017-03-09 11:11:11,LANE COVE WEST,NSW,2066,AUSTRALIA
+354,4,2,113,2066,LINLEY POINT,Y,4,\N,default,2017-03-09 11:11:11,LINLEY POINT,NSW,2066,AUSTRALIA
+355,4,2,113,2066,LONGUEVILLE,Y,4,\N,default,2017-03-09 11:11:11,LONGUEVILLE,NSW,2066,AUSTRALIA
+356,4,2,113,2066,NORTHWOOD,Y,4,\N,default,2017-03-09 11:11:11,NORTHWOOD,NSW,2066,AUSTRALIA
+357,4,2,113,2066,RIVERVIEW,Y,4,\N,default,2017-03-09 11:11:11,RIVERVIEW,NSW,2066,AUSTRALIA
+358,4,2,113,2067,CHATSWOOD,Y,4,\N,default,2017-03-09 11:11:11,CHATSWOOD,NSW,2067,AUSTRALIA
+359,4,2,113,2067,CHATSWOOD WEST,Y,4,\N,default,2017-03-09 11:11:11,CHATSWOOD WEST,NSW,2067,AUSTRALIA
+360,4,2,113,2068,CASTLECRAG,Y,4,\N,default,2017-03-09 11:11:11,CASTLECRAG,NSW,2068,AUSTRALIA
+361,4,2,113,2068,MIDDLE COVE,Y,4,\N,default,2017-03-09 11:11:11,MIDDLE COVE,NSW,2068,AUSTRALIA
+362,4,2,113,2068,NORTH WILLOUGHBY,Y,4,\N,default,2017-03-09 11:11:11,NORTH WILLOUGHBY,NSW,2068,AUSTRALIA
+363,4,2,113,2068,WILLOUGHBY,Y,4,\N,default,2017-03-09 11:11:11,WILLOUGHBY,NSW,2068,AUSTRALIA
+364,4,2,113,2068,WILLOUGHBY EAST,Y,4,\N,default,2017-03-09 11:11:11,WILLOUGHBY EAST,NSW,2068,AUSTRALIA
+365,4,2,113,2068,WILLOUGHBY NORTH,Y,4,\N,default,2017-03-09 11:11:11,WILLOUGHBY NORTH,NSW,2068,AUSTRALIA
+366,4,2,113,2069,CASTLE COVE,Y,4,\N,default,2017-03-09 11:11:11,CASTLE COVE,NSW,2069,AUSTRALIA
+367,4,2,113,2069,ROSEVILLE,Y,4,\N,default,2017-03-09 11:11:11,ROSEVILLE,NSW,2069,AUSTRALIA
+368,4,2,113,2069,ROSEVILLE CHASE,Y,4,\N,default,2017-03-09 11:11:11,ROSEVILLE CHASE,NSW,2069,AUSTRALIA
+369,4,2,113,2070,EAST LINDFIELD,Y,4,\N,default,2017-03-09 11:11:11,EAST LINDFIELD,NSW,2070,AUSTRALIA
+370,4,2,113,2070,LINDFIELD,Y,4,\N,default,2017-03-09 11:11:11,LINDFIELD,NSW,2070,AUSTRALIA
+371,4,2,113,2070,LINDFIELD WEST,Y,4,\N,default,2017-03-09 11:11:11,LINDFIELD WEST,NSW,2070,AUSTRALIA
+372,4,2,113,2071,EAST KILLARA,Y,4,\N,default,2017-03-09 11:11:11,EAST KILLARA,NSW,2071,AUSTRALIA
+373,4,2,113,2071,KILLARA,Y,4,\N,default,2017-03-09 11:11:11,KILLARA,NSW,2071,AUSTRALIA
+374,4,2,113,2072,GORDON,Y,4,\N,default,2017-03-09 11:11:11,GORDON,NSW,2072,AUSTRALIA
+375,4,2,113,2073,PYMBLE,Y,4,\N,default,2017-03-09 11:11:11,PYMBLE,NSW,2073,AUSTRALIA
+376,4,2,113,2073,WEST PYMBLE,Y,4,\N,default,2017-03-09 11:11:11,WEST PYMBLE,NSW,2073,AUSTRALIA
+377,4,2,113,2074,NORTH TURRAMURRA,Y,4,\N,default,2017-03-09 11:11:11,NORTH TURRAMURRA,NSW,2074,AUSTRALIA
+378,4,2,113,2074,SOUTH TURRAMURRA,Y,4,\N,default,2017-03-09 11:11:11,SOUTH TURRAMURRA,NSW,2074,AUSTRALIA
+379,4,2,113,2074,TURRAMURRA,Y,4,\N,default,2017-03-09 11:11:11,TURRAMURRA,NSW,2074,AUSTRALIA
+380,4,2,113,2074,WARRAWEE,Y,4,\N,default,2017-03-09 11:11:11,WARRAWEE,NSW,2074,AUSTRALIA
+381,4,2,113,2075,ST IVES,Y,4,\N,default,2017-03-09 11:11:11,ST IVES,NSW,2075,AUSTRALIA
+382,4,2,113,2075,ST IVES CHASE,Y,4,\N,default,2017-03-09 11:11:11,ST IVES CHASE,NSW,2075,AUSTRALIA
+383,4,2,113,2076,NORMANHURST,Y,4,\N,default,2017-03-09 11:11:11,NORMANHURST,NSW,2076,AUSTRALIA
+384,4,2,113,2076,NORTH WAHROONGA,Y,4,\N,default,2017-03-09 11:11:11,NORTH WAHROONGA,NSW,2076,AUSTRALIA
+385,4,2,113,2076,WAHROONGA,Y,4,\N,default,2017-03-09 11:11:11,WAHROONGA,NSW,2076,AUSTRALIA
+386,4,2,113,2077,ASQUITH,Y,4,\N,default,2017-03-09 11:11:11,ASQUITH,NSW,2077,AUSTRALIA
+387,4,2,113,2077,HORNSBY,Y,4,\N,default,2017-03-09 11:11:11,HORNSBY,NSW,2077,AUSTRALIA
+388,4,2,113,2077,HORNSBY HEIGHTS,Y,4,\N,default,2017-03-09 11:11:11,HORNSBY HEIGHTS,NSW,2077,AUSTRALIA
+389,4,2,113,2077,WAITARA,Y,4,\N,default,2017-03-09 11:11:11,WAITARA,NSW,2077,AUSTRALIA
+390,4,2,113,2079,MOUNT COLAH,Y,4,\N,default,2017-03-09 11:11:11,MOUNT COLAH,NSW,2079,AUSTRALIA
+391,4,2,113,2080,MOUNT KURING-GAI,Y,4,\N,default,2017-03-09 11:11:11,MOUNT KURING-GAI,NSW,2080,AUSTRALIA
+392,4,2,113,2081,BEROWRA,Y,4,\N,default,2017-03-09 11:11:11,BEROWRA,NSW,2081,AUSTRALIA
+393,4,2,113,2081,COWAN,Y,4,\N,default,2017-03-09 11:11:11,COWAN,NSW,2081,AUSTRALIA
+394,4,2,113,2082,BEROWRA CREEK,Y,4,\N,default,2017-03-09 11:11:11,BEROWRA CREEK,NSW,2082,AUSTRALIA
+395,4,2,113,2082,BEROWRA HEIGHTS,Y,4,\N,default,2017-03-09 11:11:11,BEROWRA HEIGHTS,NSW,2082,AUSTRALIA
+396,4,2,113,2082,BEROWRA WATERS,Y,4,\N,default,2017-03-09 11:11:11,BEROWRA WATERS,NSW,2082,AUSTRALIA
+397,4,2,113,2083,BAR POINT,Y,4,\N,default,2017-03-09 11:11:11,BAR POINT,NSW,2083,AUSTRALIA
+398,4,2,113,2083,BROOKLYN,Y,4,\N,default,2017-03-09 11:11:11,BROOKLYN,NSW,2083,AUSTRALIA
+399,4,2,113,2083,CHEERO POINT,Y,4,\N,default,2017-03-09 11:11:11,CHEERO POINT,NSW,2083,AUSTRALIA
+400,4,2,113,2083,COGRA BAY,Y,4,\N,default,2017-03-09 11:11:11,COGRA BAY,NSW,2083,AUSTRALIA
+401,4,2,113,2083,DANGAR ISLAND,Y,4,\N,default,2017-03-09 11:11:11,DANGAR ISLAND,NSW,2083,AUSTRALIA
+402,4,2,113,2083,MILSONS PASSAGE,Y,4,\N,default,2017-03-09 11:11:11,MILSONS PASSAGE,NSW,2083,AUSTRALIA
+403,4,2,113,2083,MOONEY MOONEY,Y,4,\N,default,2017-03-09 11:11:11,MOONEY MOONEY,NSW,2083,AUSTRALIA
+404,4,2,113,2084,COTTAGE POINT,Y,4,\N,default,2017-03-09 11:11:11,COTTAGE POINT,NSW,2084,AUSTRALIA
+405,4,2,113,2084,DUFFYS FOREST,Y,4,\N,default,2017-03-09 11:11:11,DUFFYS FOREST,NSW,2084,AUSTRALIA
+406,4,2,113,2084,TERREY HILLS,Y,4,\N,default,2017-03-09 11:11:11,TERREY HILLS,NSW,2084,AUSTRALIA
+407,4,2,113,2085,BELROSE,Y,4,\N,default,2017-03-09 11:11:11,BELROSE,NSW,2085,AUSTRALIA
+408,4,2,113,2085,BELROSE WEST,Y,4,\N,default,2017-03-09 11:11:11,BELROSE WEST,NSW,2085,AUSTRALIA
+409,4,2,113,2085,DAVIDSON,Y,4,\N,default,2017-03-09 11:11:11,DAVIDSON,NSW,2085,AUSTRALIA
+410,4,2,113,2086,FRENCHS FOREST,Y,4,\N,default,2017-03-09 11:11:11,FRENCHS FOREST,NSW,2086,AUSTRALIA
+411,4,2,113,2087,FORESTVILLE,Y,4,\N,default,2017-03-09 11:11:11,FORESTVILLE,NSW,2087,AUSTRALIA
+412,4,2,113,2087,KILLARNEY HEIGHTS,Y,4,\N,default,2017-03-09 11:11:11,KILLARNEY HEIGHTS,NSW,2087,AUSTRALIA
+413,4,2,113,2088,MOSMAN,Y,4,\N,default,2017-03-09 11:11:11,MOSMAN,NSW,2088,AUSTRALIA
+414,4,2,113,2088,SPIT JUNCTION,Y,4,\N,default,2017-03-09 11:11:11,SPIT JUNCTION,NSW,2088,AUSTRALIA
+415,4,2,113,2089,KURRABA POINT,Y,4,\N,default,2017-03-09 11:11:11,KURRABA POINT,NSW,2089,AUSTRALIA
+416,4,2,113,2089,NEUTRAL BAY,Y,4,\N,default,2017-03-09 11:11:11,NEUTRAL BAY,NSW,2089,AUSTRALIA
+417,4,2,113,2089,NEUTRAL BAY JUNCTION,Y,4,\N,default,2017-03-09 11:11:11,NEUTRAL BAY JUNCTION,NSW,2089,AUSTRALIA
+418,4,2,113,2090,CREMORNE,Y,4,\N,default,2017-03-09 11:11:11,CREMORNE,NSW,2090,AUSTRALIA
+419,4,2,113,2090,CREMORNE JUNCTION,Y,4,\N,default,2017-03-09 11:11:11,CREMORNE JUNCTION,NSW,2090,AUSTRALIA
+420,4,2,113,2090,CREMORNE POINT,Y,4,\N,default,2017-03-09 11:11:11,CREMORNE POINT,NSW,2090,AUSTRALIA
+421,4,2,113,2092,SEAFORTH,Y,4,\N,default,2017-03-09 11:11:11,SEAFORTH,NSW,2092,AUSTRALIA
+422,4,2,113,2093,BALGOWLAH,Y,4,\N,default,2017-03-09 11:11:11,BALGOWLAH,NSW,2093,AUSTRALIA
+423,4,2,113,2093,BALGOWLAH HEIGHTS,Y,4,\N,default,2017-03-09 11:11:11,BALGOWLAH HEIGHTS,NSW,2093,AUSTRALIA
+424,4,2,113,2093,CLONTARF,Y,4,\N,default,2017-03-09 11:11:11,CLONTARF,NSW,2093,AUSTRALIA
+425,4,2,113,2093,MANLY VALE,Y,4,\N,default,2017-03-09 11:11:11,MANLY VALE,NSW,2093,AUSTRALIA
+426,4,2,113,2093,NORTH BALGOWLAH,Y,4,\N,default,2017-03-09 11:11:11,NORTH BALGOWLAH,NSW,2093,AUSTRALIA
+427,4,2,113,2094,FAIRLIGHT,Y,4,\N,default,2017-03-09 11:11:11,FAIRLIGHT,NSW,2094,AUSTRALIA
+428,4,2,113,2095,MANLY,Y,4,\N,default,2017-03-09 11:11:11,MANLY,NSW,2095,AUSTRALIA
+429,4,2,113,2095,MANLY EAST,Y,4,\N,default,2017-03-09 11:11:11,MANLY EAST,NSW,2095,AUSTRALIA
+430,4,2,113,2096,CURL CURL,Y,4,\N,default,2017-03-09 11:11:11,CURL CURL,NSW,2096,AUSTRALIA
+431,4,2,113,2096,FRESHWATER,Y,4,\N,default,2017-03-09 11:11:11,FRESHWATER,NSW,2096,AUSTRALIA
+432,4,2,113,2096,QUEENSCLIFF,Y,4,\N,default,2017-03-09 11:11:11,QUEENSCLIFF,NSW,2096,AUSTRALIA
+433,4,2,113,2097,COLLAROY,Y,4,\N,default,2017-03-09 11:11:11,COLLAROY,NSW,2097,AUSTRALIA
+434,4,2,113,2097,COLLAROY BEACH,Y,4,\N,default,2017-03-09 11:11:11,COLLAROY BEACH,NSW,2097,AUSTRALIA
+435,4,2,113,2097,COLLAROY PLATEAU,Y,4,\N,default,2017-03-09 11:11:11,COLLAROY PLATEAU,NSW,2097,AUSTRALIA
+436,4,2,113,2097,WHEELER HEIGHTS,Y,4,\N,default,2017-03-09 11:11:11,WHEELER HEIGHTS,NSW,2097,AUSTRALIA
+437,4,2,113,2099,CROMER,Y,4,\N,default,2017-03-09 11:11:11,CROMER,NSW,2099,AUSTRALIA
+438,4,2,113,2099,DEE WHY,Y,4,\N,default,2017-03-09 11:11:11,DEE WHY,NSW,2099,AUSTRALIA
+439,4,2,113,2099,NARRAWEENA,Y,4,\N,default,2017-03-09 11:11:11,NARRAWEENA,NSW,2099,AUSTRALIA
+440,4,2,113,2099,NORTH CURL CURL,Y,4,\N,default,2017-03-09 11:11:11,NORTH CURL CURL,NSW,2099,AUSTRALIA
+441,4,2,113,2100,ALLAMBIE HEIGHTS,Y,4,\N,default,2017-03-09 11:11:11,ALLAMBIE HEIGHTS,NSW,2100,AUSTRALIA
+442,4,2,113,2100,BEACON HILL,Y,4,\N,default,2017-03-09 11:11:11,BEACON HILL,NSW,2100,AUSTRALIA
+443,4,2,113,2100,BROOKVALE,Y,4,\N,default,2017-03-09 11:11:11,BROOKVALE,NSW,2100,AUSTRALIA
+444,4,2,113,2100,NORTH MANLY,Y,4,\N,default,2017-03-09 11:11:11,NORTH MANLY,NSW,2100,AUSTRALIA
+445,4,2,113,2100,OXFORD FALLS,Y,4,\N,default,2017-03-09 11:11:11,OXFORD FALLS,NSW,2100,AUSTRALIA
+446,4,2,113,2100,WARRINGAH MALL,Y,4,\N,default,2017-03-09 11:11:11,WARRINGAH MALL,NSW,2100,AUSTRALIA
+447,4,2,113,2101,ELANORA HEIGHTS,Y,4,\N,default,2017-03-09 11:11:11,ELANORA HEIGHTS,NSW,2101,AUSTRALIA
+448,4,2,113,2101,INGLESIDE,Y,4,\N,default,2017-03-09 11:11:11,INGLESIDE,NSW,2101,AUSTRALIA
+449,4,2,113,2101,NARRABEEN,Y,4,\N,default,2017-03-09 11:11:11,NARRABEEN,NSW,2101,AUSTRALIA
+450,4,2,113,2101,NORTH NARRABEEN,Y,4,\N,default,2017-03-09 11:11:11,NORTH NARRABEEN,NSW,2101,AUSTRALIA
+451,4,2,113,2102,WARRIEWOOD,Y,4,\N,default,2017-03-09 11:11:11,WARRIEWOOD,NSW,2102,AUSTRALIA
+452,4,2,113,2102,WARRIEWOOD SHOPPING SQUARE,Y,4,\N,default,2017-03-09 11:11:11,WARRIEWOOD SHOPPING SQUARE,NSW,2102,AUSTRALIA
+453,4,2,113,2103,MONA VALE,Y,4,\N,default,2017-03-09 11:11:11,MONA VALE,NSW,2103,AUSTRALIA
+454,4,2,113,2104,BAYVIEW,Y,4,\N,default,2017-03-09 11:11:11,BAYVIEW,NSW,2104,AUSTRALIA
+455,4,2,113,2105,CHURCH POINT,Y,4,\N,default,2017-03-09 11:11:11,CHURCH POINT,NSW,2105,AUSTRALIA
+456,4,2,113,2105,ELVINA BAY,Y,4,\N,default,2017-03-09 11:11:11,ELVINA BAY,NSW,2105,AUSTRALIA
+457,4,2,113,2105,LOVETT BAY,Y,4,\N,default,2017-03-09 11:11:11,LOVETT BAY,NSW,2105,AUSTRALIA
+458,4,2,113,2105,MORNING BAY,Y,4,\N,default,2017-03-09 11:11:11,MORNING BAY,NSW,2105,AUSTRALIA
+459,4,2,113,2105,SCOTLAND ISLAND,Y,4,\N,default,2017-03-09 11:11:11,SCOTLAND ISLAND,NSW,2105,AUSTRALIA
+460,4,2,113,2106,NEWPORT,Y,4,\N,default,2017-03-09 11:11:11,NEWPORT,NSW,2106,AUSTRALIA
+461,4,2,113,2106,NEWPORT BEACH,Y,4,\N,default,2017-03-09 11:11:11,NEWPORT BEACH,NSW,2106,AUSTRALIA
+462,4,2,113,2107,AVALON,Y,4,\N,default,2017-03-09 11:11:11,AVALON,NSW,2107,AUSTRALIA
+463,4,2,113,2107,AVALON BEACH,Y,4,\N,default,2017-03-09 11:11:11,AVALON BEACH,NSW,2107,AUSTRALIA
+464,4,2,113,2107,BILGOLA,Y,4,\N,default,2017-03-09 11:11:11,BILGOLA,NSW,2107,AUSTRALIA
+465,4,2,113,2107,CLAREVILLE,Y,4,\N,default,2017-03-09 11:11:11,CLAREVILLE,NSW,2107,AUSTRALIA
+466,4,2,113,2107,WHALE BEACH,Y,4,\N,default,2017-03-09 11:11:11,WHALE BEACH,NSW,2107,AUSTRALIA
+467,4,2,113,2108,COASTERS RETREAT,Y,4,\N,default,2017-03-09 11:11:11,COASTERS RETREAT,NSW,2108,AUSTRALIA
+468,4,2,113,2108,GREAT MACKEREL BEACH,Y,4,\N,default,2017-03-09 11:11:11,GREAT MACKEREL BEACH,NSW,2108,AUSTRALIA
+469,4,2,113,2108,PALM BEACH,Y,4,\N,default,2017-03-09 11:11:11,PALM BEACH,NSW,2108,AUSTRALIA
+470,4,2,113,2109,MACQUARIE UNIVERSITY,Y,4,\N,default,2017-03-09 11:11:11,MACQUARIE UNIVERSITY,NSW,2109,AUSTRALIA
+471,4,2,113,2110,HUNTERS HILL,Y,4,\N,default,2017-03-09 11:11:11,HUNTERS HILL,NSW,2110,AUSTRALIA
+472,4,2,113,2110,WOOLWICH,Y,4,\N,default,2017-03-09 11:11:11,WOOLWICH,NSW,2110,AUSTRALIA
+473,4,2,113,2111,BORONIA PARK,Y,4,\N,default,2017-03-09 11:11:11,BORONIA PARK,NSW,2111,AUSTRALIA
+474,4,2,113,2111,GLADESVILLE,Y,4,\N,default,2017-03-09 11:11:11,GLADESVILLE,NSW,2111,AUSTRALIA
+475,4,2,113,2111,HENLEY,Y,4,\N,default,2017-03-09 11:11:11,HENLEY,NSW,2111,AUSTRALIA
+476,4,2,113,2111,HUNTLEYS COVE,Y,4,\N,default,2017-03-09 11:11:11,HUNTLEYS COVE,NSW,2111,AUSTRALIA
+477,4,2,113,2111,HUNTLEYS POINT,Y,4,\N,default,2017-03-09 11:11:11,HUNTLEYS POINT,NSW,2111,AUSTRALIA
+478,4,2,113,2111,MONASH PARK,Y,4,\N,default,2017-03-09 11:11:11,MONASH PARK,NSW,2111,AUSTRALIA
+479,4,2,113,2111,TENNYSON POINT,Y,4,\N,default,2017-03-09 11:11:11,TENNYSON POINT,NSW,2111,AUSTRALIA
+480,4,2,113,2112,DENISTONE EAST,Y,4,\N,default,2017-03-09 11:11:11,DENISTONE EAST,NSW,2112,AUSTRALIA
+481,4,2,113,2112,PUTNEY,Y,4,\N,default,2017-03-09 11:11:11,PUTNEY,NSW,2112,AUSTRALIA
+482,4,2,113,2112,RYDE,Y,4,\N,default,2017-03-09 11:11:11,RYDE,NSW,2112,AUSTRALIA
+483,4,2,113,2113,EAST RYDE,Y,4,\N,default,2017-03-09 11:11:11,EAST RYDE,NSW,2113,AUSTRALIA
+484,4,2,113,2113,MACQUARIE CENTRE,Y,4,\N,default,2017-03-09 11:11:11,MACQUARIE CENTRE,NSW,2113,AUSTRALIA
+485,4,2,113,2113,MACQUARIE PARK,Y,4,\N,default,2017-03-09 11:11:11,MACQUARIE PARK,NSW,2113,AUSTRALIA
+486,4,2,113,2113,NORTH RYDE,Y,4,\N,default,2017-03-09 11:11:11,NORTH RYDE,NSW,2113,AUSTRALIA
+487,4,2,113,2114,DENISTONE,Y,4,\N,default,2017-03-09 11:11:11,DENISTONE,NSW,2114,AUSTRALIA
+488,4,2,113,2114,DENISTONE WEST,Y,4,\N,default,2017-03-09 11:11:11,DENISTONE WEST,NSW,2114,AUSTRALIA
+489,4,2,113,2114,MEADOWBANK,Y,4,\N,default,2017-03-09 11:11:11,MEADOWBANK,NSW,2114,AUSTRALIA
+490,4,2,113,2114,MELROSE PARK,Y,4,\N,default,2017-03-09 11:11:11,MELROSE PARK,NSW,2114,AUSTRALIA
+491,4,2,113,2114,WEST RYDE,Y,4,\N,default,2017-03-09 11:11:11,WEST RYDE,NSW,2114,AUSTRALIA
+492,4,2,113,2115,ERMINGTON,Y,4,\N,default,2017-03-09 11:11:11,ERMINGTON,NSW,2115,AUSTRALIA
+493,4,2,113,2116,RYDALMERE,Y,4,\N,default,2017-03-09 11:11:11,RYDALMERE,NSW,2116,AUSTRALIA
+494,4,2,113,2117,DUNDAS,Y,4,\N,default,2017-03-09 11:11:11,DUNDAS,NSW,2117,AUSTRALIA
+495,4,2,113,2117,DUNDAS VALLEY,Y,4,\N,default,2017-03-09 11:11:11,DUNDAS VALLEY,NSW,2117,AUSTRALIA
+496,4,2,113,2117,OATLANDS,Y,4,\N,default,2017-03-09 11:11:11,OATLANDS,NSW,2117,AUSTRALIA
+497,4,2,113,2117,TELOPEA,Y,4,\N,default,2017-03-09 11:11:11,TELOPEA,NSW,2117,AUSTRALIA
+498,4,2,113,2118,CARLINGFORD,Y,4,\N,default,2017-03-09 11:11:11,CARLINGFORD,NSW,2118,AUSTRALIA
+499,4,2,113,2118,CARLINGFORD COURT,Y,4,\N,default,2017-03-09 11:11:11,CARLINGFORD COURT,NSW,2118,AUSTRALIA
+500,4,2,113,2118,CARLINGFORD NORTH,Y,4,\N,default,2017-03-09 11:11:11,CARLINGFORD NORTH,NSW,2118,AUSTRALIA
+501,4,2,113,2118,KINGSDENE,Y,4,\N,default,2017-03-09 11:11:11,KINGSDENE,NSW,2118,AUSTRALIA
+502,4,2,113,2119,BEECROFT,Y,4,\N,default,2017-03-09 11:11:11,BEECROFT,NSW,2119,AUSTRALIA
+503,4,2,113,2119,CHELTENHAM,Y,4,\N,default,2017-03-09 11:11:11,CHELTENHAM,NSW,2119,AUSTRALIA
+504,4,2,113,2120,PENNANT HILLS,Y,4,\N,default,2017-03-09 11:11:11,PENNANT HILLS,NSW,2120,AUSTRALIA
+505,4,2,113,2120,THORNLEIGH,Y,4,\N,default,2017-03-09 11:11:11,THORNLEIGH,NSW,2120,AUSTRALIA
+506,4,2,113,2120,WESTLEIGH,Y,4,\N,default,2017-03-09 11:11:11,WESTLEIGH,NSW,2120,AUSTRALIA
+507,4,2,113,2121,EPPING,Y,4,\N,default,2017-03-09 11:11:11,EPPING,NSW,2121,AUSTRALIA
+508,4,2,113,2121,NORTH EPPING,Y,4,\N,default,2017-03-09 11:11:11,NORTH EPPING,NSW,2121,AUSTRALIA
+509,4,2,113,2122,EASTWOOD,Y,4,\N,default,2017-03-09 11:11:11,EASTWOOD,NSW,2122,AUSTRALIA
+510,4,2,113,2122,MARSFIELD,Y,4,\N,default,2017-03-09 11:11:11,MARSFIELD,NSW,2122,AUSTRALIA
+511,4,2,113,2123,PARRAMATTA,Y,4,\N,default,2017-03-09 11:11:11,PARRAMATTA,NSW,2123,AUSTRALIA
+512,4,2,113,2124,PARRAMATTA,Y,4,\N,default,2017-03-09 11:11:11,PARRAMATTA,NSW,2124,AUSTRALIA
+513,4,2,113,2125,WEST PENNANT HILLS,Y,4,\N,default,2017-03-09 11:11:11,WEST PENNANT HILLS,NSW,2125,AUSTRALIA
+514,4,2,113,2126,CHERRYBROOK,Y,4,\N,default,2017-03-09 11:11:11,CHERRYBROOK,NSW,2126,AUSTRALIA
+515,4,2,113,2127,NEWINGTON,Y,4,\N,default,2017-03-09 11:11:11,NEWINGTON,NSW,2127,AUSTRALIA
+516,4,2,113,2127,SYDNEY OLYMPIC PARK,Y,4,\N,default,2017-03-09 11:11:11,SYDNEY OLYMPIC PARK,NSW,2127,AUSTRALIA
+517,4,2,113,2127,WENTWORTH POINT,Y,4,\N,default,2017-03-09 11:11:11,WENTWORTH POINT,NSW,2127,AUSTRALIA
+518,4,2,113,2128,SILVERWATER,Y,4,\N,default,2017-03-09 11:11:11,SILVERWATER,NSW,2128,AUSTRALIA
+519,4,2,113,2129,SYDNEY MARKETS,Y,4,\N,default,2017-03-09 11:11:11,SYDNEY MARKETS,NSW,2129,AUSTRALIA
+520,4,2,113,2130,SUMMER HILL,Y,4,\N,default,2017-03-09 11:11:11,SUMMER HILL,NSW,2130,AUSTRALIA
+521,4,2,113,2131,ASHFIELD,Y,4,\N,default,2017-03-09 11:11:11,ASHFIELD,NSW,2131,AUSTRALIA
+522,4,2,113,2132,CROYDON,Y,4,\N,default,2017-03-09 11:11:11,CROYDON,NSW,2132,AUSTRALIA
+523,4,2,113,2133,CROYDON PARK,Y,4,\N,default,2017-03-09 11:11:11,CROYDON PARK,NSW,2133,AUSTRALIA
+524,4,2,113,2133,ENFIELD SOUTH,Y,4,\N,default,2017-03-09 11:11:11,ENFIELD SOUTH,NSW,2133,AUSTRALIA
+525,4,2,113,2134,BURWOOD,Y,4,\N,default,2017-03-09 11:11:11,BURWOOD,NSW,2134,AUSTRALIA
+526,4,2,113,2134,BURWOOD NORTH,Y,4,\N,default,2017-03-09 11:11:11,BURWOOD NORTH,NSW,2134,AUSTRALIA
+527,4,2,113,2135,STRATHFIELD,Y,4,\N,default,2017-03-09 11:11:11,STRATHFIELD,NSW,2135,AUSTRALIA
+528,4,2,113,2136,BURWOOD HEIGHTS,Y,4,\N,default,2017-03-09 11:11:11,BURWOOD HEIGHTS,NSW,2136,AUSTRALIA
+529,4,2,113,2136,ENFIELD,Y,4,\N,default,2017-03-09 11:11:11,ENFIELD,NSW,2136,AUSTRALIA
+530,4,2,113,2136,STRATHFIELD SOUTH,Y,4,\N,default,2017-03-09 11:11:11,STRATHFIELD SOUTH,NSW,2136,AUSTRALIA
+531,4,2,113,2137,BREAKFAST POINT,Y,4,\N,default,2017-03-09 11:11:11,BREAKFAST POINT,NSW,2137,AUSTRALIA
+532,4,2,113,2137,CABARITA,Y,4,\N,default,2017-03-09 11:11:11,CABARITA,NSW,2137,AUSTRALIA
+533,4,2,113,2137,CONCORD,Y,4,\N,default,2017-03-09 11:11:11,CONCORD,NSW,2137,AUSTRALIA
+534,4,2,113,2137,MORTLAKE,Y,4,\N,default,2017-03-09 11:11:11,MORTLAKE,NSW,2137,AUSTRALIA
+535,4,2,113,2137,NORTH STRATHFIELD,Y,4,\N,default,2017-03-09 11:11:11,NORTH STRATHFIELD,NSW,2137,AUSTRALIA
+536,4,2,113,2138,CONCORD WEST,Y,4,\N,default,2017-03-09 11:11:11,CONCORD WEST,NSW,2138,AUSTRALIA
+537,4,2,113,2138,LIBERTY GROVE,Y,4,\N,default,2017-03-09 11:11:11,LIBERTY GROVE,NSW,2138,AUSTRALIA
+538,4,2,113,2138,RHODES,Y,4,\N,default,2017-03-09 11:11:11,RHODES,NSW,2138,AUSTRALIA
+539,4,2,113,2140,HOMEBUSH,Y,4,\N,default,2017-03-09 11:11:11,HOMEBUSH,NSW,2140,AUSTRALIA
+540,4,2,113,2140,HOMEBUSH SOUTH,Y,4,\N,default,2017-03-09 11:11:11,HOMEBUSH SOUTH,NSW,2140,AUSTRALIA
+541,4,2,113,2140,HOMEBUSH WEST,Y,4,\N,default,2017-03-09 11:11:11,HOMEBUSH WEST,NSW,2140,AUSTRALIA
+542,4,2,113,2141,BERALA,Y,4,\N,default,2017-03-09 11:11:11,BERALA,NSW,2141,AUSTRALIA
+543,4,2,113,2141,LIDCOMBE,Y,4,\N,default,2017-03-09 11:11:11,LIDCOMBE,NSW,2141,AUSTRALIA
+544,4,2,113,2141,LIDCOMBE NORTH,Y,4,\N,default,2017-03-09 11:11:11,LIDCOMBE NORTH,NSW,2141,AUSTRALIA
+545,4,2,113,2142,BLAXCELL,Y,4,\N,default,2017-03-09 11:11:11,BLAXCELL,NSW,2142,AUSTRALIA
+546,4,2,113,2142,CAMELLIA,Y,4,\N,default,2017-03-09 11:11:11,CAMELLIA,NSW,2142,AUSTRALIA
+547,4,2,113,2142,CLYDE,Y,4,\N,default,2017-03-09 11:11:11,CLYDE,NSW,2142,AUSTRALIA
+548,4,2,113,2142,GRANVILLE,Y,4,\N,default,2017-03-09 11:11:11,GRANVILLE,NSW,2142,AUSTRALIA
+549,4,2,113,2142,HOLROYD,Y,4,\N,default,2017-03-09 11:11:11,HOLROYD,NSW,2142,AUSTRALIA
+550,4,2,113,2142,ROSEHILL,Y,4,\N,default,2017-03-09 11:11:11,ROSEHILL,NSW,2142,AUSTRALIA
+551,4,2,113,2142,SOUTH GRANVILLE,Y,4,\N,default,2017-03-09 11:11:11,SOUTH GRANVILLE,NSW,2142,AUSTRALIA
+552,4,2,113,2143,BIRRONG,Y,4,\N,default,2017-03-09 11:11:11,BIRRONG,NSW,2143,AUSTRALIA
+553,4,2,113,2143,POTTS HILL,Y,4,\N,default,2017-03-09 11:11:11,POTTS HILL,NSW,2143,AUSTRALIA
+554,4,2,113,2143,REGENTS PARK,Y,4,\N,default,2017-03-09 11:11:11,REGENTS PARK,NSW,2143,AUSTRALIA
+555,4,2,113,2144,AUBURN,Y,4,\N,default,2017-03-09 11:11:11,AUBURN,NSW,2144,AUSTRALIA
+556,4,2,113,2145,CONSTITUTION HILL,Y,4,\N,default,2017-03-09 11:11:11,CONSTITUTION HILL,NSW,2145,AUSTRALIA
+557,4,2,113,2145,GIRRAWEEN,Y,4,\N,default,2017-03-09 11:11:11,GIRRAWEEN,NSW,2145,AUSTRALIA
+558,4,2,113,2145,GREYSTANES,Y,4,\N,default,2017-03-09 11:11:11,GREYSTANES,NSW,2145,AUSTRALIA
+559,4,2,113,2145,MAYS HILL,Y,4,\N,default,2017-03-09 11:11:11,MAYS HILL,NSW,2145,AUSTRALIA
+560,4,2,113,2145,PEMULWUY,Y,4,\N,default,2017-03-09 11:11:11,PEMULWUY,NSW,2145,AUSTRALIA
+561,4,2,113,2145,PENDLE HILL,Y,4,\N,default,2017-03-09 11:11:11,PENDLE HILL,NSW,2145,AUSTRALIA
+562,4,2,113,2145,SOUTH WENTWORTHVILLE,Y,4,\N,default,2017-03-09 11:11:11,SOUTH WENTWORTHVILLE,NSW,2145,AUSTRALIA
+563,4,2,113,2145,WENTWORTHVILLE,Y,4,\N,default,2017-03-09 11:11:11,WENTWORTHVILLE,NSW,2145,AUSTRALIA
+564,4,2,113,2145,WESTMEAD,Y,4,\N,default,2017-03-09 11:11:11,WESTMEAD,NSW,2145,AUSTRALIA
+565,4,2,113,2146,OLD TOONGABBIE,Y,4,\N,default,2017-03-09 11:11:11,OLD TOONGABBIE,NSW,2146,AUSTRALIA
+566,4,2,113,2146,TOONGABBIE,Y,4,\N,default,2017-03-09 11:11:11,TOONGABBIE,NSW,2146,AUSTRALIA
+567,4,2,113,2146,TOONGABBIE EAST,Y,4,\N,default,2017-03-09 11:11:11,TOONGABBIE EAST,NSW,2146,AUSTRALIA
+568,4,2,113,2147,KINGS LANGLEY,Y,4,\N,default,2017-03-09 11:11:11,KINGS LANGLEY,NSW,2147,AUSTRALIA
+569,4,2,113,2147,LALOR PARK,Y,4,\N,default,2017-03-09 11:11:11,LALOR PARK,NSW,2147,AUSTRALIA
+570,4,2,113,2147,SEVEN HILLS,Y,4,\N,default,2017-03-09 11:11:11,SEVEN HILLS,NSW,2147,AUSTRALIA
+571,4,2,113,2148,ARNDELL PARK,Y,4,\N,default,2017-03-09 11:11:11,ARNDELL PARK,NSW,2148,AUSTRALIA
+572,4,2,113,2148,BLACKTOWN,Y,4,\N,default,2017-03-09 11:11:11,BLACKTOWN,NSW,2148,AUSTRALIA
+573,4,2,113,2148,HUNTINGWOOD,Y,4,\N,default,2017-03-09 11:11:11,HUNTINGWOOD,NSW,2148,AUSTRALIA
+574,4,2,113,2148,KINGS PARK,Y,4,\N,default,2017-03-09 11:11:11,KINGS PARK,NSW,2148,AUSTRALIA
+575,4,2,113,2148,MARAYONG,Y,4,\N,default,2017-03-09 11:11:11,MARAYONG,NSW,2148,AUSTRALIA
+576,4,2,113,2148,PROSPECT,Y,4,\N,default,2017-03-09 11:11:11,PROSPECT,NSW,2148,AUSTRALIA
+577,4,2,113,2150,HARRIS PARK,Y,4,\N,default,2017-03-09 11:11:11,HARRIS PARK,NSW,2150,AUSTRALIA
+578,4,2,113,2150,PARRAMATTA,Y,4,\N,default,2017-03-09 11:11:11,PARRAMATTA,NSW,2150,AUSTRALIA
+579,4,2,113,2150,PARRAMATTA WESTFIELD,Y,4,\N,default,2017-03-09 11:11:11,PARRAMATTA WESTFIELD,NSW,2150,AUSTRALIA
+580,4,2,113,2151,NORTH PARRAMATTA,Y,4,\N,default,2017-03-09 11:11:11,NORTH PARRAMATTA,NSW,2151,AUSTRALIA
+581,4,2,113,2151,NORTH ROCKS,Y,4,\N,default,2017-03-09 11:11:11,NORTH ROCKS,NSW,2151,AUSTRALIA
+582,4,2,113,2152,NORTHMEAD,Y,4,\N,default,2017-03-09 11:11:11,NORTHMEAD,NSW,2152,AUSTRALIA
+583,4,2,113,2153,BAULKHAM HILLS,Y,4,\N,default,2017-03-09 11:11:11,BAULKHAM HILLS,NSW,2153,AUSTRALIA
+584,4,2,113,2153,BELLA VISTA,Y,4,\N,default,2017-03-09 11:11:11,BELLA VISTA,NSW,2153,AUSTRALIA
+585,4,2,113,2153,WINSTON HILLS,Y,4,\N,default,2017-03-09 11:11:11,WINSTON HILLS,NSW,2153,AUSTRALIA
+586,4,2,113,2154,CASTLE HILL,Y,4,\N,default,2017-03-09 11:11:11,CASTLE HILL,NSW,2154,AUSTRALIA
+587,4,2,113,2155,BEAUMONT HILLS,Y,4,\N,default,2017-03-09 11:11:11,BEAUMONT HILLS,NSW,2155,AUSTRALIA
+588,4,2,113,2155,KELLYVILLE,Y,4,\N,default,2017-03-09 11:11:11,KELLYVILLE,NSW,2155,AUSTRALIA
+589,4,2,113,2155,KELLYVILLE RIDGE,Y,4,\N,default,2017-03-09 11:11:11,KELLYVILLE RIDGE,NSW,2155,AUSTRALIA
+590,4,2,113,2155,ROUSE HILL,Y,4,\N,default,2017-03-09 11:11:11,ROUSE HILL,NSW,2155,AUSTRALIA
+591,4,2,113,2156,ANNANGROVE,Y,4,\N,default,2017-03-09 11:11:11,ANNANGROVE,NSW,2156,AUSTRALIA
+592,4,2,113,2156,GLENHAVEN,Y,4,\N,default,2017-03-09 11:11:11,GLENHAVEN,NSW,2156,AUSTRALIA
+593,4,2,113,2156,KENTHURST,Y,4,\N,default,2017-03-09 11:11:11,KENTHURST,NSW,2156,AUSTRALIA
+594,4,2,113,2157,CANOELANDS,Y,4,\N,default,2017-03-09 11:11:11,CANOELANDS,NSW,2157,AUSTRALIA
+595,4,2,113,2157,FOREST GLEN,Y,4,\N,default,2017-03-09 11:11:11,FOREST GLEN,NSW,2157,AUSTRALIA
+596,4,2,113,2157,GLENORIE,Y,4,\N,default,2017-03-09 11:11:11,GLENORIE,NSW,2157,AUSTRALIA
+597,4,2,113,2158,DURAL,Y,4,\N,default,2017-03-09 11:11:11,DURAL,NSW,2158,AUSTRALIA
+598,4,2,113,2158,MIDDLE DURAL,Y,4,\N,default,2017-03-09 11:11:11,MIDDLE DURAL,NSW,2158,AUSTRALIA
+599,4,2,113,2158,ROUND CORNER,Y,4,\N,default,2017-03-09 11:11:11,ROUND CORNER,NSW,2158,AUSTRALIA
+600,4,2,113,2159,ARCADIA,Y,4,\N,default,2017-03-09 11:11:11,ARCADIA,NSW,2159,AUSTRALIA
+601,4,2,113,2159,BERRILEE,Y,4,\N,default,2017-03-09 11:11:11,BERRILEE,NSW,2159,AUSTRALIA
+602,4,2,113,2159,FIDDLETOWN,Y,4,\N,default,2017-03-09 11:11:11,FIDDLETOWN,NSW,2159,AUSTRALIA
+603,4,2,113,2159,GALSTON,Y,4,\N,default,2017-03-09 11:11:11,GALSTON,NSW,2159,AUSTRALIA
+604,4,2,113,2160,MERRYLANDS,Y,4,\N,default,2017-03-09 11:11:11,MERRYLANDS,NSW,2160,AUSTRALIA
+605,4,2,113,2160,MERRYLANDS WEST,Y,4,\N,default,2017-03-09 11:11:11,MERRYLANDS WEST,NSW,2160,AUSTRALIA
+606,4,2,113,2161,GUILDFORD,Y,4,\N,default,2017-03-09 11:11:11,GUILDFORD,NSW,2161,AUSTRALIA
+607,4,2,113,2161,GUILDFORD WEST,Y,4,\N,default,2017-03-09 11:11:11,GUILDFORD WEST,NSW,2161,AUSTRALIA
+608,4,2,113,2161,OLD GUILDFORD,Y,4,\N,default,2017-03-09 11:11:11,OLD GUILDFORD,NSW,2161,AUSTRALIA
+609,4,2,113,2161,YENNORA,Y,4,\N,default,2017-03-09 11:11:11,YENNORA,NSW,2161,AUSTRALIA
+610,4,2,113,2162,CHESTER HILL,Y,4,\N,default,2017-03-09 11:11:11,CHESTER HILL,NSW,2162,AUSTRALIA
+611,4,2,113,2162,SEFTON,Y,4,\N,default,2017-03-09 11:11:11,SEFTON,NSW,2162,AUSTRALIA
+612,4,2,113,2163,CARRAMAR,Y,4,\N,default,2017-03-09 11:11:11,CARRAMAR,NSW,2163,AUSTRALIA
+613,4,2,113,2163,LANSDOWNE,Y,4,\N,default,2017-03-09 11:11:11,LANSDOWNE,NSW,2163,AUSTRALIA
+614,4,2,113,2163,VILLAWOOD,Y,4,\N,default,2017-03-09 11:11:11,VILLAWOOD,NSW,2163,AUSTRALIA
+615,4,2,113,2164,SMITHFIELD,Y,4,\N,default,2017-03-09 11:11:11,SMITHFIELD,NSW,2164,AUSTRALIA
+616,4,2,113,2164,SMITHFIELD WEST,Y,4,\N,default,2017-03-09 11:11:11,SMITHFIELD WEST,NSW,2164,AUSTRALIA
+617,4,2,113,2164,WETHERILL PARK,Y,4,\N,default,2017-03-09 11:11:11,WETHERILL PARK,NSW,2164,AUSTRALIA
+618,4,2,113,2164,WOODPARK,Y,4,\N,default,2017-03-09 11:11:11,WOODPARK,NSW,2164,AUSTRALIA
+619,4,2,113,2165,FAIRFIELD,Y,4,\N,default,2017-03-09 11:11:11,FAIRFIELD,NSW,2165,AUSTRALIA
+620,4,2,113,2165,FAIRFIELD EAST,Y,4,\N,default,2017-03-09 11:11:11,FAIRFIELD EAST,NSW,2165,AUSTRALIA
+621,4,2,113,2165,FAIRFIELD HEIGHTS,Y,4,\N,default,2017-03-09 11:11:11,FAIRFIELD HEIGHTS,NSW,2165,AUSTRALIA
+622,4,2,113,2165,FAIRFIELD WEST,Y,4,\N,default,2017-03-09 11:11:11,FAIRFIELD WEST,NSW,2165,AUSTRALIA
+623,4,2,113,2166,CABRAMATTA,Y,4,\N,default,2017-03-09 11:11:11,CABRAMATTA,NSW,2166,AUSTRALIA
+624,4,2,113,2166,CABRAMATTA WEST,Y,4,\N,default,2017-03-09 11:11:11,CABRAMATTA WEST,NSW,2166,AUSTRALIA
+625,4,2,113,2166,CANLEY HEIGHTS,Y,4,\N,default,2017-03-09 11:11:11,CANLEY HEIGHTS,NSW,2166,AUSTRALIA
+626,4,2,113,2166,CANLEY VALE,Y,4,\N,default,2017-03-09 11:11:11,CANLEY VALE,NSW,2166,AUSTRALIA
+627,4,2,113,2166,LANSVALE,Y,4,\N,default,2017-03-09 11:11:11,LANSVALE,NSW,2166,AUSTRALIA
+628,4,2,113,2167,GLENFIELD,Y,4,\N,default,2017-03-09 11:11:11,GLENFIELD,NSW,2167,AUSTRALIA
+629,4,2,113,2168,ASHCROFT,Y,4,\N,default,2017-03-09 11:11:11,ASHCROFT,NSW,2168,AUSTRALIA
+630,4,2,113,2168,BUSBY,Y,4,\N,default,2017-03-09 11:11:11,BUSBY,NSW,2168,AUSTRALIA
+631,4,2,113,2168,CARTWRIGHT,Y,4,\N,default,2017-03-09 11:11:11,CARTWRIGHT,NSW,2168,AUSTRALIA
+632,4,2,113,2168,GREEN VALLEY,Y,4,\N,default,2017-03-09 11:11:11,GREEN VALLEY,NSW,2168,AUSTRALIA
+633,4,2,113,2168,HECKENBERG,Y,4,\N,default,2017-03-09 11:11:11,HECKENBERG,NSW,2168,AUSTRALIA
+634,4,2,113,2168,HINCHINBROOK,Y,4,\N,default,2017-03-09 11:11:11,HINCHINBROOK,NSW,2168,AUSTRALIA
+635,4,2,113,2168,MILLER,Y,4,\N,default,2017-03-09 11:11:11,MILLER,NSW,2168,AUSTRALIA
+636,4,2,113,2168,SADLEIR,Y,4,\N,default,2017-03-09 11:11:11,SADLEIR,NSW,2168,AUSTRALIA
+637,4,2,113,2170,CASULA,Y,4,\N,default,2017-03-09 11:11:11,CASULA,NSW,2170,AUSTRALIA
+638,4,2,113,2170,CASULA MALL,Y,4,\N,default,2017-03-09 11:11:11,CASULA MALL,NSW,2170,AUSTRALIA
+639,4,2,113,2170,CHIPPING NORTON,Y,4,\N,default,2017-03-09 11:11:11,CHIPPING NORTON,NSW,2170,AUSTRALIA
+640,4,2,113,2170,HAMMONDVILLE,Y,4,\N,default,2017-03-09 11:11:11,HAMMONDVILLE,NSW,2170,AUSTRALIA
+641,4,2,113,2170,LIVERPOOL,Y,4,\N,default,2017-03-09 11:11:11,LIVERPOOL,NSW,2170,AUSTRALIA
+642,4,2,113,2170,LIVERPOOL WESTFIELD,Y,4,\N,default,2017-03-09 11:11:11,LIVERPOOL WESTFIELD,NSW,2170,AUSTRALIA
+643,4,2,113,2170,LURNEA,Y,4,\N,default,2017-03-09 11:11:11,LURNEA,NSW,2170,AUSTRALIA
+644,4,2,113,2170,MOOREBANK,Y,4,\N,default,2017-03-09 11:11:11,MOOREBANK,NSW,2170,AUSTRALIA
+645,4,2,113,2170,MOUNT PRITCHARD,Y,4,\N,default,2017-03-09 11:11:11,MOUNT PRITCHARD,NSW,2170,AUSTRALIA
+646,4,2,113,2170,PRESTONS,Y,4,\N,default,2017-03-09 11:11:11,PRESTONS,NSW,2170,AUSTRALIA
+647,4,2,113,2170,WARWICK FARM,Y,4,\N,default,2017-03-09 11:11:11,WARWICK FARM,NSW,2170,AUSTRALIA
+648,4,2,113,2171,CARNES HILL,Y,4,\N,default,2017-03-09 11:11:11,CARNES HILL,NSW,2171,AUSTRALIA
+649,4,2,113,2171,CECIL HILLS,Y,4,\N,default,2017-03-09 11:11:11,CECIL HILLS,NSW,2171,AUSTRALIA
+650,4,2,113,2171,ELIZABETH HILLS,Y,4,\N,default,2017-03-09 11:11:11,ELIZABETH HILLS,NSW,2171,AUSTRALIA
+651,4,2,113,2171,HORNINGSEA PARK,Y,4,\N,default,2017-03-09 11:11:11,HORNINGSEA PARK,NSW,2171,AUSTRALIA
+652,4,2,113,2171,HOXTON PARK,Y,4,\N,default,2017-03-09 11:11:11,HOXTON PARK,NSW,2171,AUSTRALIA
+653,4,2,113,2171,LEN WATERS ESTATE,Y,4,\N,default,2017-03-09 11:11:11,LEN WATERS ESTATE,NSW,2171,AUSTRALIA
+654,4,2,113,2171,MIDDLETON GRANGE,Y,4,\N,default,2017-03-09 11:11:11,MIDDLETON GRANGE,NSW,2171,AUSTRALIA
+655,4,2,113,2171,WEST HOXTON,Y,4,\N,default,2017-03-09 11:11:11,WEST HOXTON,NSW,2171,AUSTRALIA
+656,4,2,113,2172,PLEASURE POINT,Y,4,\N,default,2017-03-09 11:11:11,PLEASURE POINT,NSW,2172,AUSTRALIA
+657,4,2,113,2172,SANDY POINT,Y,4,\N,default,2017-03-09 11:11:11,SANDY POINT,NSW,2172,AUSTRALIA
+658,4,2,113,2172,VOYAGER POINT,Y,4,\N,default,2017-03-09 11:11:11,VOYAGER POINT,NSW,2172,AUSTRALIA
+659,4,2,113,2173,HOLSWORTHY,Y,4,\N,default,2017-03-09 11:11:11,HOLSWORTHY,NSW,2173,AUSTRALIA
+660,4,2,113,2173,WATTLE GROVE,Y,4,\N,default,2017-03-09 11:11:11,WATTLE GROVE,NSW,2173,AUSTRALIA
+661,4,2,113,2174,EDMONDSON PARK,Y,4,\N,default,2017-03-09 11:11:11,EDMONDSON PARK,NSW,2174,AUSTRALIA
+662,4,2,113,2175,HORSLEY PARK,Y,4,\N,default,2017-03-09 11:11:11,HORSLEY PARK,NSW,2175,AUSTRALIA
+663,4,2,113,2176,ABBOTSBURY,Y,4,\N,default,2017-03-09 11:11:11,ABBOTSBURY,NSW,2176,AUSTRALIA
+664,4,2,113,2176,BOSSLEY PARK,Y,4,\N,default,2017-03-09 11:11:11,BOSSLEY PARK,NSW,2176,AUSTRALIA
+665,4,2,113,2176,EDENSOR PARK,Y,4,\N,default,2017-03-09 11:11:11,EDENSOR PARK,NSW,2176,AUSTRALIA
+666,4,2,113,2176,GREENFIELD PARK,Y,4,\N,default,2017-03-09 11:11:11,GREENFIELD PARK,NSW,2176,AUSTRALIA
+667,4,2,113,2176,PRAIRIEWOOD,Y,4,\N,default,2017-03-09 11:11:11,PRAIRIEWOOD,NSW,2176,AUSTRALIA
+668,4,2,113,2176,ST JOHNS PARK,Y,4,\N,default,2017-03-09 11:11:11,ST JOHNS PARK,NSW,2176,AUSTRALIA
+669,4,2,113,2176,WAKELEY,Y,4,\N,default,2017-03-09 11:11:11,WAKELEY,NSW,2176,AUSTRALIA
+670,4,2,113,2177,BONNYRIGG,Y,4,\N,default,2017-03-09 11:11:11,BONNYRIGG,NSW,2177,AUSTRALIA
+671,4,2,113,2177,BONNYRIGG HEIGHTS,Y,4,\N,default,2017-03-09 11:11:11,BONNYRIGG HEIGHTS,NSW,2177,AUSTRALIA
+672,4,2,113,2178,CECIL PARK,Y,4,\N,default,2017-03-09 11:11:11,CECIL PARK,NSW,2178,AUSTRALIA
+673,4,2,113,2178,KEMPS CREEK,Y,4,\N,default,2017-03-09 11:11:11,KEMPS CREEK,NSW,2178,AUSTRALIA
+674,4,2,113,2178,MOUNT VERNON,Y,4,\N,default,2017-03-09 11:11:11,MOUNT VERNON,NSW,2178,AUSTRALIA
+675,4,2,113,2179,AUSTRAL,Y,4,\N,default,2017-03-09 11:11:11,AUSTRAL,NSW,2179,AUSTRALIA
+676,4,2,113,2179,LEPPINGTON,Y,4,\N,default,2017-03-09 11:11:11,LEPPINGTON,NSW,2179,AUSTRALIA
+677,4,2,113,2190,CHULLORA,Y,4,\N,default,2017-03-09 11:11:11,CHULLORA,NSW,2190,AUSTRALIA
+678,4,2,113,2190,GREENACRE,Y,4,\N,default,2017-03-09 11:11:11,GREENACRE,NSW,2190,AUSTRALIA
+679,4,2,113,2190,MOUNT LEWIS,Y,4,\N,default,2017-03-09 11:11:11,MOUNT LEWIS,NSW,2190,AUSTRALIA
+680,4,2,113,2191,BELFIELD,Y,4,\N,default,2017-03-09 11:11:11,BELFIELD,NSW,2191,AUSTRALIA
+681,4,2,113,2192,BELMORE,Y,4,\N,default,2017-03-09 11:11:11,BELMORE,NSW,2192,AUSTRALIA
+682,4,2,113,2193,ASHBURY,Y,4,\N,default,2017-03-09 11:11:11,ASHBURY,NSW,2193,AUSTRALIA
+683,4,2,113,2193,CANTERBURY,Y,4,\N,default,2017-03-09 11:11:11,CANTERBURY,NSW,2193,AUSTRALIA
+684,4,2,113,2193,HURLSTONE PARK,Y,4,\N,default,2017-03-09 11:11:11,HURLSTONE PARK,NSW,2193,AUSTRALIA
+685,4,2,113,2194,CAMPSIE,Y,4,\N,default,2017-03-09 11:11:11,CAMPSIE,NSW,2194,AUSTRALIA
+686,4,2,113,2195,LAKEMBA,Y,4,\N,default,2017-03-09 11:11:11,LAKEMBA,NSW,2195,AUSTRALIA
+687,4,2,113,2195,WILEY PARK,Y,4,\N,default,2017-03-09 11:11:11,WILEY PARK,NSW,2195,AUSTRALIA
+688,4,2,113,2196,PUNCHBOWL,Y,4,\N,default,2017-03-09 11:11:11,PUNCHBOWL,NSW,2196,AUSTRALIA
+689,4,2,113,2196,ROSELANDS,Y,4,\N,default,2017-03-09 11:11:11,ROSELANDS,NSW,2196,AUSTRALIA
+690,4,2,113,2197,BASS HILL,Y,4,\N,default,2017-03-09 11:11:11,BASS HILL,NSW,2197,AUSTRALIA
+691,4,2,113,2198,GEORGES HALL,Y,4,\N,default,2017-03-09 11:11:11,GEORGES HALL,NSW,2198,AUSTRALIA
+692,4,2,113,2199,YAGOONA,Y,4,\N,default,2017-03-09 11:11:11,YAGOONA,NSW,2199,AUSTRALIA
+693,4,2,113,2200,BANKSTOWN,Y,4,\N,default,2017-03-09 11:11:11,BANKSTOWN,NSW,2200,AUSTRALIA
+694,4,2,113,2200,BANKSTOWN AERODROME,Y,4,\N,default,2017-03-09 11:11:11,BANKSTOWN AERODROME,NSW,2200,AUSTRALIA
+695,4,2,113,2200,BANKSTOWN SQUARE,Y,4,\N,default,2017-03-09 11:11:11,BANKSTOWN SQUARE,NSW,2200,AUSTRALIA
+696,4,2,113,2200,CONDELL PARK,Y,4,\N,default,2017-03-09 11:11:11,CONDELL PARK,NSW,2200,AUSTRALIA
+697,4,2,113,2200,MANAHAN,Y,4,\N,default,2017-03-09 11:11:11,MANAHAN,NSW,2200,AUSTRALIA
+698,4,2,113,2203,DULWICH HILL,Y,4,\N,default,2017-03-09 11:11:11,DULWICH HILL,NSW,2203,AUSTRALIA
+699,4,2,113,2204,MARRICKVILLE,Y,4,\N,default,2017-03-09 11:11:11,MARRICKVILLE,NSW,2204,AUSTRALIA
+700,4,2,113,2204,MARRICKVILLE METRO,Y,4,\N,default,2017-03-09 11:11:11,MARRICKVILLE METRO,NSW,2204,AUSTRALIA
+701,4,2,113,2204,MARRICKVILLE SOUTH,Y,4,\N,default,2017-03-09 11:11:11,MARRICKVILLE SOUTH,NSW,2204,AUSTRALIA
+702,4,2,113,2205,ARNCLIFFE,Y,4,\N,default,2017-03-09 11:11:11,ARNCLIFFE,NSW,2205,AUSTRALIA
+703,4,2,113,2205,TURRELLA,Y,4,\N,default,2017-03-09 11:11:11,TURRELLA,NSW,2205,AUSTRALIA
+704,4,2,113,2205,WOLLI CREEK,Y,4,\N,default,2017-03-09 11:11:11,WOLLI CREEK,NSW,2205,AUSTRALIA
+705,4,2,113,2206,CLEMTON PARK,Y,4,\N,default,2017-03-09 11:11:11,CLEMTON PARK,NSW,2206,AUSTRALIA
+706,4,2,113,2206,EARLWOOD,Y,4,\N,default,2017-03-09 11:11:11,EARLWOOD,NSW,2206,AUSTRALIA
+707,4,2,113,2207,BARDWELL PARK,Y,4,\N,default,2017-03-09 11:11:11,BARDWELL PARK,NSW,2207,AUSTRALIA
+708,4,2,113,2207,BARDWELL VALLEY,Y,4,\N,default,2017-03-09 11:11:11,BARDWELL VALLEY,NSW,2207,AUSTRALIA
+709,4,2,113,2207,BEXLEY,Y,4,\N,default,2017-03-09 11:11:11,BEXLEY,NSW,2207,AUSTRALIA
+710,4,2,113,2207,BEXLEY NORTH,Y,4,\N,default,2017-03-09 11:11:11,BEXLEY NORTH,NSW,2207,AUSTRALIA
+711,4,2,113,2207,BEXLEY SOUTH,Y,4,\N,default,2017-03-09 11:11:11,BEXLEY SOUTH,NSW,2207,AUSTRALIA
+712,4,2,113,2208,KINGSGROVE,Y,4,\N,default,2017-03-09 11:11:11,KINGSGROVE,NSW,2208,AUSTRALIA
+713,4,2,113,2208,KINGSWAY WEST,Y,4,\N,default,2017-03-09 11:11:11,KINGSWAY WEST,NSW,2208,AUSTRALIA
+714,4,2,113,2209,BEVERLY HILLS,Y,4,\N,default,2017-03-09 11:11:11,BEVERLY HILLS,NSW,2209,AUSTRALIA
+715,4,2,113,2209,NARWEE,Y,4,\N,default,2017-03-09 11:11:11,NARWEE,NSW,2209,AUSTRALIA
+716,4,2,113,2210,LUGARNO,Y,4,\N,default,2017-03-09 11:11:11,LUGARNO,NSW,2210,AUSTRALIA
+717,4,2,113,2210,PEAKHURST,Y,4,\N,default,2017-03-09 11:11:11,PEAKHURST,NSW,2210,AUSTRALIA
+718,4,2,113,2210,PEAKHURST HEIGHTS,Y,4,\N,default,2017-03-09 11:11:11,PEAKHURST HEIGHTS,NSW,2210,AUSTRALIA
+719,4,2,113,2210,RIVERWOOD,Y,4,\N,default,2017-03-09 11:11:11,RIVERWOOD,NSW,2210,AUSTRALIA
+720,4,2,113,2211,PADSTOW,Y,4,\N,default,2017-03-09 11:11:11,PADSTOW,NSW,2211,AUSTRALIA
+721,4,2,113,2211,PADSTOW HEIGHTS,Y,4,\N,default,2017-03-09 11:11:11,PADSTOW HEIGHTS,NSW,2211,AUSTRALIA
+722,4,2,113,2212,REVESBY,Y,4,\N,default,2017-03-09 11:11:11,REVESBY,NSW,2212,AUSTRALIA
+723,4,2,113,2212,REVESBY HEIGHTS,Y,4,\N,default,2017-03-09 11:11:11,REVESBY HEIGHTS,NSW,2212,AUSTRALIA
+724,4,2,113,2212,REVESBY NORTH,Y,4,\N,default,2017-03-09 11:11:11,REVESBY NORTH,NSW,2212,AUSTRALIA
+725,4,2,113,2213,EAST HILLS,Y,4,\N,default,2017-03-09 11:11:11,EAST HILLS,NSW,2213,AUSTRALIA
+726,4,2,113,2213,PANANIA,Y,4,\N,default,2017-03-09 11:11:11,PANANIA,NSW,2213,AUSTRALIA
+727,4,2,113,2213,PICNIC POINT,Y,4,\N,default,2017-03-09 11:11:11,PICNIC POINT,NSW,2213,AUSTRALIA
+728,4,2,113,2214,MILPERRA,Y,4,\N,default,2017-03-09 11:11:11,MILPERRA,NSW,2214,AUSTRALIA
+729,4,2,113,2216,BANKSIA,Y,4,\N,default,2017-03-09 11:11:11,BANKSIA,NSW,2216,AUSTRALIA
+730,4,2,113,2216,BRIGHTON-LE-SANDS,Y,4,\N,default,2017-03-09 11:11:11,BRIGHTON-LE-SANDS,NSW,2216,AUSTRALIA
+731,4,2,113,2216,KYEEMAGH,Y,4,\N,default,2017-03-09 11:11:11,KYEEMAGH,NSW,2216,AUSTRALIA
+732,4,2,113,2216,ROCKDALE,Y,4,\N,default,2017-03-09 11:11:11,ROCKDALE,NSW,2216,AUSTRALIA
+733,4,2,113,2217,BEVERLEY PARK,Y,4,\N,default,2017-03-09 11:11:11,BEVERLEY PARK,NSW,2217,AUSTRALIA
+734,4,2,113,2217,KOGARAH,Y,4,\N,default,2017-03-09 11:11:11,KOGARAH,NSW,2217,AUSTRALIA
+735,4,2,113,2217,KOGARAH BAY,Y,4,\N,default,2017-03-09 11:11:11,KOGARAH BAY,NSW,2217,AUSTRALIA
+736,4,2,113,2217,MONTEREY,Y,4,\N,default,2017-03-09 11:11:11,MONTEREY,NSW,2217,AUSTRALIA
+737,4,2,113,2217,RAMSGATE,Y,4,\N,default,2017-03-09 11:11:11,RAMSGATE,NSW,2217,AUSTRALIA
+738,4,2,113,2217,RAMSGATE BEACH,Y,4,\N,default,2017-03-09 11:11:11,RAMSGATE BEACH,NSW,2217,AUSTRALIA
+739,4,2,113,2218,ALLAWAH,Y,4,\N,default,2017-03-09 11:11:11,ALLAWAH,NSW,2218,AUSTRALIA
+740,4,2,113,2218,CARLTON,Y,4,\N,default,2017-03-09 11:11:11,CARLTON,NSW,2218,AUSTRALIA
+741,4,2,113,2219,DOLLS POINT,Y,4,\N,default,2017-03-09 11:11:11,DOLLS POINT,NSW,2219,AUSTRALIA
+742,4,2,113,2219,SANDRINGHAM,Y,4,\N,default,2017-03-09 11:11:11,SANDRINGHAM,NSW,2219,AUSTRALIA
+743,4,2,113,2219,SANS SOUCI,Y,4,\N,default,2017-03-09 11:11:11,SANS SOUCI,NSW,2219,AUSTRALIA
+744,4,2,113,2220,HURSTVILLE,Y,4,\N,default,2017-03-09 11:11:11,HURSTVILLE,NSW,2220,AUSTRALIA
+745,4,2,113,2220,HURSTVILLE GROVE,Y,4,\N,default,2017-03-09 11:11:11,HURSTVILLE GROVE,NSW,2220,AUSTRALIA
+746,4,2,113,2221,BLAKEHURST,Y,4,\N,default,2017-03-09 11:11:11,BLAKEHURST,NSW,2221,AUSTRALIA
+747,4,2,113,2221,CARSS PARK,Y,4,\N,default,2017-03-09 11:11:11,CARSS PARK,NSW,2221,AUSTRALIA
+748,4,2,113,2221,CONNELLS POINT,Y,4,\N,default,2017-03-09 11:11:11,CONNELLS POINT,NSW,2221,AUSTRALIA
+749,4,2,113,2221,KYLE BAY,Y,4,\N,default,2017-03-09 11:11:11,KYLE BAY,NSW,2221,AUSTRALIA
+750,4,2,113,2221,SOUTH HURSTVILLE,Y,4,\N,default,2017-03-09 11:11:11,SOUTH HURSTVILLE,NSW,2221,AUSTRALIA
+751,4,2,113,2222,PENSHURST,Y,4,\N,default,2017-03-09 11:11:11,PENSHURST,NSW,2222,AUSTRALIA
+752,4,2,113,2223,MORTDALE,Y,4,\N,default,2017-03-09 11:11:11,MORTDALE,NSW,2223,AUSTRALIA
+753,4,2,113,2223,OATLEY,Y,4,\N,default,2017-03-09 11:11:11,OATLEY,NSW,2223,AUSTRALIA
+754,4,2,113,2224,KANGAROO POINT,Y,4,\N,default,2017-03-09 11:11:11,KANGAROO POINT,NSW,2224,AUSTRALIA
+755,4,2,113,2224,SYLVANIA,Y,4,\N,default,2017-03-09 11:11:11,SYLVANIA,NSW,2224,AUSTRALIA
+756,4,2,113,2224,SYLVANIA SOUTHGATE,Y,4,\N,default,2017-03-09 11:11:11,SYLVANIA SOUTHGATE,NSW,2224,AUSTRALIA
+757,4,2,113,2224,SYLVANIA WATERS,Y,4,\N,default,2017-03-09 11:11:11,SYLVANIA WATERS,NSW,2224,AUSTRALIA
+758,4,2,113,2225,OYSTER BAY,Y,4,\N,default,2017-03-09 11:11:11,OYSTER BAY,NSW,2225,AUSTRALIA
+759,4,2,113,2226,BONNET BAY,Y,4,\N,default,2017-03-09 11:11:11,BONNET BAY,NSW,2226,AUSTRALIA
+760,4,2,113,2226,COMO,Y,4,\N,default,2017-03-09 11:11:11,COMO,NSW,2226,AUSTRALIA
+761,4,2,113,2226,JANNALI,Y,4,\N,default,2017-03-09 11:11:11,JANNALI,NSW,2226,AUSTRALIA
+762,4,2,113,2227,GYMEA,Y,4,\N,default,2017-03-09 11:11:11,GYMEA,NSW,2227,AUSTRALIA
+763,4,2,113,2227,GYMEA BAY,Y,4,\N,default,2017-03-09 11:11:11,GYMEA BAY,NSW,2227,AUSTRALIA
+764,4,2,113,2228,MIRANDA,Y,4,\N,default,2017-03-09 11:11:11,MIRANDA,NSW,2228,AUSTRALIA
+765,4,2,113,2228,YOWIE BAY,Y,4,\N,default,2017-03-09 11:11:11,YOWIE BAY,NSW,2228,AUSTRALIA
+766,4,2,113,2229,CARINGBAH,Y,4,\N,default,2017-03-09 11:11:11,CARINGBAH,NSW,2229,AUSTRALIA
+767,4,2,113,2229,CARINGBAH SOUTH,Y,4,\N,default,2017-03-09 11:11:11,CARINGBAH SOUTH,NSW,2229,AUSTRALIA
+768,4,2,113,2229,DOLANS BAY,Y,4,\N,default,2017-03-09 11:11:11,DOLANS BAY,NSW,2229,AUSTRALIA
+769,4,2,113,2229,LILLI PILLI,Y,4,\N,default,2017-03-09 11:11:11,LILLI PILLI,NSW,2229,AUSTRALIA
+770,4,2,113,2229,PORT HACKING,Y,4,\N,default,2017-03-09 11:11:11,PORT HACKING,NSW,2229,AUSTRALIA
+771,4,2,113,2229,TAREN POINT,Y,4,\N,default,2017-03-09 11:11:11,TAREN POINT,NSW,2229,AUSTRALIA
+772,4,2,113,2230,BUNDEENA,Y,4,\N,default,2017-03-09 11:11:11,BUNDEENA,NSW,2230,AUSTRALIA
+773,4,2,113,2230,BURRANEER,Y,4,\N,default,2017-03-09 11:11:11,BURRANEER,NSW,2230,AUSTRALIA
+774,4,2,113,2230,CRONULLA,Y,4,\N,default,2017-03-09 11:11:11,CRONULLA,NSW,2230,AUSTRALIA
+775,4,2,113,2230,GREENHILLS BEACH,Y,4,\N,default,2017-03-09 11:11:11,GREENHILLS BEACH,NSW,2230,AUSTRALIA
+776,4,2,113,2230,MAIANBAR,Y,4,\N,default,2017-03-09 11:11:11,MAIANBAR,NSW,2230,AUSTRALIA
+777,4,2,113,2230,WOOLOOWARE,Y,4,\N,default,2017-03-09 11:11:11,WOOLOOWARE,NSW,2230,AUSTRALIA
+778,4,2,113,2231,KURNELL,Y,4,\N,default,2017-03-09 11:11:11,KURNELL,NSW,2231,AUSTRALIA
+779,4,2,113,2232,GRAYS POINT,Y,4,\N,default,2017-03-09 11:11:11,GRAYS POINT,NSW,2232,AUSTRALIA
+780,4,2,113,2232,KAREELA,Y,4,\N,default,2017-03-09 11:11:11,KAREELA,NSW,2232,AUSTRALIA
+781,4,2,113,2232,KIRRAWEE,Y,4,\N,default,2017-03-09 11:11:11,KIRRAWEE,NSW,2232,AUSTRALIA
+782,4,2,113,2232,LOFTUS,Y,4,\N,default,2017-03-09 11:11:11,LOFTUS,NSW,2232,AUSTRALIA
+783,4,2,113,2232,SUTHERLAND,Y,4,\N,default,2017-03-09 11:11:11,SUTHERLAND,NSW,2232,AUSTRALIA
+784,4,2,113,2232,WORONORA,Y,4,\N,default,2017-03-09 11:11:11,WORONORA,NSW,2232,AUSTRALIA
+785,4,2,113,2233,ENGADINE,Y,4,\N,default,2017-03-09 11:11:11,ENGADINE,NSW,2233,AUSTRALIA
+786,4,2,113,2233,HEATHCOTE,Y,4,\N,default,2017-03-09 11:11:11,HEATHCOTE,NSW,2233,AUSTRALIA
+787,4,2,113,2233,WATERFALL,Y,4,\N,default,2017-03-09 11:11:11,WATERFALL,NSW,2233,AUSTRALIA
+788,4,2,113,2233,WORONORA HEIGHTS,Y,4,\N,default,2017-03-09 11:11:11,WORONORA HEIGHTS,NSW,2233,AUSTRALIA
+789,4,2,113,2233,YARRAWARRAH,Y,4,\N,default,2017-03-09 11:11:11,YARRAWARRAH,NSW,2233,AUSTRALIA
+790,4,2,113,2234,ALFORDS POINT,Y,4,\N,default,2017-03-09 11:11:11,ALFORDS POINT,NSW,2234,AUSTRALIA
+791,4,2,113,2234,BANGOR,Y,4,\N,default,2017-03-09 11:11:11,BANGOR,NSW,2234,AUSTRALIA
+792,4,2,113,2234,BARDEN RIDGE,Y,4,\N,default,2017-03-09 11:11:11,BARDEN RIDGE,NSW,2234,AUSTRALIA
+793,4,2,113,2234,ILLAWONG,Y,4,\N,default,2017-03-09 11:11:11,ILLAWONG,NSW,2234,AUSTRALIA
+794,4,2,113,2234,LUCAS HEIGHTS,Y,4,\N,default,2017-03-09 11:11:11,LUCAS HEIGHTS,NSW,2234,AUSTRALIA
+795,4,2,113,2234,MENAI,Y,4,\N,default,2017-03-09 11:11:11,MENAI,NSW,2234,AUSTRALIA
+796,4,2,113,2234,MENAI CENTRAL,Y,4,\N,default,2017-03-09 11:11:11,MENAI CENTRAL,NSW,2234,AUSTRALIA
+797,4,2,113,2250,BUCKETTY,Y,4,\N,default,2017-03-09 11:11:11,BUCKETTY,NSW,2250,AUSTRALIA
+798,4,2,113,2250,CALGA,Y,4,\N,default,2017-03-09 11:11:11,CALGA,NSW,2250,AUSTRALIA
+799,4,2,113,2250,CENTRAL MANGROVE,Y,4,\N,default,2017-03-09 11:11:11,CENTRAL MANGROVE,NSW,2250,AUSTRALIA
+800,4,2,113,2250,EAST GOSFORD,Y,4,\N,default,2017-03-09 11:11:11,EAST GOSFORD,NSW,2250,AUSTRALIA
+801,4,2,113,2250,ERINA,Y,4,\N,default,2017-03-09 11:11:11,ERINA,NSW,2250,AUSTRALIA
+802,4,2,113,2250,ERINA FAIR,Y,4,\N,default,2017-03-09 11:11:11,ERINA FAIR,NSW,2250,AUSTRALIA
+803,4,2,113,2250,GLENWORTH VALLEY,Y,4,\N,default,2017-03-09 11:11:11,GLENWORTH VALLEY,NSW,2250,AUSTRALIA
+804,4,2,113,2250,GOSFORD,Y,4,\N,default,2017-03-09 11:11:11,GOSFORD,NSW,2250,AUSTRALIA
+805,4,2,113,2250,GREENGROVE,Y,4,\N,default,2017-03-09 11:11:11,GREENGROVE,NSW,2250,AUSTRALIA
+806,4,2,113,2250,HOLGATE,Y,4,\N,default,2017-03-09 11:11:11,HOLGATE,NSW,2250,AUSTRALIA
+807,4,2,113,2250,KARIONG,Y,4,\N,default,2017-03-09 11:11:11,KARIONG,NSW,2250,AUSTRALIA
+808,4,2,113,2250,KULNURA,Y,4,\N,default,2017-03-09 11:11:11,KULNURA,NSW,2250,AUSTRALIA
+809,4,2,113,2250,LISAROW,Y,4,\N,default,2017-03-09 11:11:11,LISAROW,NSW,2250,AUSTRALIA
+810,4,2,113,2250,LOWER MANGROVE,Y,4,\N,default,2017-03-09 11:11:11,LOWER MANGROVE,NSW,2250,AUSTRALIA
+811,4,2,113,2250,MANGROVE CREEK,Y,4,\N,default,2017-03-09 11:11:11,MANGROVE CREEK,NSW,2250,AUSTRALIA
+812,4,2,113,2250,MANGROVE MOUNTAIN,Y,4,\N,default,2017-03-09 11:11:11,MANGROVE MOUNTAIN,NSW,2250,AUSTRALIA
+813,4,2,113,2250,MATCHAM,Y,4,\N,default,2017-03-09 11:11:11,MATCHAM,NSW,2250,AUSTRALIA
+814,4,2,113,2250,MOONEY MOONEY CREEK,Y,4,\N,default,2017-03-09 11:11:11,MOONEY MOONEY CREEK,NSW,2250,AUSTRALIA
+815,4,2,113,2250,MOUNT ELLIOT,Y,4,\N,default,2017-03-09 11:11:11,MOUNT ELLIOT,NSW,2250,AUSTRALIA
+816,4,2,113,2250,MOUNT WHITE,Y,4,\N,default,2017-03-09 11:11:11,MOUNT WHITE,NSW,2250,AUSTRALIA
+817,4,2,113,2250,NARARA,Y,4,\N,default,2017-03-09 11:11:11,NARARA,NSW,2250,AUSTRALIA
+818,4,2,113,2250,NIAGARA PARK,Y,4,\N,default,2017-03-09 11:11:11,NIAGARA PARK,NSW,2250,AUSTRALIA
+819,4,2,113,2250,NORTH GOSFORD,Y,4,\N,default,2017-03-09 11:11:11,NORTH GOSFORD,NSW,2250,AUSTRALIA
+820,4,2,113,2250,PEATS RIDGE,Y,4,\N,default,2017-03-09 11:11:11,PEATS RIDGE,NSW,2250,AUSTRALIA
+821,4,2,113,2250,POINT CLARE,Y,4,\N,default,2017-03-09 11:11:11,POINT CLARE,NSW,2250,AUSTRALIA
+822,4,2,113,2250,POINT FREDERICK,Y,4,\N,default,2017-03-09 11:11:11,POINT FREDERICK,NSW,2250,AUSTRALIA
+823,4,2,113,2250,SOMERSBY,Y,4,\N,default,2017-03-09 11:11:11,SOMERSBY,NSW,2250,AUSTRALIA
+824,4,2,113,2250,SPRINGFIELD,Y,4,\N,default,2017-03-09 11:11:11,SPRINGFIELD,NSW,2250,AUSTRALIA
+825,4,2,113,2250,TASCOTT,Y,4,\N,default,2017-03-09 11:11:11,TASCOTT,NSW,2250,AUSTRALIA
+826,4,2,113,2250,TEN MILE HOLLOW,Y,4,\N,default,2017-03-09 11:11:11,TEN MILE HOLLOW,NSW,2250,AUSTRALIA
+827,4,2,113,2250,UPPER MANGROVE,Y,4,\N,default,2017-03-09 11:11:11,UPPER MANGROVE,NSW,2250,AUSTRALIA
+828,4,2,113,2250,WENDOREE PARK,Y,4,\N,default,2017-03-09 11:11:11,WENDOREE PARK,NSW,2250,AUSTRALIA
+829,4,2,113,2250,WEST GOSFORD,Y,4,\N,default,2017-03-09 11:11:11,WEST GOSFORD,NSW,2250,AUSTRALIA
+830,4,2,113,2250,WYOMING,Y,4,\N,default,2017-03-09 11:11:11,WYOMING,NSW,2250,AUSTRALIA
+831,4,2,113,2251,AVOCA BEACH,Y,4,\N,default,2017-03-09 11:11:11,AVOCA BEACH,NSW,2251,AUSTRALIA
+832,4,2,113,2251,BENSVILLE,Y,4,\N,default,2017-03-09 11:11:11,BENSVILLE,NSW,2251,AUSTRALIA
+833,4,2,113,2251,BOUDDI,Y,4,\N,default,2017-03-09 11:11:11,BOUDDI,NSW,2251,AUSTRALIA
+834,4,2,113,2251,COPACABANA,Y,4,\N,default,2017-03-09 11:11:11,COPACABANA,NSW,2251,AUSTRALIA
+835,4,2,113,2251,DAVISTOWN,Y,4,\N,default,2017-03-09 11:11:11,DAVISTOWN,NSW,2251,AUSTRALIA
+836,4,2,113,2251,GREEN POINT,Y,4,\N,default,2017-03-09 11:11:11,GREEN POINT,NSW,2251,AUSTRALIA
+837,4,2,113,2251,KINCUMBER,Y,4,\N,default,2017-03-09 11:11:11,KINCUMBER,NSW,2251,AUSTRALIA
+838,4,2,113,2251,KINCUMBER SOUTH,Y,4,\N,default,2017-03-09 11:11:11,KINCUMBER SOUTH,NSW,2251,AUSTRALIA
+839,4,2,113,2251,MACMASTERS BEACH,Y,4,\N,default,2017-03-09 11:11:11,MACMASTERS BEACH,NSW,2251,AUSTRALIA
+840,4,2,113,2251,PICKETTS VALLEY,Y,4,\N,default,2017-03-09 11:11:11,PICKETTS VALLEY,NSW,2251,AUSTRALIA
+841,4,2,113,2251,SARATOGA,Y,4,\N,default,2017-03-09 11:11:11,SARATOGA,NSW,2251,AUSTRALIA
+842,4,2,113,2251,YATTALUNGA,Y,4,\N,default,2017-03-09 11:11:11,YATTALUNGA,NSW,2251,AUSTRALIA
+843,4,2,113,2256,BLACKWALL,Y,4,\N,default,2017-03-09 11:11:11,BLACKWALL,NSW,2256,AUSTRALIA
+844,4,2,113,2256,HORSFIELD BAY,Y,4,\N,default,2017-03-09 11:11:11,HORSFIELD BAY,NSW,2256,AUSTRALIA
+845,4,2,113,2256,KOOLEWONG,Y,4,\N,default,2017-03-09 11:11:11,KOOLEWONG,NSW,2256,AUSTRALIA
+846,4,2,113,2256,LITTLE WOBBY,Y,4,\N,default,2017-03-09 11:11:11,LITTLE WOBBY,NSW,2256,AUSTRALIA
+847,4,2,113,2256,PATONGA,Y,4,\N,default,2017-03-09 11:11:11,PATONGA,NSW,2256,AUSTRALIA
+848,4,2,113,2256,PEARL BEACH,Y,4,\N,default,2017-03-09 11:11:11,PEARL BEACH,NSW,2256,AUSTRALIA
+849,4,2,113,2256,PHEGANS BAY,Y,4,\N,default,2017-03-09 11:11:11,PHEGANS BAY,NSW,2256,AUSTRALIA
+850,4,2,113,2256,WONDABYNE,Y,4,\N,default,2017-03-09 11:11:11,WONDABYNE,NSW,2256,AUSTRALIA
+851,4,2,113,2256,WOY WOY,Y,4,\N,default,2017-03-09 11:11:11,WOY WOY,NSW,2256,AUSTRALIA
+852,4,2,113,2256,WOY WOY BAY,Y,4,\N,default,2017-03-09 11:11:11,WOY WOY BAY,NSW,2256,AUSTRALIA
+853,4,2,113,2257,BOOKER BAY,Y,4,\N,default,2017-03-09 11:11:11,BOOKER BAY,NSW,2257,AUSTRALIA
+854,4,2,113,2257,BOX HEAD,Y,4,\N,default,2017-03-09 11:11:11,BOX HEAD,NSW,2257,AUSTRALIA
+855,4,2,113,2257,DALEYS POINT,Y,4,\N,default,2017-03-09 11:11:11,DALEYS POINT,NSW,2257,AUSTRALIA
+856,4,2,113,2257,EMPIRE BAY,Y,4,\N,default,2017-03-09 11:11:11,EMPIRE BAY,NSW,2257,AUSTRALIA
+857,4,2,113,2257,ETTALONG BEACH,Y,4,\N,default,2017-03-09 11:11:11,ETTALONG BEACH,NSW,2257,AUSTRALIA
+858,4,2,113,2257,HARDYS BAY,Y,4,\N,default,2017-03-09 11:11:11,HARDYS BAY,NSW,2257,AUSTRALIA
+859,4,2,113,2257,KILLCARE,Y,4,\N,default,2017-03-09 11:11:11,KILLCARE,NSW,2257,AUSTRALIA
+860,4,2,113,2257,KILLCARE HEIGHTS,Y,4,\N,default,2017-03-09 11:11:11,KILLCARE HEIGHTS,NSW,2257,AUSTRALIA
+861,4,2,113,2257,PRETTY BEACH,Y,4,\N,default,2017-03-09 11:11:11,PRETTY BEACH,NSW,2257,AUSTRALIA
+862,4,2,113,2257,ST HUBERTS ISLAND,Y,4,\N,default,2017-03-09 11:11:11,ST HUBERTS ISLAND,NSW,2257,AUSTRALIA
+863,4,2,113,2257,UMINA BEACH,Y,4,\N,default,2017-03-09 11:11:11,UMINA BEACH,NSW,2257,AUSTRALIA
+864,4,2,113,2257,WAGSTAFFE,Y,4,\N,default,2017-03-09 11:11:11,WAGSTAFFE,NSW,2257,AUSTRALIA
+865,4,2,113,2258,FOUNTAINDALE,Y,4,\N,default,2017-03-09 11:11:11,FOUNTAINDALE,NSW,2258,AUSTRALIA
+866,4,2,113,2258,KANGY ANGY,Y,4,\N,default,2017-03-09 11:11:11,KANGY ANGY,NSW,2258,AUSTRALIA
+867,4,2,113,2258,OURIMBAH,Y,4,\N,default,2017-03-09 11:11:11,OURIMBAH,NSW,2258,AUSTRALIA
+868,4,2,113,2258,PALM GROVE,Y,4,\N,default,2017-03-09 11:11:11,PALM GROVE,NSW,2258,AUSTRALIA
+869,4,2,113,2258,PALMDALE,Y,4,\N,default,2017-03-09 11:11:11,PALMDALE,NSW,2258,AUSTRALIA
+870,4,2,113,2259,ALISON,Y,4,\N,default,2017-03-09 11:11:11,ALISON,NSW,2259,AUSTRALIA
+871,4,2,113,2259,BUSHELLS RIDGE,Y,4,\N,default,2017-03-09 11:11:11,BUSHELLS RIDGE,NSW,2259,AUSTRALIA
+872,4,2,113,2259,CEDAR BRUSH CREEK,Y,4,\N,default,2017-03-09 11:11:11,CEDAR BRUSH CREEK,NSW,2259,AUSTRALIA
+873,4,2,113,2259,CHAIN VALLEY BAY,Y,4,\N,default,2017-03-09 11:11:11,CHAIN VALLEY BAY,NSW,2259,AUSTRALIA
+874,4,2,113,2259,CRANGAN BAY,Y,4,\N,default,2017-03-09 11:11:11,CRANGAN BAY,NSW,2259,AUSTRALIA
+875,4,2,113,2259,DOORALONG,Y,4,\N,default,2017-03-09 11:11:11,DOORALONG,NSW,2259,AUSTRALIA
+876,4,2,113,2259,DURREN DURREN,Y,4,\N,default,2017-03-09 11:11:11,DURREN DURREN,NSW,2259,AUSTRALIA
+877,4,2,113,2259,FRAZER PARK,Y,4,\N,default,2017-03-09 11:11:11,FRAZER PARK,NSW,2259,AUSTRALIA
+878,4,2,113,2259,FREEMANS,Y,4,\N,default,2017-03-09 11:11:11,FREEMANS,NSW,2259,AUSTRALIA
+879,4,2,113,2259,GWANDALAN,Y,4,\N,default,2017-03-09 11:11:11,GWANDALAN,NSW,2259,AUSTRALIA
+880,4,2,113,2259,HALLORAN,Y,4,\N,default,2017-03-09 11:11:11,HALLORAN,NSW,2259,AUSTRALIA
+881,4,2,113,2259,HAMLYN TERRACE,Y,4,\N,default,2017-03-09 11:11:11,HAMLYN TERRACE,NSW,2259,AUSTRALIA
+882,4,2,113,2259,JILLIBY,Y,4,\N,default,2017-03-09 11:11:11,JILLIBY,NSW,2259,AUSTRALIA
+883,4,2,113,2259,KANWAL,Y,4,\N,default,2017-03-09 11:11:11,KANWAL,NSW,2259,AUSTRALIA
+884,4,2,113,2259,KIAR,Y,4,\N,default,2017-03-09 11:11:11,KIAR,NSW,2259,AUSTRALIA
+885,4,2,113,2259,KINGFISHER SHORES,Y,4,\N,default,2017-03-09 11:11:11,KINGFISHER SHORES,NSW,2259,AUSTRALIA
+886,4,2,113,2259,LAKE MUNMORAH,Y,4,\N,default,2017-03-09 11:11:11,LAKE MUNMORAH,NSW,2259,AUSTRALIA
+887,4,2,113,2259,LEMON TREE,Y,4,\N,default,2017-03-09 11:11:11,LEMON TREE,NSW,2259,AUSTRALIA
+888,4,2,113,2259,LITTLE JILLIBY,Y,4,\N,default,2017-03-09 11:11:11,LITTLE JILLIBY,NSW,2259,AUSTRALIA
+889,4,2,113,2259,MANNERING PARK,Y,4,\N,default,2017-03-09 11:11:11,MANNERING PARK,NSW,2259,AUSTRALIA
+890,4,2,113,2259,MARDI,Y,4,\N,default,2017-03-09 11:11:11,MARDI,NSW,2259,AUSTRALIA
+891,4,2,113,2259,MOONEE,Y,4,\N,default,2017-03-09 11:11:11,MOONEE,NSW,2259,AUSTRALIA
+892,4,2,113,2259,POINT WOLSTONCROFT,Y,4,\N,default,2017-03-09 11:11:11,POINT WOLSTONCROFT,NSW,2259,AUSTRALIA
+893,4,2,113,2259,RAVENSDALE,Y,4,\N,default,2017-03-09 11:11:11,RAVENSDALE,NSW,2259,AUSTRALIA
+894,4,2,113,2259,ROCKY POINT,Y,4,\N,default,2017-03-09 11:11:11,ROCKY POINT,NSW,2259,AUSTRALIA
+895,4,2,113,2259,SUMMERLAND POINT,Y,4,\N,default,2017-03-09 11:11:11,SUMMERLAND POINT,NSW,2259,AUSTRALIA
+896,4,2,113,2259,TACOMA,Y,4,\N,default,2017-03-09 11:11:11,TACOMA,NSW,2259,AUSTRALIA
+897,4,2,113,2259,TACOMA SOUTH,Y,4,\N,default,2017-03-09 11:11:11,TACOMA SOUTH,NSW,2259,AUSTRALIA
+898,4,2,113,2259,TUGGERAH,Y,4,\N,default,2017-03-09 11:11:11,TUGGERAH,NSW,2259,AUSTRALIA
+899,4,2,113,2259,TUGGERAWONG,Y,4,\N,default,2017-03-09 11:11:11,TUGGERAWONG,NSW,2259,AUSTRALIA
+900,4,2,113,2259,WADALBA,Y,4,\N,default,2017-03-09 11:11:11,WADALBA,NSW,2259,AUSTRALIA
+901,4,2,113,2259,WALLARAH,Y,4,\N,default,2017-03-09 11:11:11,WALLARAH,NSW,2259,AUSTRALIA
+902,4,2,113,2259,WARNERVALE,Y,4,\N,default,2017-03-09 11:11:11,WARNERVALE,NSW,2259,AUSTRALIA
+903,4,2,113,2259,WATANOBBI,Y,4,\N,default,2017-03-09 11:11:11,WATANOBBI,NSW,2259,AUSTRALIA
+904,4,2,113,2259,WOONGARRAH,Y,4,\N,default,2017-03-09 11:11:11,WOONGARRAH,NSW,2259,AUSTRALIA
+905,4,2,113,2259,WYBUNG,Y,4,\N,default,2017-03-09 11:11:11,WYBUNG,NSW,2259,AUSTRALIA
+906,4,2,113,2259,WYEE,Y,4,\N,default,2017-03-09 11:11:11,WYEE,NSW,2259,AUSTRALIA
+907,4,2,113,2259,WYEE POINT,Y,4,\N,default,2017-03-09 11:11:11,WYEE POINT,NSW,2259,AUSTRALIA
+908,4,2,113,2259,WYONG,Y,4,\N,default,2017-03-09 11:11:11,WYONG,NSW,2259,AUSTRALIA
+909,4,2,113,2259,WYONG CREEK,Y,4,\N,default,2017-03-09 11:11:11,WYONG CREEK,NSW,2259,AUSTRALIA
+910,4,2,113,2259,WYONGAH,Y,4,\N,default,2017-03-09 11:11:11,WYONGAH,NSW,2259,AUSTRALIA
+911,4,2,113,2259,YARRAMALONG,Y,4,\N,default,2017-03-09 11:11:11,YARRAMALONG,NSW,2259,AUSTRALIA
+912,4,2,113,2260,ERINA HEIGHTS,Y,4,\N,default,2017-03-09 11:11:11,ERINA HEIGHTS,NSW,2260,AUSTRALIA
+913,4,2,113,2260,FORRESTERS BEACH,Y,4,\N,default,2017-03-09 11:11:11,FORRESTERS BEACH,NSW,2260,AUSTRALIA
+914,4,2,113,2260,NORTH AVOCA,Y,4,\N,default,2017-03-09 11:11:11,NORTH AVOCA,NSW,2260,AUSTRALIA
+915,4,2,113,2260,TERRIGAL,Y,4,\N,default,2017-03-09 11:11:11,TERRIGAL,NSW,2260,AUSTRALIA
+916,4,2,113,2260,WAMBERAL,Y,4,\N,default,2017-03-09 11:11:11,WAMBERAL,NSW,2260,AUSTRALIA
+917,4,2,113,2261,BATEAU BAY,Y,4,\N,default,2017-03-09 11:11:11,BATEAU BAY,NSW,2261,AUSTRALIA
+918,4,2,113,2261,BAY VILLAGE,Y,4,\N,default,2017-03-09 11:11:11,BAY VILLAGE,NSW,2261,AUSTRALIA
+919,4,2,113,2261,BERKELEY VALE,Y,4,\N,default,2017-03-09 11:11:11,BERKELEY VALE,NSW,2261,AUSTRALIA
+920,4,2,113,2261,BLUE BAY,Y,4,\N,default,2017-03-09 11:11:11,BLUE BAY,NSW,2261,AUSTRALIA
+921,4,2,113,2261,CHITTAWAY BAY,Y,4,\N,default,2017-03-09 11:11:11,CHITTAWAY BAY,NSW,2261,AUSTRALIA
+922,4,2,113,2261,CHITTAWAY POINT,Y,4,\N,default,2017-03-09 11:11:11,CHITTAWAY POINT,NSW,2261,AUSTRALIA
+923,4,2,113,2261,GLENNING VALLEY,Y,4,\N,default,2017-03-09 11:11:11,GLENNING VALLEY,NSW,2261,AUSTRALIA
+924,4,2,113,2261,KILLARNEY VALE,Y,4,\N,default,2017-03-09 11:11:11,KILLARNEY VALE,NSW,2261,AUSTRALIA
+925,4,2,113,2261,LONG JETTY,Y,4,\N,default,2017-03-09 11:11:11,LONG JETTY,NSW,2261,AUSTRALIA
+926,4,2,113,2261,MAGENTA,Y,4,\N,default,2017-03-09 11:11:11,MAGENTA,NSW,2261,AUSTRALIA
+927,4,2,113,2261,SHELLY BEACH,Y,4,\N,default,2017-03-09 11:11:11,SHELLY BEACH,NSW,2261,AUSTRALIA
+928,4,2,113,2261,THE ENTRANCE,Y,4,\N,default,2017-03-09 11:11:11,THE ENTRANCE,NSW,2261,AUSTRALIA
+929,4,2,113,2261,THE ENTRANCE NORTH,Y,4,\N,default,2017-03-09 11:11:11,THE ENTRANCE NORTH,NSW,2261,AUSTRALIA
+930,4,2,113,2261,TOOWOON BAY,Y,4,\N,default,2017-03-09 11:11:11,TOOWOON BAY,NSW,2261,AUSTRALIA
+931,4,2,113,2261,TUMBI UMBI,Y,4,\N,default,2017-03-09 11:11:11,TUMBI UMBI,NSW,2261,AUSTRALIA
+932,4,2,113,2262,BLUE HAVEN,Y,4,\N,default,2017-03-09 11:11:11,BLUE HAVEN,NSW,2262,AUSTRALIA
+933,4,2,113,2262,BUDGEWOI,Y,4,\N,default,2017-03-09 11:11:11,BUDGEWOI,NSW,2262,AUSTRALIA
+934,4,2,113,2262,BUDGEWOI PENINSULA,Y,4,\N,default,2017-03-09 11:11:11,BUDGEWOI PENINSULA,NSW,2262,AUSTRALIA
+935,4,2,113,2262,BUFF POINT,Y,4,\N,default,2017-03-09 11:11:11,BUFF POINT,NSW,2262,AUSTRALIA
+936,4,2,113,2262,COLONGRA,Y,4,\N,default,2017-03-09 11:11:11,COLONGRA,NSW,2262,AUSTRALIA
+937,4,2,113,2262,DOYALSON,Y,4,\N,default,2017-03-09 11:11:11,DOYALSON,NSW,2262,AUSTRALIA
+938,4,2,113,2262,DOYALSON NORTH,Y,4,\N,default,2017-03-09 11:11:11,DOYALSON NORTH,NSW,2262,AUSTRALIA
+939,4,2,113,2262,HALEKULANI,Y,4,\N,default,2017-03-09 11:11:11,HALEKULANI,NSW,2262,AUSTRALIA
+940,4,2,113,2262,SAN REMO,Y,4,\N,default,2017-03-09 11:11:11,SAN REMO,NSW,2262,AUSTRALIA
+941,4,2,113,2263,CANTON BEACH,Y,4,\N,default,2017-03-09 11:11:11,CANTON BEACH,NSW,2263,AUSTRALIA
+942,4,2,113,2263,CHARMHAVEN,Y,4,\N,default,2017-03-09 11:11:11,CHARMHAVEN,NSW,2263,AUSTRALIA
+943,4,2,113,2263,GOROKAN,Y,4,\N,default,2017-03-09 11:11:11,GOROKAN,NSW,2263,AUSTRALIA
+944,4,2,113,2263,LAKE HAVEN,Y,4,\N,default,2017-03-09 11:11:11,LAKE HAVEN,NSW,2263,AUSTRALIA
+945,4,2,113,2263,NORAH HEAD,Y,4,\N,default,2017-03-09 11:11:11,NORAH HEAD,NSW,2263,AUSTRALIA
+946,4,2,113,2263,NORAVILLE,Y,4,\N,default,2017-03-09 11:11:11,NORAVILLE,NSW,2263,AUSTRALIA
+947,4,2,113,2263,TOUKLEY,Y,4,\N,default,2017-03-09 11:11:11,TOUKLEY,NSW,2263,AUSTRALIA
+948,4,2,113,2264,BALCOLYN,Y,4,\N,default,2017-03-09 11:11:11,BALCOLYN,NSW,2264,AUSTRALIA
+949,4,2,113,2264,BONNELLS BAY,Y,4,\N,default,2017-03-09 11:11:11,BONNELLS BAY,NSW,2264,AUSTRALIA
+950,4,2,113,2264,BRIGHTWATERS,Y,4,\N,default,2017-03-09 11:11:11,BRIGHTWATERS,NSW,2264,AUSTRALIA
+951,4,2,113,2264,DORA CREEK,Y,4,\N,default,2017-03-09 11:11:11,DORA CREEK,NSW,2264,AUSTRALIA
+952,4,2,113,2264,ERARING,Y,4,\N,default,2017-03-09 11:11:11,ERARING,NSW,2264,AUSTRALIA
+953,4,2,113,2264,MANDALONG,Y,4,\N,default,2017-03-09 11:11:11,MANDALONG,NSW,2264,AUSTRALIA
+954,4,2,113,2264,MIRRABOOKA,Y,4,\N,default,2017-03-09 11:11:11,MIRRABOOKA,NSW,2264,AUSTRALIA
+955,4,2,113,2264,MORISSET,Y,4,\N,default,2017-03-09 11:11:11,MORISSET,NSW,2264,AUSTRALIA
+956,4,2,113,2264,MORISSET PARK,Y,4,\N,default,2017-03-09 11:11:11,MORISSET PARK,NSW,2264,AUSTRALIA
+957,4,2,113,2264,MYUNA BAY,Y,4,\N,default,2017-03-09 11:11:11,MYUNA BAY,NSW,2264,AUSTRALIA
+958,4,2,113,2264,SILVERWATER,Y,4,\N,default,2017-03-09 11:11:11,SILVERWATER,NSW,2264,AUSTRALIA
+959,4,2,113,2264,SUNSHINE,Y,4,\N,default,2017-03-09 11:11:11,SUNSHINE,NSW,2264,AUSTRALIA
+960,4,2,113,2264,WINDERMERE PARK,Y,4,\N,default,2017-03-09 11:11:11,WINDERMERE PARK,NSW,2264,AUSTRALIA
+961,4,2,113,2264,YARRAWONGA PARK,Y,4,\N,default,2017-03-09 11:11:11,YARRAWONGA PARK,NSW,2264,AUSTRALIA
+962,4,2,113,2265,COORANBONG,Y,4,\N,default,2017-03-09 11:11:11,COORANBONG,NSW,2265,AUSTRALIA
+963,4,2,113,2265,MARTINSVILLE,Y,4,\N,default,2017-03-09 11:11:11,MARTINSVILLE,NSW,2265,AUSTRALIA
+964,4,2,113,2267,WANGI WANGI,Y,4,\N,default,2017-03-09 11:11:11,WANGI WANGI,NSW,2267,AUSTRALIA
+965,4,2,113,2278,BARNSLEY,Y,4,\N,default,2017-03-09 11:11:11,BARNSLEY,NSW,2278,AUSTRALIA
+966,4,2,113,2278,KILLINGWORTH,Y,4,\N,default,2017-03-09 11:11:11,KILLINGWORTH,NSW,2278,AUSTRALIA
+967,4,2,113,2278,WAKEFIELD,Y,4,\N,default,2017-03-09 11:11:11,WAKEFIELD,NSW,2278,AUSTRALIA
+968,4,2,113,2280,BELMONT,Y,4,\N,default,2017-03-09 11:11:11,BELMONT,NSW,2280,AUSTRALIA
+969,4,2,113,2280,BELMONT NORTH,Y,4,\N,default,2017-03-09 11:11:11,BELMONT NORTH,NSW,2280,AUSTRALIA
+970,4,2,113,2280,BELMONT SOUTH,Y,4,\N,default,2017-03-09 11:11:11,BELMONT SOUTH,NSW,2280,AUSTRALIA
+971,4,2,113,2280,CROUDACE BAY,Y,4,\N,default,2017-03-09 11:11:11,CROUDACE BAY,NSW,2280,AUSTRALIA
+972,4,2,113,2280,FLORAVILLE,Y,4,\N,default,2017-03-09 11:11:11,FLORAVILLE,NSW,2280,AUSTRALIA
+973,4,2,113,2280,JEWELLS,Y,4,\N,default,2017-03-09 11:11:11,JEWELLS,NSW,2280,AUSTRALIA
+974,4,2,113,2280,MARKS POINT,Y,4,\N,default,2017-03-09 11:11:11,MARKS POINT,NSW,2280,AUSTRALIA
+975,4,2,113,2280,VALENTINE,Y,4,\N,default,2017-03-09 11:11:11,VALENTINE,NSW,2280,AUSTRALIA
+976,4,2,113,2281,BLACKSMITHS,Y,4,\N,default,2017-03-09 11:11:11,BLACKSMITHS,NSW,2281,AUSTRALIA
+977,4,2,113,2281,CAMS WHARF,Y,4,\N,default,2017-03-09 11:11:11,CAMS WHARF,NSW,2281,AUSTRALIA
+978,4,2,113,2281,CATHERINE HILL BAY,Y,4,\N,default,2017-03-09 11:11:11,CATHERINE HILL BAY,NSW,2281,AUSTRALIA
+979,4,2,113,2281,CAVES BEACH,Y,4,\N,default,2017-03-09 11:11:11,CAVES BEACH,NSW,2281,AUSTRALIA
+980,4,2,113,2281,LITTLE PELICAN,Y,4,\N,default,2017-03-09 11:11:11,LITTLE PELICAN,NSW,2281,AUSTRALIA
+981,4,2,113,2281,MURRAYS BEACH,Y,4,\N,default,2017-03-09 11:11:11,MURRAYS BEACH,NSW,2281,AUSTRALIA
+982,4,2,113,2281,NORDS WHARF,Y,4,\N,default,2017-03-09 11:11:11,NORDS WHARF,NSW,2281,AUSTRALIA
+983,4,2,113,2281,PELICAN,Y,4,\N,default,2017-03-09 11:11:11,PELICAN,NSW,2281,AUSTRALIA
+984,4,2,113,2281,PINNY BEACH,Y,4,\N,default,2017-03-09 11:11:11,PINNY BEACH,NSW,2281,AUSTRALIA
+985,4,2,113,2281,SWANSEA,Y,4,\N,default,2017-03-09 11:11:11,SWANSEA,NSW,2281,AUSTRALIA
+986,4,2,113,2281,SWANSEA HEADS,Y,4,\N,default,2017-03-09 11:11:11,SWANSEA HEADS,NSW,2281,AUSTRALIA
+987,4,2,113,2282,ELEEBANA,Y,4,\N,default,2017-03-09 11:11:11,ELEEBANA,NSW,2282,AUSTRALIA
+988,4,2,113,2282,LAKELANDS,Y,4,\N,default,2017-03-09 11:11:11,LAKELANDS,NSW,2282,AUSTRALIA
+989,4,2,113,2282,WARNERS BAY,Y,4,\N,default,2017-03-09 11:11:11,WARNERS BAY,NSW,2282,AUSTRALIA
+990,4,2,113,2283,ARCADIA VALE,Y,4,\N,default,2017-03-09 11:11:11,ARCADIA VALE,NSW,2283,AUSTRALIA
+991,4,2,113,2283,AWABA,Y,4,\N,default,2017-03-09 11:11:11,AWABA,NSW,2283,AUSTRALIA
+992,4,2,113,2283,BALMORAL,Y,4,\N,default,2017-03-09 11:11:11,BALMORAL,NSW,2283,AUSTRALIA
+993,4,2,113,2283,BLACKALLS PARK,Y,4,\N,default,2017-03-09 11:11:11,BLACKALLS PARK,NSW,2283,AUSTRALIA
+994,4,2,113,2283,BOLTON POINT,Y,4,\N,default,2017-03-09 11:11:11,BOLTON POINT,NSW,2283,AUSTRALIA
+995,4,2,113,2283,BUTTABA,Y,4,\N,default,2017-03-09 11:11:11,BUTTABA,NSW,2283,AUSTRALIA
+996,4,2,113,2283,CAREY BAY,Y,4,\N,default,2017-03-09 11:11:11,CAREY BAY,NSW,2283,AUSTRALIA
+997,4,2,113,2283,COAL POINT,Y,4,\N,default,2017-03-09 11:11:11,COAL POINT,NSW,2283,AUSTRALIA
+998,4,2,113,2283,FASSIFERN,Y,4,\N,default,2017-03-09 11:11:11,FASSIFERN,NSW,2283,AUSTRALIA
+999,4,2,113,2283,FENNELL BAY,Y,4,\N,default,2017-03-09 11:11:11,FENNELL BAY,NSW,2283,AUSTRALIA
+1000,4,2,113,2283,FISHING POINT,Y,4,\N,default,2017-03-09 11:11:11,FISHING POINT,NSW,2283,AUSTRALIA

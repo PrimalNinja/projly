@@ -1,0 +1,9 @@
+﻿// Projly v20260922 =============================================================================
+// Copyright (C) 2024 Projly Pty Ltd. Released under the MIT License.
+//
+// ==============================================================================================
+// AWAF v20260922 ===============================================================================
+// Copyright (C) 2012-2024 Mitsukibo Pty Ltd, Julian Cassin & Francis Weston. Released under the MIT License.
+
+/*jsl:ignore*/
+function getNavMapPublic(a){return[{location:"root",title:"Menu",layout:[[]]}]};

@@ -1,0 +1,12 @@
+﻿// Projly v20260922 =============================================================================
+// Copyright (C) 2024 Projly Pty Ltd. Released under the MIT License.
+//
+// ==============================================================================================
+// AWAF v20260922 ===============================================================================
+// Copyright (C) 2012-2024 Mitsukibo Pty Ltd, Julian Cassin & Francis Weston. Released under the MIT License.
+
+/*jsl:ignore*/
+function widgetspeech_wgtSpeech(t,u,y){function v(){c=new webkitSpeechRecognition;c.continuous=!0;c.interimResults=!1;c.onstart=function(){};c.onerror=function(b){h("Speech System Error");"no-speech"==b.error&&(q=!0);"audio-capture"==b.error&&(q=!0);"not-allowed"==b.error&&(q=!0);e.processSpeech(b.error)};c.onend=function(){q||g&&e.broadcast(d,"speech","speech dictate off")};c.onresult=function(b){var a="";if("undefined"==typeof b.results)c.onend=null,c.stop(),e.broadcast(d,"speech","speech system off");
+else{for(var f=b.resultIndex;f<b.results.length;++f)b.results[f][0].confidence>=w&&(a=b.results[f][0].transcript);e.processSpeech(a,l)?doNothing():l&&(g+=a)}};e.registerSpeech(m,"Google")}function x(){n=window.speechSynthesis;0===n.getVoices().length?n.addEventListener("voiceschanged",function(){s()}):s()}function s(){var b=!1;p=n.getVoices();for(var a=0;a<p.length;a++)if("en-AU"===p[a].lang){r=p[a];b=!0;break}b||(r=p[0])}function h(b){var a=new SpeechSynthesisUtterance;a.rate=1;a.pitch=0.5;a.text=
+b;a.voice=r;a.onend=function(){doNothing()};n.speak(a)}var e=t,m=this,d=u,g="",q=!1,l=!1,c=null,n=null,p=[],r="",w=0.7;this.Form_allowMultipleInstances=function(){return!1};this.Form_onBroadcast=function(b,a){if("speech"===b)if("speech system on"===a)c.start(),l=!1,g="";else if("speech system off"===a)c.stop();else if("speech dictate on"===a)h("Speech Dictate On"),g="",l=!0;else if("speech dictate off"===a)l=!1,h("You said quote"),h(g),h("end quote."),e.copyToClipboard(g),g="";else if("what is the time now"===
+a){var f=new Date,d=f.getHours(),f=f.getMinutes(),k;k="";12<=d?(d-=12,k="pm"):k="am";k="The time is "+d+" "+(10>f?"oh "+f:f)+" "+k+".";0<k.length&&h(k)}"speak"===b&&h(a)};this.Form_onPermissionCheck=function(){return!0};this.Form_onLoad=function(){e.unbindEvents(d,"gb-form");e.bindEvent(m,d,".gb-form","Form","onClick");e.bindEvent(m,d,".gb-form","Form","onDblClick");e.bindEvent(m,d,".gb-form","Form","onMouseEnter");e.bindEvent(m,d,".gb-form","Form","onMouseLeave");x();v();c.lang="en-AU"}};

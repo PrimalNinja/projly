@@ -1,0 +1,13 @@
+{
+    "permissions": [
+		"VW_WORKQUEUEITEMTYPE",
+
+		"VW_WORKQUEUESTATUS",
+
+		"ADD_WORKQUEUE",
+		"EDT_WORKQUEUE",
+		"DEL_WORKQUEUE",
+		"VW_WORKQUEUE",
+		"LIST_WORKQUEUE"
+    ]
+}

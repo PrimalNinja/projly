@@ -1,0 +1,13 @@
+﻿// Projly v20260922 =============================================================================
+// Copyright (C) 2024 Projly Pty Ltd. Released under the MIT License.
+//
+// ==============================================================================================
+// AWAF v20260922 ===============================================================================
+// Copyright (C) 2012-2024 Mitsukibo Pty Ltd, Julian Cassin & Francis Weston. Released under the MIT License.
+
+/*jsl:ignore*/
+function core_frmImageViewer(a,b,g){var c=this,e="",h="",f=0,k,m=[{location:"root",title:"Home",layout:[["CloseButton","SelectButton"]]}],n=[{id:"-",caption:"",classes:"",permissions:[],action:"",tip:"",type:"blank"},{id:"CloseButton",caption:"Close",classes:"btn-success",permissions:[],action:function(){c.FormClose_onClick()},tip:"Click here to close the form",type:"toolbarbutton"}];this.Form_allowMultipleInstances=function(){return!0};this.Form_onBroadcast=function(d,c,e){"hash"===d&&"change"===
+c&&a.closeForm(b)};this.Form_canClose=function(){return!0};this.Form_onClick=function(){a.setFormFocus(c,b)};this.Form_onFocus=function(){doNothing()};this.Form_onDblClick=function(){a.formToFront(b)};this.Form_onLoad=function(){var d=a.getViewPort().width,l=a.getViewPort().height;a.resizeAndRepositionForm(b,0.1*l,0.1*d,0.8*l,0.8*d);k=new jDock(a,{alwaysvisiblebuttoncount:2,map:m,tiles:n});k.render(b,".ge-button-panel");a.unbindEvents(b,"gb-form-close,gb-form,gb-formtitle-inner-panel,ge-content-panel");
+a.bindEvent(c,b,".gb-form-close","FormClose","onClick");a.bindEvent(c,b,".gb-form","Form","onClick");a.bindEvent(c,b,".gb-form","Form","onDblClick");a.bindEvent(c,b,".gb-formtitle-inner-panel","FormTitle","onClick");a.bindEvent(c,b,".ge-content-panel","ContentPanel","onScroll");a.element(b,".ge-renderer-content").css("width","100%");e=g.title;void 0===e&&(e="");h=g.imageid;a.element(b,".ge-form-title").html(htmlEncode(e));d='<img class="ge-image" src="fetch.php?token='+encodeURIComponent(SECURITY_TOKEN)+
+"&image="+htmlEncode(h)+'" />';a.element(b,".ge-renderer-content").html(d);a.unbindEvents(b,"ge-image");a.bindEvent(c,b,".ge-image","Image","onLoad")};this.Form_onPermissionCheck=function(){return!0};this.FormTitle_onClick=function(){a.formToFront(b)};this.Form_onResize=function(d,c){f=a.getFormCanvasHeight(b)-110;a.element(b,".ge-content-panel").height(f+"px");a.element(b,".ge-renderer-content").height(f+"px")};this.FormClose_onClick=function(){a.closeForm(b)};this.Image_onLoad=function(a){var b=
+a.width/a.height;$(a).css("width","");$(a).css("height","");1<b?$(a).css("width","100%"):$(a).css("height","100%")}};

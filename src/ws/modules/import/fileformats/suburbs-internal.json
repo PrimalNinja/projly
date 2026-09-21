@@ -1,0 +1,11 @@
+{
+	"description": "Internal Suburb File",
+	"formattype": "CSV",
+	"headerrows": 0,
+	"fields": [
+		{ "position": 1, "fieldname": "suburb", "datatype": "S" },
+		{ "position": 2, "fieldname": "state", "datatype": "S" },
+		{ "position": 3, "fieldname": "postcode", "datatype": "S" },
+		{ "position": 4, "fieldname": "country", "datatype": "S" }
+	]
+}

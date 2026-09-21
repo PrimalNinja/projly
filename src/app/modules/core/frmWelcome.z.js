@@ -1,0 +1,12 @@
+﻿// Projly v20260922 =============================================================================
+// Copyright (C) 2024 Projly Pty Ltd. Released under the MIT License.
+//
+// ==============================================================================================
+// AWAF v20260922 ===============================================================================
+// Copyright (C) 2012-2024 Mitsukibo Pty Ltd, Julian Cassin & Francis Weston. Released under the MIT License.
+
+/*jsl:ignore*/
+function core_frmWelcome(h,k,l){function d(){a.unbindEvents(b,"ge-tab-start,ge-tab-end");a.bindEvent(c,b,".ge-tab-start","TabStart","onFocus");a.bindEvent(c,b,".ge-tab-end","TabEnd","onFocus");a.setTabOrder(b,"ge-tab-start,ge-tab-end")}var a=h,c=this,b=k,f="TRUE"==TESTSCROLL&&!a.hasCapability("regionscroll")&&a.hasCapability("mobile");f&&(a.element(b,".ge-content-panel").removeClass("gb-scrollable-panel"),a.element(b,".ge-thecontent").removeClass("gb-scrollable-content"),a.element(b,".gb-form").removeClass("gb-resizable"),
+a.element(b).css({position:"relative",height:"auto"}));this.Form_allowMultipleInstances=function(){return!1};this.Form_canClose=function(){return a.isMDI()};this.Form_onBroadcast=function(a,b){("orientation"===a||"viewport"===a)&&"change"===b&&c.Form_onResize()};this.Form_onClick=function(){a.setFormFocus(c,b)};this.Form_onDblClick=function(){a.formToFront(b)};this.Form_onFocus=function(){d();c.Form_onResize()};this.Form_onLoad=function(){if(a.isMDI()){var g=a.getViewPort().width,e=a.getViewPort().height;
+a.resizeAndRepositionForm(b,0.1*e,0.1*g,0.8*e,0.8*g);a.formToFront(b,!1)}a.unbindEvents(b,"gb-form");a.unbindEvents(b,"gb-form-close");a.bindEvent(c,b,".gb-form","Form","onClick");a.bindEvent(c,b,".gb-form-close","FormClose","onClick");a.bindEvent(c,b,".gb-form","Form","onDblClick");a.registerServerEvent("dashboard",b);a.enableServerEventQueue("dasboard");a.ajaxCall(URL_WEBSERVICE,a.ajaxRequestCreate("esb_registerbroadcaster",[{name:"eventqueue",value:"dashboard"}]),doNothing,doNothing);a.ajaxCall(URL_WEBSERVICE,
+a.ajaxRequestCreate("esb_registerlistener",[{name:"eventqueue",value:"dashboard"}]),doNothing,doNothing);d()};this.Form_onPermissionCheck=function(){return!0};this.Form_onResize=function(c,e){var d=a.getFormCanvasHeight(b)-20;f?doNothing():(a.element(b,".ge-content-panel").height(d+"px"),a.element(b,".ge-thecontent").height("100%"))};this.FormClose_onClick=function(){a.closeForm(b)};this.TabEnd_onFocus=function(){};this.TabStart_onFocus=function(){}};

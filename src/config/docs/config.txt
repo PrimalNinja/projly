@@ -1,0 +1,97 @@
+AWAF Install Script Documentation
+
+Provides a set of options which when invoked can process a series of task sets.  Task sets can be defined and are a group of tasks.
+
+System Set Variables:
+
+	%SYS_DBSYSTEMMAIN_DATABASENAME%
+	%SYS_DBSYSTEMMAIN_HOSTNAME%
+	%SYS_DBSYSTEMMAIN_LOGIN%
+	%SYS_DBSYSTEMMAIN_PASSWORD%
+
+	%SYS_DBSYSTEMHISTORY_DATABASENAME%
+	%SYS_DBSYSTEMHISTORY_HOSTNAME%
+	%SYS_DBSYSTEMHISTORY_LOGIN%
+	%SYS_DBSYSTEMHISTORY_PASSWORD%
+
+	%SYS_DBSYSTEMTEMP_DATABASENAME%
+	%SYS_DBSYSTEMTEMP_HOSTNAME%
+	%SYS_DBSYSTEMTEMP_LOGIN%
+	%SYS_DBSYSTEMTEMP_PASSWORD%
+
+	%SYS_YYYYMMDDHHNNSS%
+	%SYS_FILESELECTED%
+	%SYS_TODAY%
+	%SYS_PATH_CONFIG%
+
+Option Set flags:
+
+	/advanced
+	/developer
+	/installed
+
+Option flags:
+
+	/automate
+	/installed
+
+Currently supported tasks:
+
+	archiveFolder folder archive exclude /recurse
+	copyFile source destination /replace
+	copyFolder source destination /recurse
+	createDatabase database script
+	createFolder folder /recurse
+	createMetaData source destination update description filename
+	deleteDatabase database
+	deleteFile file
+	deleteFolder folder /recurse
+	deleteFolderContent folder exclude /recurse
+	exportData database script /data /schema
+	importData database script
+	migrateData source destination script				limitation: both databases must be in the same server
+	set name value
+	setSchema name metadata
+	nextTaskSet checkfile
+	stop
+	unarchive archive folder
+
+
+Processes:
+
+	Backing Up
+		Backup Database and Repository Only
+		Backup Database Only
+		Backup Repository Only
+		Backup Applicaiton Only
+		Complete Backup
+		
+	Simple Installation and Upgrades
+		Install Application and Database
+		Upgrade Application and Database
+		
+	Maintenance
+		Purge Server Temporary Files Only
+
+	Advanced - Restoring
+		Restore Backup of Application Only
+		Restore Backup of Database Only
+		Restore Backup of Repository Only
+
+	Advanced - Installation
+		Install Application Only
+		Install Database Only
+		Upgrade Database Only
+
+	Advanced - Deleting
+		Delete Application Only
+		Delete Database Only
+		Delete Repository Only
+		
+	Developer
+		Package Application and Database
+		Package Application Only
+		Package Database Only
+		Purge Repository Only
+		Purge Temporary Files Only
+

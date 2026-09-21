@@ -1,0 +1,13 @@
+﻿// Projly v20260922 =============================================================================
+// Copyright (C) 2024 Projly Pty Ltd. Released under the MIT License.
+//
+// ==============================================================================================
+// AWAF v20260922 ===============================================================================
+// Copyright (C) 2012-2024 Mitsukibo Pty Ltd, Julian Cassin & Francis Weston. Released under the MIT License.
+
+/*jsl:ignore*/
+function dash_frmProject(n,p,r){function q(c){d=c;e++;f===e&&(g=new dash_wgtChart(a,b,{chart:d.issues_lackofthroughput_past_year}),h=new dash_wgtChart(a,b,{chart:d.issues_lackofthroughput_per_project_past_year}),k=new dash_wgtChart(a,b,{chart:d.issues_unresolved_by_project}),l=new dash_wgtChart(a,b,{chart:d.issues_unresolved_per_project}),g.render(".ge-cell-1-1"),h.render(".ge-cell-1-2"),k.render(".ge-cell-2-1"),l.render(".ge-cell-2-2"),a.registerServerEvent("dashboard",b),a.enableServerEventQueue("dasboard"),
+a.ajaxCall(URL_WEBSERVICE,a.ajaxRequestCreate("esb_registerbroadcaster",[{name:"eventqueue",value:"dashboard"}]),doNothing,doNothing),a.ajaxCall(URL_WEBSERVICE,a.ajaxRequestCreate("esb_registerlistener",[{name:"eventqueue",value:"dashboard"}]),doNothing,doNothing),a.element(b,".ge-form-title").text("Project Dashboard"))}function m(){a.unbindEvents(b,"ge-tab-start,ge-tab-end");a.bindEvent(c,b,".ge-tab-start","TabStart","onFocus");a.bindEvent(c,b,".ge-tab-end","TabEnd","onFocus");a.setTabOrder(b,"ge-tab-start,ge-tab-end")}
+var a=n,c=this,b=p,f=0,e=0,d=[],g,h,k,l;this.Form_allowMultipleInstances=function(){return!1};this.Form_canClose=function(){return!0};this.Form_onBroadcast=function(a,b){("orientation"===a||"viewport"===a)&&"change"===b&&c.Form_onResize()};this.Form_onClick=function(){a.setFormFocus(c,b)};this.Form_onDblClick=function(){a.formToFront(b)};this.Form_onFocus=function(){m();c.Form_onResize()};this.Form_onLoad=function(){a.unbindEvents(b,"gb-form");a.unbindEvents(b,"gb-form-close");a.bindEvent(c,b,".gb-form",
+"Form","onClick");a.bindEvent(c,b,".gb-form-close","FormClose","onClick");a.bindEvent(c,b,".gb-form","Form","onDblClick");f=1;e=0;var d=a.ajaxRequestCreate("projly_fetchcharts",[]);a.ajaxCall(URL_WEBSERVICE,d,q,a.ajaxError,doNothing,!0);m()};this.Form_onPermissionCheck=function(){return!0};this.Form_onResize=function(c,d){var e=a.getFormCanvasHeight(b)-20;a.element(b,".ge-content-panel").height(e+"px");a.element(b,".ge-thecontent").height("1000px")};this.FormClose_onClick=function(){a.closeForm(b)};
+this.TabEnd_onFocus=function(){};this.TabStart_onFocus=function(){}};

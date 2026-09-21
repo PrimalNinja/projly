@@ -1,0 +1,8 @@
+ECHO ON
+
+ECHO %1 
+
+ECHO OFF
+
+del %1
+

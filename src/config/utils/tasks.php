@@ -1,0 +1,696 @@
+<?php
+
+	function processTask($objTask_a)
+	{
+		$blnResult = false;
+		
+		$arrFunctions = array(
+			"alert" => "taskAlert",
+			"archiveFolder" => "taskArchiveFolder",
+			"configureApplication" => "taskConfigureApplication",
+			"copyFile" => "taskCopyFile",
+			"copyFolder" => "taskCopyFolder",
+			"createDatabase" => "taskCreateDatabase",
+			"createFolder" => "taskCreateFolder",
+			"createMetaData" => "taskCreateMetaData",
+			"deleteDatabase" => "taskDeleteDatabase",
+			"deleteFile" => "taskDeleteFile",
+			"deleteFolder" => "taskDeleteFolder",
+			"deleteFolderContent" => "taskDeleteFolderContent",
+			"executeSQL" => "taskExecuteSQL",
+			"exportData" => "taskExportData",
+			"exportTable" => "taskExportTable",
+			"getExportedFiles" => "taskGetExportedFiles",
+			"getSchemaElements" => "taskGetSchemaElements",
+			"importData" => "taskImportData",
+			"importFile" => "taskImportFile",
+			"importTable" => "taskImportTable",
+			"initialise" => "taskInitialise",
+			"installOption" => "taskInstallOption",
+			"migrateData" => "taskMigrateData",
+			"set" => "taskSet",
+			"setSchema" => "taskSetSchema",
+			"nextTaskSet" => "taskNextTaskSet",
+			"stop" => "taskStop",
+			"unarchive" => "taskUnarchive"
+		);
+
+		$strTask = $objTask_a['exec'];
+		if (array_key_exists($strTask, $arrFunctions))
+		{
+			$blnResult = call_user_func($arrFunctions[$strTask], $objTask_a);
+		}
+		else
+		{
+			die('invalid command');
+		}
+		
+		return $blnResult;
+	}
+	
+	function addDictionary($strKey_a, $strValue_a)
+	{
+		global $g_arrDictionary;
+		
+		if (array_key_exists($strKey_a, $g_arrDictionary))
+		{
+			$g_arrDictionary[$strKey_a] = $strValue_a;
+		}
+		else
+		{
+			$g_arrDictionary[] = array("key"=>$strKey_a, "value"=>$strValue_a);
+		}
+	}
+	
+	function addDefaultDictionary($strKey_a, $strValue_a)
+	{
+		global $g_arrDefaultDictionary;
+		
+		if (array_key_exists($strKey_a, $g_arrDefaultDictionary))
+		{
+			$g_arrDefaultDictionary[$strKey_a] = $strValue_a;
+		}
+		else
+		{
+			$g_arrDefaultDictionary[] = array("key"=>$strKey_a, "value"=>$strValue_a);
+		}
+	}
+	
+	function getFlag($arr_a, $strFlag_a)
+	{
+		$blnResult = false;
+
+		$arrFlags = array();
+		if (array_key_exists('flags', $arr_a)) { $arrFlags = $arr_a['flags']; }
+
+		foreach ($arrFlags as $strFlag)
+		{
+			if ($strFlag == $strFlag_a)
+			{
+				$blnResult = true;
+			}
+		}
+		
+		return $blnResult;
+	}
+
+	// reads the parameter with full dictionary substitution
+	function replaceDictionary($str_a)
+	{
+		global $g_arrDictionary;
+		
+		$strResult = $str_a;
+		
+		for ($intI = 0; $intI < count($g_arrDictionary); $intI++)
+		{
+			$strKey = $g_arrDictionary[$intI]['key'];
+			$strValue = $g_arrDictionary[$intI]['value'];
+			$strResult = str_replace($strKey, $strValue, $strResult);
+		}
+		
+		return $strResult;
+	}
+	
+	function taskAlert($objTask_a)
+	{
+		global $g_strAlert;
+		
+		$blnResult = true;
+
+		$strMessage = replaceDictionary(elementString($objTask_a, 'message', ''));
+		
+		if (strlen($g_strAlert) > 0)
+		{
+			$g_strAlert .= ", ";
+		}
+		
+		$g_strAlert .= $strMessage;
+		
+		return $blnResult;
+	}
+	
+	// eg: { "exec": "archiveFolder", "folder": "%PATH_APP%", "archive": "%PATH_TEMP%/application.zip", "flags": ["recurse"], "exclude": ["backup", "config", "repository", "temp"] }
+	// flags: recurse
+	function taskArchiveFolder($objTask_a)
+	{
+		$strFolder = replaceDictionary(elementString($objTask_a, 'folder', ''));
+		$strArchive = replaceDictionary(elementString($objTask_a, 'archive', ''));
+		$arrExclude = replaceDictionary(elementArray($objTask_a, 'exclude', array()));
+		$blnRecurse = getFlag($objTask_a, 'recurse');
+		
+		return zipFolder($strFolder, $strArchive, $arrExclude, $blnRecurse);
+	}
+	
+	function taskConfigureApplication($objTask_a)
+	{
+		$blnResult = false;
+
+		$strFolder = replaceDictionary(elementString($objTask_a, 'folder', ''));
+		$strFile = replaceDictionary(elementString($objTask_a, 'file', ''));
+		
+		$strConfiguration = "{\"code\":\"\",\"description\":\"\",\"files\":[]}";
+		if (file_exists($strFile))
+		{
+			$strConfiguration = loadFile($strFile);
+		}
+		$objConfiguration = json_decode($strConfiguration, true);
+		
+		return configureApplication($strFolder, $objConfiguration);
+	}
+	
+	// eg: { "exec": "copyFile", "source": "%PATH_TEMP%/application.zip", "destination": "%PATH_BACKUP%/%FILE_BACKUP%-application.zip", "flags": ["replace"] }
+	// flags: replace
+	function taskCopyFile($objTask_a)
+	{
+		$blnResult = false;
+		
+		$strSource = replaceDictionary(elementString($objTask_a, 'source', ''));
+		$strDestination = replaceDictionary(elementString($objTask_a, 'destination', ''));
+		$blnReplace = getFlag($objTask_a, 'replace');
+		
+		if ((is_file($strSource)) && ($blnReplace || !file_exists($strDestination)))
+		{
+			$blnResult = copyFile($strSource, $strDestination);
+		}
+		
+		return $blnResult;
+	}
+
+	// eg: { "exec": "copyFolder", "source": "%PATH_TEMP%/%APP_NAME%", "destination": "%PATH_APP%", "flags": ["recurse"] }
+	// flags: recurse, replace
+	function taskCopyFolder($objTask_a)
+	{
+		$blnResult = false;
+		
+		$strSource = replaceDictionary(elementString($objTask_a, 'source', ''));
+		$strDestination = replaceDictionary(elementString($objTask_a, 'destination', ''));
+		$blnRecurse = getFlag($objTask_a, 'recurse');
+		
+		if (is_dir($strSource) && is_dir($strDestination))
+		{
+			$blnResult = copyFolder($strSource, $strDestination, $blnRecurse);
+		}
+		
+		return $blnResult;
+    }
+
+	// eg: { "exec": "createDatabase", "database": { "hostname": "localhost", "dbname": "%NEW_DATABASE_APP%", "login": "%LOGIN%", "password": "%PASSWORD%" }, "script": "%PATH_TEMP%/blah/scripts/schema.sql" }
+	function taskCreateDatabase($objTask_a)
+	{
+		$blnResult = true;
+		
+		$strDatabaseHostname = replaceDictionary($objTask_a['database']['hostname']);
+		$strDatabaseDBName = replaceDictionary($objTask_a['database']['dbname']);
+		$strDatabaseLogin = replaceDictionary($objTask_a['database']['login']);
+		$strDatabasePassword = replaceDictionary($objTask_a['database']['password']);
+		$strScript = replaceDictionary(elementString($objTask_a, 'script', ''));
+		
+		$objConn = dbCreate($strDatabaseHostname, $strDatabaseLogin, $strDatabasePassword, $strDatabaseDBName);
+		if ($objConn == null)
+		{
+			$blnResult = false;
+		}
+		else
+		{
+			if (strlen($strScript) > 0)
+			{
+				if (file_exists($strScript))
+				{
+					$blnResult = dbExecuteScript($objConn, $strScript, '');
+				}
+			}
+			dbClose($objConn);
+		}
+		
+		return $blnResult;
+	}
+
+	// eg: { "exec": "createFolder", "folder": "%PATH_TEMP%/application" }
+	function taskCreateFolder($objTask_a)
+	{
+		$strFolder = replaceDictionary($objTask_a['folder']);
+		$blnRecurse = getFlag($objTask_a, 'recurse');
+		
+		return createFolder($strFolder, $blnRecurse);
+	}
+
+	// eg: { "exec": "createMetaData", "source": "%PATH_APP%/application.json", "destination": "%PATH_TEMP%/application.json", "filename": "%PATH_TEMP%/application.zip", "description": "Application Backup at %TODAY%." }
+	function taskCreateMetaData($objTask_a)
+	{
+		$strSource = replaceDictionary(elementString($objTask_a, 'source', ''));
+		$strDestination = replaceDictionary(elementString($objTask_a, 'destination', ''));
+		$strDescription = replaceDictionary(elementString($objTask_a, 'description', ''));
+		$strUpdate = replaceDictionary(elementString($objTask_a, 'update', ''));
+		$strFilename = replaceDictionary(elementString($objTask_a, 'filename', ''));
+
+		$strMetaData = "{\"update\":\"\",\"date\":\"\",\"version\":\"unknown\",\"dbversion\":\"unknown\",\"build\":\"\",\"description\":\"\",\"filename\":\"\",\"url\":\"\"}";
+		if (file_exists($strSource))
+		{
+			$strMetaData = loadFile($strSource);
+		}
+		$objMetaData = json_decode($strMetaData, true);
+		$objMetaData["update"] = $strUpdate;
+		$objMetaData["date"] = getToday();
+		$objMetaData["description"] = $strDescription;
+		$objMetaData["filename"] = $strFilename;
+		$strMetaData = json_encode($objMetaData);
+		saveFile($strDestination, $strMetaData);
+
+		return true;
+	}
+	
+	// eg: { "exec": "deleteDatabase", "database": { "hostname": "localhost", "dbname": "%CURRENT_DATABASE_APP%", "login": "%LOGIN%", "password": "%PASSWORD%" } }
+	function taskDeleteDatabase($objTask_a)
+	{
+		$strDatabaseHostname = replaceDictionary($objTask_a['database']['hostname']);
+		$strDatabaseDBName = replaceDictionary($objTask_a['database']['dbname']);
+		$strDatabaseLogin = replaceDictionary($objTask_a['database']['login']);
+		$strDatabasePassword = replaceDictionary($objTask_a['database']['password']);
+		
+		return dbDrop($strDatabaseHostname, $strDatabaseLogin, $strDatabasePassword, $strDatabaseDBName);
+	}
+
+	// eg: { "exec": "deleteFile", "file": "%PATH_APP%/database.json" }
+	function taskDeleteFile($objTask_a)
+	{
+		$strFile = replaceDictionary(elementString($objTask_a, 'file', ''));
+		
+		return deleteFile($strFile);
+	}
+
+	// eg: { "exec": "deleteFolder", "folder": "%PATH_APP%", "flags": ["recurse"] }
+	// flags: recurse
+	function taskDeleteFolder($objTask_a)
+	{
+		$strFolder = replaceDictionary(elementString($objTask_a, 'folder', ''));
+		$blnRecurse = getFlag($objTask_a, 'recurse');
+		
+		return deleteFolder($strFolder, $blnRecurse);
+	}
+
+	// eg: { "exec": "deleteFolderContent", "folder": "%PATH_APP%", "flags": ["recurse"], "exclude": ["backup", "config", "repository", "temp"] }
+	// flags: recurse
+	function taskDeleteFolderContent($objTask_a)
+	{
+		$strFolder = replaceDictionary(elementString($objTask_a, 'folder', ''));
+		$arrExclude = replaceDictionary(elementArray($objTask_a, 'exclude', array()));
+		$blnRecurse = getFlag($objTask_a, 'recurse');
+		
+		return deleteFolderContent($strFolder, $arrExclude, $blnRecurse);
+	}
+	
+	// eg: { "exec": "executeSQL", "database": { "hostname": "%DBHOSTNAME%", "dbname": "%DBDATABASENAME%", "login": "%DBLOGIN%", "password": "%DBPASSWORD%" }, "script": "%SYS_PATH_CONFIG%/sql/package.sql" }
+	function taskExecuteSQL($objTask_a)
+	{
+		$blnResult = true;
+		
+		$strDatabaseHostname = replaceDictionary($objTask_a['database']['hostname']);
+		$strDatabaseDBName = replaceDictionary($objTask_a['database']['dbname']);
+		$strDatabaseLogin = replaceDictionary($objTask_a['database']['login']);
+		$strDatabasePassword = replaceDictionary($objTask_a['database']['password']);
+		$strScript = replaceDictionary(elementString($objTask_a, 'script', ''));
+		
+		$objConn = dbOpen($strDatabaseHostname, $strDatabaseLogin, $strDatabasePassword, $strDatabaseDBName);
+		if ($objConn == null)
+		{
+			$blnResult = false;
+		}
+		else
+		{
+			if (strlen($strScript) > 0)
+			{
+				if (file_exists($strScript))
+				{
+					$blnResult = dbExecuteScript($objConn, $strScript, '');
+				}
+			}
+			dbClose($objConn);
+		}
+		
+		return $blnResult;
+	}
+
+	// eg: { "exec": "exportData", "database": { "hostname": "localhost", "dbname": "%CURRENT_DATABASE_APP%", "login": "%LOGIN%", "password": "%PASSWORD%", "chunksize": 1000 }, "target": "%PATH_TEMP%/database/schema.sql", "flags": ["schema"] }
+	// flags: data, schema
+	function taskExportData($objTask_a)
+	{
+		$strDatabaseHostname = replaceDictionary($objTask_a['database']['hostname']);
+		$strDatabaseDBName = replaceDictionary($objTask_a['database']['dbname']);
+		$strDatabaseLogin = replaceDictionary($objTask_a['database']['login']);
+		$strDatabasePassword = replaceDictionary($objTask_a['database']['password']);
+		$intChunk = intval($objTask_a['chunk'], 10);
+		$intChunkOf = intval($objTask_a['chunkof'], 10);
+		$intChunkSize = intval($objTask_a['chunksize'], 10);
+		$strTarget = replaceDictionary(elementString($objTask_a, 'target', ''));
+		$blnData = getFlag($objTask_a, 'data');
+		$blnSchema = getFlag($objTask_a, 'schema');
+		
+		return dbExport($strDatabaseHostname, $strDatabaseLogin, $strDatabasePassword, $strDatabaseDBName, $strTarget, $blnSchema, $blnData, $intChunk, $intChunkOf, $intChunkSize);
+	}
+	
+	function taskGetExportedFiles($objTask_a)
+	{
+		//$strDatabaseHostname = replaceDictionary($objTask_a['database']['hostname']);
+		//$strDatabaseDBName = replaceDictionary($objTask_a['database']['dbname']);
+		//$strDatabaseLogin = replaceDictionary($objTask_a['database']['login']);
+		//$strDatabasePassword = replaceDictionary($objTask_a['database']['password']);
+		$strSource = replaceDictionary($objTask_a['source']);		
+		$strType = replaceDictionary($objTask_a['type']);		
+		
+		return dbGetExportedFiles($strSource, $strType);
+	}
+
+	// eg: { "exec": "exportTable", "database": { "hostname": "localhost", "dbname": "%CURRENT_DATABASE_APP%", "login": "%LOGIN%", "password": "%PASSWORD%", "chunksize": 1000 }, "tablename": "%TABLENAME%", "target": "%PATH_TEMP%/database/schema.sql", "flags": ["schema"] }
+	// flags: data, schema
+	function taskExportTable($objTask_a)
+	{
+		$strDatabaseHostname = replaceDictionary($objTask_a['database']['hostname']);
+		$strDatabaseDBName = replaceDictionary($objTask_a['database']['dbname']);
+		$strDatabaseLogin = replaceDictionary($objTask_a['database']['login']);
+		$strDatabasePassword = replaceDictionary($objTask_a['database']['password']);
+		$intChunk = intval($objTask_a['chunk'], 10);
+		$intChunkOf = intval($objTask_a['chunkof'], 10);
+		$intChunkSize = intval($objTask_a['chunksize'], 10);
+		$strTableName = replaceDictionary(elementString($objTask_a, 'tablename', ''));
+		$strTarget = replaceDictionary(elementString($objTask_a, 'target', ''));
+		$blnData = getFlag($objTask_a, 'data');
+		$blnSchema = getFlag($objTask_a, 'schema');
+		
+		return dbExportTable($strDatabaseHostname, $strDatabaseLogin, $strDatabasePassword, $strDatabaseDBName, $strTableName, $strTarget, $blnSchema, $blnData, $intChunk, $intChunkOf, $intChunkSize);
+	}
+	
+	function taskGetSchemaElements($objTask_a)
+	{
+		$strDatabaseHostname = replaceDictionary($objTask_a['database']['hostname']);
+		$strDatabaseDBName = replaceDictionary($objTask_a['database']['dbname']);
+		$strDatabaseLogin = replaceDictionary($objTask_a['database']['login']);
+		$strDatabasePassword = replaceDictionary($objTask_a['database']['password']);
+		
+		return dbGetSchemaElements($strDatabaseHostname, $strDatabaseLogin, $strDatabasePassword, $strDatabaseDBName);
+	}
+
+	// eg: { "exec": "importData", "database": { "hostname": "localhost", "dbname": "%NEW_DATABASE_TEMP%", "login": "%LOGIN%", "password": "%PASSWORD%" }, "source": "%PATH_TEMP%/blah/scripts/schema_temp.sql" }
+	function taskImportData($objTask_a)
+	{
+		$strDatabaseHostname = replaceDictionary($objTask_a['database']['hostname']);
+		$strDatabaseDBName = replaceDictionary($objTask_a['database']['dbname']);
+		$strDatabaseLogin = replaceDictionary($objTask_a['database']['login']);
+		$strDatabasePassword = replaceDictionary($objTask_a['database']['password']);
+		$strSource = replaceDictionary($objTask_a['source']);
+
+		return dbImport($strDatabaseHostname, $strDatabaseLogin, $strDatabasePassword, $strDatabaseDBName, $strSource);
+	}
+	
+	// eg: { "exec": "importFile", "database": { "hostname": "localhost", "dbname": "%NEW_DATABASE_TEMP%", "login": "%LOGIN%", "password": "%PASSWORD%" }, "table": "datafile", "source": "%PATH_TEMP%/blah/datafile.dat" }
+	function taskImportFile($objTask_a)
+	{
+		$strDatabaseHostname = replaceDictionary($objTask_a['database']['hostname']);
+		$strDatabaseDBName = replaceDictionary($objTask_a['database']['dbname']);
+		$strDatabaseLogin = replaceDictionary($objTask_a['database']['login']);
+		$strDatabasePassword = replaceDictionary($objTask_a['database']['password']);
+		$strTableName = replaceDictionary(elementString($objTask_a, 'tablename', ''));
+		$strSource = replaceDictionary($objTask_a['source']);
+
+		return dbImportFile($strDatabaseHostname, $strDatabaseLogin, $strDatabasePassword, $strDatabaseDBName, $strTableName, $strSource);
+	}
+	
+	// eg: { "exec": "importTable", "database": { "hostname": "localhost", "dbname": "%NEW_DATABASE_TEMP%", "login": "%LOGIN%", "password": "%PASSWORD%" }, "tablename": "%TABLENAME%", "source": "%PATH_TEMP%/blah/scripts/schema_temp.sql" }
+	function taskImportTable($objTask_a)
+	{
+		$strDatabaseHostname = replaceDictionary($objTask_a['database']['hostname']);
+		$strDatabaseDBName = replaceDictionary($objTask_a['database']['dbname']);
+		$strDatabaseLogin = replaceDictionary($objTask_a['database']['login']);
+		$strDatabasePassword = replaceDictionary($objTask_a['database']['password']);
+		$strTableName = replaceDictionary(elementString($objTask_a, 'tablename', ''));
+		$strSource = replaceDictionary($objTask_a['source']);
+
+		return dbImportTable($strDatabaseHostname, $strDatabaseLogin, $strDatabasePassword, $strDatabaseDBName, $strTableName, $strSource);
+	}
+	
+	// clear the dictionary
+	function taskInitialise($objTask_a)
+	{
+		global $g_arrDefaultDictionary;
+		global $g_arrDictionary;
+		
+		$g_arrDictionary = array();
+		$g_arrDictionary = array_merge($g_arrDefaultDictionary, $g_arrDictionary);
+		deleteFile("dictionary.json");
+		saveFile("dictionary.json", json_encode($g_arrDictionary));
+	}
+
+	// install option
+	function taskInstallOption($objTask_a)
+	{		
+		require_once( "utils/entity.php" );
+		require_once( "utils/forms.php" );
+		require_once( "utils/reports.php" );
+
+		$blnResult = false;
+
+		$strTableNameConfig = getTableNameEntity("config", false);
+		$strTableNameConfigTask = getTableNameEntity("configtask", false);
+
+		$strDatabaseHostname = replaceDictionary($objTask_a['database']['hostname']);
+		$strDatabaseDBName = replaceDictionary($objTask_a['database']['dbname']);
+		$strDatabaseLogin = replaceDictionary($objTask_a['database']['login']);
+		$strDatabasePassword = replaceDictionary($objTask_a['database']['password']);
+
+		$objConn = dbOpen($strDatabaseHostname, $strDatabaseLogin, $strDatabasePassword, $strDatabaseDBName);
+
+		$strTaskCode = $objTask_a['code'];
+		$strConfigFile = replaceDictionary(elementString($objTask_a, 'file', ''));
+
+		$strConfigJSON = file_get_contents($strConfigFile);
+
+		$arrConfigJSON = json_decode($strConfigJSON, true);
+		
+		$arrTaskOptions = [];
+
+		foreach($arrConfigJSON['optionSets'] as $arrConfig)
+		{
+			$arrOptions = $arrConfig['options'];
+
+			foreach($arrOptions as $arrOption)
+			{
+				if($arrOption['code'] === $strTaskCode)
+				{
+					$arrTaskOptions[] = [
+						'code' => $arrOption['code'],
+						'description' => $arrOption['description'],
+						'taskSets' => $arrOption['taskSets']
+					];
+				}
+			}
+		}
+
+		if($objConn)
+		{
+			$strClientID = getSystemClientID($objConn); //$_SESSION['server_loggedin_clientid'];
+			$strLogin = ""; //$_SESSION['server_loggedin_user'];
+
+			$strEntityID = getEntityID($objConn, "systemform");
+
+			foreach($arrTaskOptions as $arrTaskOption)
+			{
+				$strCode = $arrTaskOption['code'];
+				$strDescription = $arrTaskOption['description'];
+				$arrJSONData = formTemplateGetFromDBByEntityCode($objConn, "CONFIG");			
+				
+				$arrJSONData = formValueUpdateBySectionCodeFieldCode($arrJSONData, 'gb018840e-bc4f-45fc-b8a6-2c6338ca1be1', "CODE", $strCode);
+				$arrJSONData = formValueUpdateBySectionCodeFieldCode($arrJSONData, 'gb018840e-bc4f-45fc-b8a6-2c6338ca1be1', "DESCRIPTION", $strDescription);
+				$arrJSONData = formValueUpdateBySectionCodeFieldCode($arrJSONData, 'gb018840e-bc4f-45fc-b8a6-2c6338ca1be1', "IS_PROCESSED", "N");
+				$arrJSONData = formValueUpdateBySectionCodeFieldCode($arrJSONData, 'gb018840e-bc4f-45fc-b8a6-2c6338ca1be1', "IS_READY", "N");
+				$arrJSONData = formValueUpdateBySectionCodeFieldCode($arrJSONData, 'gb018840e-bc4f-45fc-b8a6-2c6338ca1be1', "STARTTIME", "");
+				$arrJSONData = formValueUpdateBySectionCodeFieldCode($arrJSONData, 'gb018840e-bc4f-45fc-b8a6-2c6338ca1be1', "ENDTIME", "");
+				$arrJSONData = formValueUpdateBySectionCodeFieldCode($arrJSONData, 'gb018840e-bc4f-45fc-b8a6-2c6338ca1be1', "SORTORDER", "");
+				$strJSONData = json_encode($arrJSONData);
+
+				$strSQL = "insert into ~TABLENAMECONFIG~ (client_id, entity_id, dataentity_id, code, description, is_enabled, data_client_id, jsondata, modifyuser, modifydatetime) values(~CLIENTID~, ~ENTITYID~, ~DATAENTITYID~, '~CODE~', '~DESCRIPTION~', '~ISENABLED~', ~CLIENTID~, '~JSONDATA~', '~MODIFYUSER~', '~MODIFYDATETIME~')";
+				$strSQL = str_replace('~TABLENAMECONFIG~', ff($strTableNameConfig), $strSQL);
+				$strSQL = str_replace('~CLIENTID~', ff($strClientID), $strSQL);
+				$strSQL = str_replace('~CODE~', $strCode, $strSQL);
+				$strSQL = str_replace('~DESCRIPTION~', $strDescription, $strSQL);
+				$strSQL = str_replace('~ISENABLED~', 'Y', $strSQL);
+				$strSQL = str_replace('~ENTITYID~', ff($strEntityID), $strSQL);
+				$strSQL = str_replace('~DATAENTITYID~', ff(getEntityID($objConn, "config")), $strSQL);
+				$strSQL = str_replace('~JSONDATA~', ff($strJSONData), $strSQL);
+				$strSQL = str_replace('~MODIFYUSER~', ff($strLogin), $strSQL);
+				$strSQL = str_replace('~MODIFYDATETIME~', getDateTime(), $strSQL);
+				dbExecuteSQL($objConn, $strSQL, __FUNCTION__);
+				$strConfigID = dbLastInsertID($objConn);
+				
+				exposeEntityData($objConn, 'SYSTEMFORM', 'CONFIG', $strConfigID, $strJSONData);
+				
+				// to be use later below
+				$arrConfigJSONData = json_decode($strJSONData, true);
+
+				$arrConfigTaskSets = $arrConfigJSON['taskSets'];
+
+				foreach($arrTaskOption['taskSets'] as $strTaskSetCode)
+				{
+					if(isset($arrConfigTaskSets[$strTaskSetCode]))
+					{	
+						$arrTaskSet = $arrConfigTaskSets[$strTaskSetCode];
+						
+						$strCode = $strTaskSetCode;
+						$strDescription = $arrTaskSet['description'];
+						$arrTaskSetTasks = $arrTaskSet['tasks'];
+
+						foreach($arrTaskSetTasks as $arrTask)
+						{
+							$strCommand = $arrTask['exec'];
+							$strParameters = json_encode($arrTask, JSON_PRETTY_PRINT);
+
+							$arrJSONData = formTemplateGetFromDBByEntityCode($objConn, "CONFIGTASK");
+
+							$arrJSONData = formValueUpdateBySectionCodeFieldCode($arrJSONData, 'g15aeaa60-835c-4974-87c5-e82ec903629f', "CODE", $strCode);
+							$arrJSONData = formValueUpdateBySectionCodeFieldCode($arrJSONData, 'g15aeaa60-835c-4974-87c5-e82ec903629f', "DESCRIPTION", $strDescription);
+							$arrJSONData = formValueUpdateBySectionCodeFieldCode($arrJSONData, 'g15aeaa60-835c-4974-87c5-e82ec903629f', "COMMAND", $strCommand);
+							$arrJSONData = formValueUpdateBySectionCodeFieldCode($arrJSONData, 'g15aeaa60-835c-4974-87c5-e82ec903629f', "PARAMETERS", $strParameters);
+							$arrJSONData = formValueUpdateBySectionCodeFieldCode($arrJSONData, 'g15aeaa60-835c-4974-87c5-e82ec903629f', "IS_PROCESSED", "N");
+							$arrJSONData = formValueUpdateBySectionCodeFieldCode($arrJSONData, 'g15aeaa60-835c-4974-87c5-e82ec903629f', "STARTTIME", "");
+							$arrJSONData = formValueUpdateBySectionCodeFieldCode($arrJSONData, 'g15aeaa60-835c-4974-87c5-e82ec903629f', "ENDTIME", "");
+							$arrJSONData = formValueUpdateBySectionCodeFieldCode($arrJSONData, 'g15aeaa60-835c-4974-87c5-e82ec903629f', "SORTORDER", "");
+							$strJSONData = json_encode($arrJSONData);
+
+							$strSQL = "insert into ~TABLENAMECONFIGTASK~ (client_id, entity_id, dataentity_id, code, description, is_enabled, data_client_id, jsondata, modifyuser, modifydatetime, config_id) values(~CLIENTID~, ~ENTITYID~, ~DATAENTITYID~, '~CODE~', '~DESCRIPTION~', '~ISENABLED~', ~CLIENTID~, '~JSONDATA~', '~MODIFYUSER~', '~MODIFYDATETIME~', ~CONFIGID~)";
+							$strSQL = str_replace('~TABLENAMECONFIGTASK~', ff($strTableNameConfigTask), $strSQL);
+							$strSQL = str_replace('~CLIENTID~', ff($strClientID), $strSQL);
+							$strSQL = str_replace('~CODE~', $strCode, $strSQL);
+							$strSQL = str_replace('~DESCRIPTION~', $strDescription, $strSQL);
+							$strSQL = str_replace('~ISENABLED~', 'Y', $strSQL);
+							$strSQL = str_replace('~ENTITYID~', ff($strEntityID), $strSQL);
+							$strSQL = str_replace('~DATAENTITYID~', ff(getEntityID($objConn, "config")), $strSQL);
+							$strSQL = str_replace('~JSONDATA~', ff($strJSONData), $strSQL);
+							$strSQL = str_replace('~MODIFYUSER~', ff($strLogin), $strSQL);
+							$strSQL = str_replace('~MODIFYDATETIME~', getDateTime(), $strSQL);
+							$strSQL = str_replace('~CONFIGID~', $strConfigID, $strSQL);
+							dbExecuteSQL($objConn, $strSQL, __FUNCTION__);
+							$strConfigTaskID = dbLastInsertID($objConn);
+							
+							exposeEntityData($objConn, 'SYSTEMFORM', 'CONFIGTASK', $strConfigTaskID, $strJSONData);
+						}
+					}
+				}
+
+				//update sortorder and is ready 
+				$arrJSONData = $arrConfigJSONData;
+				$arrJSONData = formValueUpdateBySectionCodeFieldCode($arrJSONData, 'gb018840e-bc4f-45fc-b8a6-2c6338ca1be1', "IS_READY", 'Y');
+				$arrJSONData = formValueUpdateBySectionCodeFieldCode($arrJSONData, 'gb018840e-bc4f-45fc-b8a6-2c6338ca1be1', "SORTORDER", $strConfigID);
+				$strJSONData = json_encode($arrJSONData);
+
+				$strSQL = "update ~TABLENAMECONFIG~ set jsondata = '~JSONDATA~' where id = ~CONFIGID~";
+				$strSQL = str_replace('~TABLENAMECONFIG~', ff($strTableNameConfig), $strSQL);
+				$strSQL = str_replace('~JSONDATA~', ff($strJSONData), $strSQL);
+				$strSQL = str_replace('~CONFIGID~', ff($strConfigID), $strSQL);
+				dbExecuteSQL($objConn, $strSQL, __FUNCTION__);
+				
+				exposeEntityData($objConn, 'SYSTEMFORM', 'CONFIG', $strConfigID, $strJSONData);
+			}
+
+			dbClose($objConn); 
+
+			$blnResult = true;
+		}
+		else
+		{
+			$blnResult = false;
+		}
+
+		return $blnResult;
+	}
+
+	// eg: { "exec": "migrateData", "source": { "hostname": "localhost", "dbname": "%CURRENT_DATABASE_APP%", "login": "%LOGIN%", "password": "%PASSWORD%" }, "destination": { "hostname": "localhost", "dbname": "%NEW_DATABASE_APP%", "login": "%LOGIN%", "password": "%PASSWORD%" }, "script": "%PATH_APP%/scripts/update%CURRENT_SCHEMA%to%NEW_SCHEMA%.sql" }
+	function taskMigrateData($objTask_a)
+	{
+		$blnResult = true;
+		
+		$strSourceHostname = replaceDictionary($objTask_a['source']['hostname']);
+		$strSourceDBName = replaceDictionary($objTask_a['source']['dbname']);
+		$strSourceLogin = replaceDictionary($objTask_a['source']['login']);
+		$strSourcePassword = replaceDictionary($objTask_a['source']['password']);
+		$strDestinationHostname = replaceDictionary($objTask_a['destination']['hostname']);
+		$strDestinationDBName = replaceDictionary($objTask_a['destination']['dbname']);
+		$strDestinationLogin = replaceDictionary($objTask_a['destination']['login']);
+		$strDestinationPassword = replaceDictionary($objTask_a['destination']['password']);
+		$strScript = replaceDictionary(elementString($objTask_a, 'script', ''));
+		
+		$objConn = dbOpen($strDestinationHostname, $strDestinationLogin, $strDestinationPassword, $strDestinationDBName);
+		if ($objConn == null)
+		{
+			$blnResult = false;
+		}
+		else
+		{
+			if (strlen($strScript) > 0)
+			{
+				$blnResult = dbExecuteScript($objConn, $strScript, $strSourceDBName);
+			}
+			dbClose($objConn);
+		}
+
+		return $blnResult;
+	}
+
+	function taskNextTaskSet($objTask_a)
+	{
+		global $g_blnSkipTaskset;
+		
+		$blnResult = true;
+		
+		$strFilename = replaceDictionary(elementString($objTask_a, 'checkfile', ''));
+		if (!file_exists($strFilename))
+		{
+			$g_blnSkipTaskset = true;
+		}
+		
+		return $blnResult;
+	}
+	
+	// eg: { "exec": "set", "name": "%CURRENT_DATABASE_APP%", "value": "current_blah" }
+	function taskSet($objTask_a)
+	{
+		$strName = replaceDictionary(elementString($objTask_a, 'name', ''));
+		$strValue = replaceDictionary(elementString($objTask_a, 'value', ''));
+
+		addDictionary($strName, $strValue);
+		
+		return true;
+	}
+	
+	// eg: { "exec": "setSchema", "name": "%CURRENT_SCHEMA%", "metadata": "%PATH_APP%/application.json" }
+	function taskSetSchema($objTask_a)
+	{
+		$strName = replaceDictionary(elementString($objTask_a, 'name', ''));
+		$strSource = replaceDictionary(elementString($objTask_a, 'metadata', ''));
+
+		$strMetaData = "{\"update\":\"\",\"date\":\"\",\"version\":\"0\",\"dbversion\":\"0\",\"build\":\"\",\"description\":\"\",\"filename\":\"\",\"url\":\"\"}";
+		if (file_exists($strSource))
+		{
+			$strMetaData = loadFile($strSource);
+		}
+		$objMetaData = json_decode($strMetaData, true);
+		$strValue = $objMetaData["dbversion"];
+
+		addDictionary($strName, $strValue);
+		
+		return true;
+	}
+	
+	// for debug purposes
+	function taskStop($objTask_a)
+	{
+		return false;
+	}
+
+	// eg: { "exec": "unarchive", "archive": "updates/%UPDATEFILENAME%", "folder": "%PATH_TEMP%" }
+	function taskUnarchive($objTask_a)
+	{
+		$strArchive = replaceDictionary(elementString($objTask_a, 'archive', ''));
+		$strFolder = replaceDictionary(elementString($objTask_a, 'folder', ''));
+
+		return unzipFile($strArchive, $strFolder . '/');
+	}
+
+?>

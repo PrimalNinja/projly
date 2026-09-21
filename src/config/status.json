@@ -1,0 +1,1 @@
+[{"statusmsg":"","optioncode":"DDU-RSDO","tasksetname":"task","tasksetdescription":"{\"exec\":\"deleteFolderContent\",\"folder\":\"%PATH_TEMP%\",\"flags\":[\"recurse\"]}","taskset":1,"tasksets":1,"taskdescription":"","task":1,"tasks":1,"processtime":0,"alertmsg":"","result":[]}]

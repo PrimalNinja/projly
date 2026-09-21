@@ -1,0 +1,87 @@
+JavaScript Lint 0.3.0 (JavaScript-C 1.5 2004-09-24)
+Developed by Matthias Miller (http://www.JavaScriptLint.com)
+
+extend.js
+index.js
+showform.js
+inc-nav.js
+inc-navmap-client.js
+inc-navmap-public.js
+inc-navmap-developer.js
+inc-navmap-sysadmin.js
+inc-navmap-sysowner.js
+inc-hostdriver.js
+D:\dev\projly-dev\app\inc-hostdriver.js(49): SyntaxError: missing name after . operator
+		}).catch(function(err)  
+...................^
+
+inc-osutils.js
+inc-osutils-classes.js
+inc-osutils-jcalendar.js
+inc-osutils-jcanvas.js
+inc-osutils-jcodeeditor.js
+inc-osutils-jdock.js
+inc-osutils-jeditor.js
+inc-osutils-jformrenderer.js
+inc-osutils-jgrids.js
+inc-osutils-notminified.js
+D:\dev\projly-dev\app\inc-osutils-notminified.js(10): SyntaxError: unterminated character class -
+		/\b(\d{4})[-/](\d{1,2})[-/](\d{1,2})\b/, // yyyy-mm-dd or yyyy/mm/dd
+................^
+
+inc-os.js
+inc-config.js
+frmChangePassword.js
+frmCustom.js
+frmGallery.js
+frmHealth.js
+frmImageViewer.js
+frmLicenceChecker.js
+frmLicensing.js
+frmLister.js
+frmLogin.js
+frmMenu.js
+frmPasswordConfirmation.js
+frmPasswordFailed.js
+frmPayment.js
+frmPrintPreview.js
+frmPublic.js
+frmRecordChooser.js
+frmRegister.js
+frmRegisterConfirmation.js
+frmRegisterFailed.js
+frmRegisterVerification.js
+frmTaskbar.js
+frmTaskbarExtend.js
+frmThemes.js
+frmUpload.js
+frmVerified.js
+frmVerifiedFailed.js
+frmVideo.js
+frmWelcome.js
+wgtChart.js
+frmWikiForm.js
+frmProject.js
+frmSecurity.js
+frmWelcome.js
+frmEntityChooser.js
+frmForm.js
+frmHTMLForm.js
+frmLister.js
+server.js
+frmMap.js
+frmMyComposeMessage.js
+frmMyMessage.js
+frmMyMessages.js
+wgtCalculator.js
+wgtClock.js
+wgtDesktopSizer.js
+wgtDock.js
+wgtFormBuilder.js
+wgtPanel.js
+wgtPrinter.js
+wgtSpeech.js
+wgtTerm.js
+wgtTube.js
+
+2 error(s), 0 warning(s)

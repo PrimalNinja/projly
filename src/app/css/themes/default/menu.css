@@ -1,0 +1,41 @@
+/* menu styles -------------------------------------------------- */
+
+/* menu colours -------------------------------------------------- */
+
+.gs-menupriority1
+{
+	background-color: white !important;
+	color: #538135 !important;
+}
+
+.gs-menupriority2
+{
+	background-color: red !important;
+	color: black !important;
+}
+
+.gs-menupriority3
+{
+	background-color: white !important;
+	color: #FFC000 !important;
+}
+
+.gs-menupriority4
+{
+	background-color: white !important;
+	color: #008080 !important;
+}
+
+.gs-menupriority5
+{
+	background-color: white !important;
+	color: #0070C0 !important;
+}
+
+.gs-menupriority6
+{
+	background-color: white !important;
+	color: #FF00FF
+ !important;
+}
+

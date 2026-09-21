@@ -1,0 +1,1810 @@
+{
+	"awafinstallscript": "AWAF Script Version 1.3",
+	"scriptversion": 3,
+	"comments": "AWAF Install Configuration",
+	"optionSets":
+	[
+		{
+			"description": "Backing Up (to Backups Folder)",
+			"code": "BU",
+			"flags": ["installed"],
+			"options":
+			[
+				{ "description": "Backup Client & System Databases Only", "code": "BU-BCSDO", "taskSets": ["pre", "clientDatabaseBackup", "systemDatabaseBackup", "post"] },
+				{ "description": "Backup Client Databases Only", "code": "BU-BCDO", "taskSets": ["pre", "clientDatabaseBackup", "post"] },
+				{ "description": "Backup System Databases Only", "code": "BU-BSDO", "taskSets": ["pre", "systemDatabaseBackup", "post"] },
+				{ "description": "Backup Client & System Repository Only", "code": "BU-BCSRO", "taskSets": ["pre", "clientRepositoryBackup", "systemRepositoryBackup", "post"] },
+				{ "description": "Backup Client Repository Only", "code": "BU-BCRO", "taskSets": ["pre", "clientRepositoryBackup", "post"] },
+				{ "description": "Backup System Repository Only", "code": "BU-BSRO", "taskSets": ["pre", "systemRepositoryBackup", "post"] },
+				{ "description": "Backup Application Only", "code": "BU-BAO", "taskSets": ["pre", "applicationBackup", "post"] },
+				{ "description": "Complete Backup", "code": "BU-CB", "taskSets": ["pre", "clientDatabaseBackup", "systemDatabaseBackup", "systemRepositoryBackup", "applicationBackup", "post"] }
+			]
+		},
+		{
+			"description": "UAT - Typical Deploy",
+			"code": "UTD",
+			"flags": ["developer"],
+			"options":
+			[
+				{ "description": "1 Package Application, Database (Prod, Deletes Data) and Repository", "code": "UTD-PADAR", "taskSets": ["pre", "systemDatabasePackageProd", "systemDatabasePurgeHistoryTables", "systemDatabasePurgeTempTables", "clientDatabasePackageProd", "clientDatabasePurgeHistoryTables", "clientDatabasePurgeTempTables", "applicationPackage", "systemRepositoryPackage", "clientRepositoryPackage", "post"] },
+				{ "description": "2 Choose Configuration Only - <font style='color:red;'>UAT</font>", "code": "UTD-CCOU", "taskSets": ["pre", "applicationChooseConfigUAT", "post"], "flags": ["configuration-uat"] },
+				{ "description": "3 Full Install (Application, DBs, Repositories)", "code": "UTD-FIADR", "taskSets": ["pre", "clientDatabaseDelete", "systemDatabaseDelete", "clientDatabasePrepare", "clientDatabaseCreate", "clientDatabaseImport", "clientDatabaseConfigApply", "systemDatabasePrepare", "systemDatabaseCreate", "systemDatabaseImport", "systemDatabaseConfigApply", "clientRepositoryInstall", "systemRepositoryInstall", "applicationInstallQuick", "applicationConfigApply", "post"], "flags": ["update"] }
+			]
+		},
+		{
+			"description": "Advanced - Deleting",
+			"code": "AD",
+			"flags": ["advanced"],
+			"options":
+			[
+				{ "description": "Delete Application Only", "code": "AD-DAO", "taskSets": ["pre", "applicationDelete", "post"] },
+				{ "description": "Delete Client & System Databases Only", "code": "AD-DCSDO", "taskSets": ["pre", "clientDatabaseDelete", "systemDatabaseDelete", "post"] },
+				{ "description": "Delete Client Databases Only", "code": "AD-DCDO", "taskSets": ["pre", "clientDatabaseDelete", "post"] },
+				{ "description": "Delete System Databases Only", "code": "AD-DSDO", "taskSets": ["pre", "systemDatabaseDelete", "post"] },
+				{ "description": "Delete Client & System Repository Only", "code": "AD-DCSRO", "taskSets": ["pre", "clientRepositoryDelete", "systemRepositoryDelete", "post"] },
+				{ "description": "Delete Client Repository Only", "code": "AD-DCRO", "taskSets": ["pre", "clientRepositoryDelete", "post"] },
+				{ "description": "Delete System Repository Only", "code": "AD-DSRO", "taskSets": ["pre", "systemRepositoryDelete", "post"] }
+			]
+		},
+		{
+			"description": "Advanced - Installation (from Updates Folder, * typical tasks)",
+			"code": "AI",
+			"flags": ["advanced"],
+			"options":
+			[
+				{ "description": "* MANUALLY <font style='color:red;'>backup the .htaccess if required</font> on the host", "code": "AI-1", "taskSets": [] },
+				{ "description": "* MANUALLY <font style='color:red;'>clear out any LOG files</font> in the WS folder", "code": "AI-2", "taskSets": [] },
+				{ "description": "* Package Application, Database (Prod, Deletes Data) and Repository", "code": "AI-PADAR", "taskSets": ["pre", "systemDatabasePackageProd", "systemDatabasePurgeHistoryTables", "systemDatabasePurgeTempTables", "systemDatabaseExport", "clientDatabasePackageProd", "clientDatabasePurgeHistoryTables", "clientDatabasePurgeTempTables", "clientDatabaseExport", "applicationPackage", "systemRepositoryPackage", "clientRepositoryPackage", "post"] },
+				{ "description": "* Package Application and Repository", "code": "AI-PAR", "taskSets": ["pre", "applicationPackage", "systemRepositoryPackage", "clientRepositoryPackage", "post"] },
+				{ "description": "* Choose Configuration Only - <font style='color:red;'>PROD</font>", "code": "AI-CCOP", "taskSets": ["pre", "applicationChooseConfigProd", "post"], "flags": ["configuration-prod"] },
+				{ "description": "* Choose Configuration Only - <font style='color:red;'>UAT</font>", "code": "AI-CCOU", "taskSets": ["pre", "applicationChooseConfigUAT", "post"], "flags": ["configuration-uat"] },
+				{ "description": "* Choose Configuration Only - <font style='color:red;'>DEV</font>", "code": "AI-CCOD", "taskSets": ["pre", "applicationChooseConfigDev", "post"], "flags": ["configuration-dev"] },
+				{ "description": "* Delete Client & System Databases Only", "code": "AI-DCSDO", "taskSets": ["pre", "clientDatabaseDelete", "systemDatabaseDelete", "post"] },
+				{ "description": "* Delete Client Databases Only", "code": "AI-DCDO", "taskSets": ["pre", "clientDatabaseDelete", "post"] },
+				{ "description": "* Delete System Databases Only", "code": "AI-DSDO", "taskSets": ["pre", "systemDatabaseDelete", "post"] },
+				{ "description": "Delete Application Only", "code": "AI-DAO", "taskSets": ["pre", "applicationDelete", "post"] },
+				{ "description": "Delete Client Repository Only", "code": "AI-DCRO", "taskSets": ["pre", "clientRepositoryDelete", "post"] },
+				{ "description": "Delete System Repository Only", "code": "AI-DSRO", "taskSets": ["pre", "systemRepositoryDelete", "post"] },
+				{ "description": "* Install Client & System Databases Only", "code": "AI-ICSDO", "taskSets": ["pre", "clientDatabasePrepare", "clientDatabaseCreate", "clientDatabaseImport", "clientDatabaseConfigApply", "systemDatabasePrepare", "systemDatabaseCreate", "systemDatabaseImport", "systemDatabaseConfigApply", "post"], "flags": ["update"] },
+				{ "description": "* Install Client Databases Only", "code": "AI-ICDO", "taskSets": ["pre", "clientDatabasePrepare", "clientDatabaseCreate", "clientDatabaseImport", "clientDatabaseConfigApply", "post"], "flags": ["update"] },
+				{ "description": "* Install System Databases Only", "code": "AI-ISDO", "taskSets": ["pre", "systemDatabasePrepare", "systemDatabaseCreate", "systemDatabaseImport", "systemDatabaseConfigApply", "post"], "flags": ["update"] },
+				{ "description": "* Install Client & System Repository Only", "code": "AI-ICSRO", "taskSets": ["pre", "clientRepositoryInstall", "systemRepositoryInstall", "post"], "flags": ["update"] },
+				{ "description": "* Install Client Repository Only", "code": "AI-ICRO", "taskSets": ["pre", "clientRepositoryInstall", "post"], "flags": ["update"] },
+				{ "description": "* Install System Repository Only", "code": "AI-ISRO", "taskSets": ["pre", "systemRepositoryInstall", "post"], "flags": ["update"] },
+				{ "description": "* UAT ONLY - Quick Install Application", "code": "AI-UOQIA", "taskSets": ["pre", "applicationInstallQuick", "applicationConfigApply", "post"], "flags": ["update"] },
+				{ "description": "* PROD ONLY - Install Application Only", "code": "AI-IAO", "taskSets": ["pre", "applicationInstall", "applicationConfigApply", "post"], "flags": ["update"] },
+				{ "description": "Re-Apply Application and Database Configuration", "code": "AI-RAAADC", "taskSets": ["pre", "applicationConfigApply", "post"] },
+				{ "description": "* MANUALLY <font style='color:red;'>reinstate the .htaccess</font> if required on the host", "code": "AI-3", "taskSets": [] }
+			]
+		},
+		{
+			"description": "Advanced - Restoring (from Backups Folder)",
+			"code": "AR",
+			"flags": ["advanced"],
+			"options":
+			[
+				{ "description": "Delete Client & System Databases Only", "code": "AR-DCSDO", "taskSets": ["pre", "clientDatabaseDelete", "systemDatabaseDelete", "post"] },
+				{ "description": "Delete Client Databases Only", "code": "AR-DCDO", "taskSets": ["pre", "clientDatabaseDelete", "post"] },
+				{ "description": "Delete System Databases Only", "code": "AR-DSDO", "taskSets": ["pre", "systemDatabaseDelete", "post"] },
+				{ "description": "Delete Application Only", "code": "AR-DAO", "taskSets": ["pre", "applicationDelete", "post"] },
+				{ "description": "Delete Client Repository Only", "code": "AR-DCRO", "taskSets": ["pre", "clientRepositoryDelete", "post"] },
+				{ "description": "Delete System Repository Only", "code": "AR-DSRO", "taskSets": ["pre", "systemRepositoryDelete", "post"] },
+				{ "description": "Restore Backup of Client & System Databases Only", "code": "AR-RBOCSDO", "taskSets": ["pre", "clientDatabaseRestore", "clientDatabaseConfigApply", "systemDatabaseRestore", "systemDatabaseConfigApply", "post"], "flags": ["backup"] },
+				{ "description": "Restore Backup of Client Databases Only", "code": "AR-RBOCDO", "taskSets": ["pre", "clientDatabaseRestore", "clientDatabaseConfigApply", "post"], "flags": ["backup"] },
+				{ "description": "Restore Backup of System Databases Only", "code": "AR-RBOSDO", "taskSets": ["pre", "systemDatabaseRestore", "systemDatabaseConfigApply", "post"], "flags": ["backup"] },
+				{ "description": "Restore Backup of Client & System Repository Only", "code": "AR-RBOCSRO", "taskSets": ["pre", "clientRepositoryRestore", "systemRepositoryRestore", "post"], "flags": ["backup"] },
+				{ "description": "Restore Backup of Client Repository Only", "code": "AR-RBOCRO", "taskSets": ["pre", "clientRepositoryRestore", "post"], "flags": ["backup"] },
+				{ "description": "Restore Backup of System Repository Only", "code": "AR-RBOSRO", "taskSets": ["pre", "systemRepositoryRestore", "post"], "flags": ["backup"] },
+				{ "description": "Restore Backup of Application Only", "code": "AR-RBOAO", "taskSets": ["pre", "applicationRestore", "post"], "flags": ["backup"] },
+				{ "description": "Re-Apply Application and Database Configuration", "code": "AR-RAAADC", "taskSets": ["pre", "applicationConfigApply", "post"] }
+			]
+		},
+		{
+			"description": "CRONable Processes",
+			"code": "CP",
+			"flags": ["installed"],
+			"options":
+			[
+				{ "description": "Backup Client & System Databases Only", "code": "CP-BCSDO", "taskSets": ["pre", "clientDatabaseBackup", "systemDatabaseBackup", "post"], "flags": ["automate"] },
+				{ "description": "Backup Client Databases Only", "code": "CP-BCDO", "taskSets": ["pre", "clientDatabaseBackup", "post"], "flags": ["automate"] },
+				{ "description": "Backup System Databases Only", "code": "CP-BSDO", "taskSets": ["pre", "systemDatabaseBackup", "post"], "flags": ["automate"] },
+				{ "description": "Backup Client Databases and Client Repository Only", "code": "CP-BCDACRO", "taskSets": ["pre", "clientDatabaseBackup", "clientRepositoryBackup", "post"], "flags": ["automate"] },
+				{ "description": "Backup System Databases and System Repository Only", "code": "CP-BSDASRO", "taskSets": ["pre", "systemDatabaseBackup", "systemRepositoryBackup", "post"], "flags": ["automate"] },
+				{ "description": "Backup Client Repository Only", "code": "CP-BCRO", "taskSets": ["pre", "clientRepositoryBackup", "post"], "flags": ["automate"] },
+				{ "description": "Backup System Repository Only", "code": "CP-BSRO", "taskSets": ["pre", "systemRepositoryBackup", "post"], "flags": ["automate"] },
+				{ "description": "Backup Application Only", "code": "CP-BAO", "taskSets": ["pre", "applicationBackup", "post"], "flags": ["automate"] },
+				{ "description": "Complete Backup", "code": "CP-CB", "taskSets": ["pre", "clientDatabaseBackup", "clientRepositoryBackup", "systemDatabaseBackup", "systemRepositoryBackup", "applicationBackup", "post"], "flags": ["automate"] },
+				{ "description": "Purge Server Temporary Files Only", "code": "CP-PSTFO", "taskSets": ["pre", "purgeServerTempFiles", "post"], "flags": ["automate"] }
+			]
+		},
+		{
+			"description": "Developer - Production Packaging (to Updates Folder)",
+			"code": "DPP",
+			"flags": ["developer"],
+			"options":
+			[
+				{ "description": "Delete Client Repository Content Only", "code": "DPP-DCRCO", "taskSets": ["pre", "clientRepositoryPurge", "post"] },
+				{ "description": "Delete System Repository Content Only", "code": "DPP-DSRCO", "taskSets": ["pre", "systemRepositoryPurge", "post"] },
+				{ "description": "Delete Temporary Files Only", "code": "DPP-DTFO", "taskSets": ["pre", "post"] },
+				{ "description": "Package Application, Database (Prod, Deletes Data) and Repository", "code": "DPP-PADAR", "taskSets": ["pre", "systemDatabasePackageProd", "systemDatabasePurgeHistoryTables", "systemDatabasePurgeTempTables", "systemDatabaseExport", "clientDatabasePackageProd", "clientDatabasePurgeHistoryTables", "clientDatabasePurgeTempTables", "clientDatabaseExport", "applicationPackage", "systemRepositoryPackage", "clientRepositoryPackage", "post"] },
+				{ "description": "Package Application and Database (Prod, Deletes Data)", "code": "DPP-PAAD", "taskSets": ["pre", "systemDatabasePackageProd", "systemDatabasePurgeHistoryTables", "systemDatabasePurgeTempTables", "systemDatabaseExport", "clientDatabasePackageProd", "clientDatabasePurgeHistoryTables", "clientDatabasePurgeTempTables", "clientDatabaseExport", "applicationPackage", "post"] },
+				{ "description": "Package Application Only", "code": "DPP-PAO", "taskSets": ["pre", "applicationPackage", "post"] },
+				{ "description": "Package Client Databases Only (Prod, Deletes Data)", "code": "DPP-PCDOP", "taskSets": ["pre", "clientDatabasePackageProd", "clientDatabasePurgeHistoryTables", "clientDatabasePurgeTempTables", "clientDatabaseExport", "post"] },
+				{ "description": "Package System Databases Only (Prod, Deletes Data)", "code": "DPP-PSDOP", "taskSets": ["pre", "systemDatabasePackageProd", "systemDatabasePurgeHistoryTables", "systemDatabasePurgeTempTables", "systemDatabaseExport", "post"] },
+				{ "description": "Package Client & System Repository Only", "code": "DPP-PCSDO", "taskSets": ["pre", "clientRepositoryPackage", "systemRepositoryPackage", "post"] },
+				{ "description": "Package Client Repository Only", "code": "DPP-PCDO", "taskSets": ["pre", "clientRepositoryPackage", "post"] },
+				{ "description": "Package System Repository Only", "code": "DPP-PSDO", "taskSets": ["pre", "systemRepositoryPackage", "post"] }
+			]
+		},
+		{
+			"description": "Developer - Database Scripts",
+			"code": "DS",
+			"flags": ["developer"],
+			"options":
+			[
+				{ "description": "Client Databases Purge Clients (includes History & Temp Tables)", "code": "DS-CPC", "taskSets": ["pre", "clientDatabasePurgeHistoryTables", "clientDatabasePurgeTempTables", "clientDatabasePurgeClientData", "post"] },
+				{ "description": "Client Databases Purge History", "code": "DS-CPH", "taskSets": ["pre", "clientDatabasePurgeHistoryTables", "post"] },
+				{ "description": "Client Databases Purge Temp Tables", "code": "DS-CPTT", "taskSets": ["pre", "clientDatabasePurgeTempTables", "post"] },
+				{ "description": "System Databases Purge Clients (includes History & Temp Tables)", "code": "DS-SPC", "taskSets": ["pre", "systemDatabasePurgeHistoryTables", "systemDatabasePurgeTempTables", "systemDatabasePurgeClientData", "post"] },
+				{ "description": "System Databases Purge History", "code": "DS-SPH", "taskSets": ["pre", "systemDatabasePurgeHistoryTables", "post"] },
+				{ "description": "System Databases Purge Temp Tables", "code": "DS-SPTT", "taskSets": ["pre", "systemDatabasePurgeTempTables", "post"] }
+			]
+		},
+		{
+			"description": "Batch Tasks",
+			"code": "BT",
+			"flags": ["developer"],
+			"options":
+			[
+				{ "description": "Install: Backup Client Databases and Client Repository Only", "code": "install-CP-BCDACRO", "taskSets": ["pre", "install-CP-BCDACRO", "post"] },
+				{ "description": "Install: Backup System Databases and System Repository Only", "code": "install-CP-BSDASRO", "taskSets": ["pre", "install-CP-BCDACRO", "post"] },
+				{ "description": "Install: Backup Client & System Databases Only", "code": "install-CP-BCSDO", "taskSets": ["pre", "install-CP-BCSDO", "post"] },
+				{ "description": "Install: Complete Backup", "code": "install-CP-CB", "taskSets": ["pre", "install-CP-CB", "post"] }
+			]
+		},
+		{
+			"description": "Developer - Development Utils (to Updates Folder)",
+			"code": "DDU",
+			"flags": ["developer"],
+			"options":
+			[
+				{ "description": "Package Client & System Databases Only", "code": "DDU-PCSDO", "taskSets": ["pre", "clientDatabasePackageDev", "clientDatabasePurgeTempTables", "clientDatabaseExport", "systemDatabasePackageDev", "systemDatabasePurgeTempTables", "systemDatabaseExport", "post"] },
+				{ "description": "ReInstall Client & System Database Only", "code": "DDU-RCSDO", "taskSets": ["pre", "clientDatabaseDelete", "systemDatabaseDelete", "post", "pre", "clientDatabasePrepare", "clientDatabaseInstall", "clientDatabaseConfigApply", "systemDatabasePrepare", "systemDatabaseInstall", "systemDatabaseConfigApply", "post"], "flags": ["update"] },
+				{ "description": "Package System Database Only", "code": "DDU-PSDO", "taskSets": ["pre", "systemDatabasePackageDev", "systemDatabasePurgeTempTables", "systemDatabaseExport", "post"] },
+				{ "description": "ReInstall System Database Only", "code": "DDU-RSDO", "taskSets": ["pre", "systemDatabaseDelete", "post", "pre", "systemDatabasePrepare", "systemDatabaseInstall", "systemDatabaseConfigApply", "post"], "flags": ["update"] },
+				{ "description": "Re-Configure Application Only - DEV", "code": "DDU-CCOD", "taskSets": ["pre", "applicationChooseConfigDev", "applicationConfigApply", "post"], "flags": ["configuration-dev"] }
+			]
+		}
+
+	],
+	"taskSets":
+	{
+		"pre":
+		{
+			"description": "prepare",
+			"comments": "set up some constants for use during common to all task sets",
+			"tasks":
+			[
+				{ "exec": "initialise" },
+				
+				{ "exec": "set", "name": "%TODAY%", "value": "%SYS_TODAY%" },
+				{ "exec": "set", "name": "%FILE_BACKUP%", "value": "%SYS_YYYYMMDDHHNNSS%" },
+				{ "exec": "set", "name": "%FILE_UPDATE%", "value": "%SYS_YYYYMMDDHHNNSS%" },
+				{ "exec": "set", "name": "%FILE_SELECTED%", "value": "%SYS_FILESELECTED%" },
+
+				{ "exec": "set", "name": "%PATH_CONFIG%", "value": "%SYS_PATH_CONFIG%" },
+				{ "exec": "set", "name": "%PATH_APP%", "value": "%SYS_PATH_CONFIG%/.." },
+				{ "exec": "set", "name": "%PATH_WS%", "value": "%SYS_PATH_CONFIG%/../ws" },
+
+				{ "exec": "set", "name": "%PATH_CLIENTREPOSITORY%", "value": "%SYS_PATH_CONFIG%/../repository-client" },
+				{ "exec": "set", "name": "%PATH_SYSTEMREPOSITORY%", "value": "%SYS_PATH_CONFIG%/../repository-system" },
+
+				{ "exec": "set", "name": "%DBCLIENTMAIN_DATABASENAME%", "value": "%SYS_DBCLIENTMAIN_DATABASENAME%" },
+				{ "exec": "set", "name": "%DBCLIENTMAIN_HOSTNAME%", "value": "%SYS_DBCLIENTMAIN_HOSTNAME%" },
+				{ "exec": "set", "name": "%DBCLIENTMAIN_LOGIN%", "value": "%SYS_DBCLIENTMAIN_LOGIN%" },
+				{ "exec": "set", "name": "%DBCLIENTMAIN_PASSWORD%", "value": "%SYS_DBCLIENTMAIN_PASSWORD%" },
+
+                { "exec": "set", "name": "%DBCLIENTHISTORY_DATABASENAME%", "value": "%SYS_DBCLIENTHISTORY_DATABASENAME%" },
+				{ "exec": "set", "name": "%DBCLIENTHISTORY_HOSTNAME%", "value": "%SYS_DBCLIENTHISTORY_HOSTNAME%" },
+				{ "exec": "set", "name": "%DBCLIENTHISTORY_LOGIN%", "value": "%SYS_DBCLIENTHISTORY_LOGIN%" },
+				{ "exec": "set", "name": "%DBCLIENTHISTORY_PASSWORD%", "value": "%SYS_DBCLIENTHISTORY_PASSWORD%" },
+
+				{ "exec": "set", "name": "%DBCLIENTTEMP_DATABASENAME%", "value": "%SYS_DBCLIENTTEMP_DATABASENAME%" },
+				{ "exec": "set", "name": "%DBCLIENTTEMP_HOSTNAME%", "value": "%SYS_DBCLIENTTEMP_HOSTNAME%" },
+				{ "exec": "set", "name": "%DBCLIENTTEMP_LOGIN%", "value": "%SYS_DBCLIENTTEMP_LOGIN%" },
+                { "exec": "set", "name": "%DBCLIENTTEMP_PASSWORD%", "value": "%SYS_DBCLIENTTEMP_PASSWORD%" },
+                
+				{ "exec": "set", "name": "%DBSYSTEMMAIN_DATABASENAME%", "value": "%SYS_DBSYSTEMMAIN_DATABASENAME%" },
+				{ "exec": "set", "name": "%DBSYSTEMMAIN_HOSTNAME%", "value": "%SYS_DBSYSTEMMAIN_HOSTNAME%" },
+				{ "exec": "set", "name": "%DBSYSTEMMAIN_LOGIN%", "value": "%SYS_DBSYSTEMMAIN_LOGIN%" },
+				{ "exec": "set", "name": "%DBSYSTEMMAIN_PASSWORD%", "value": "%SYS_DBSYSTEMMAIN_PASSWORD%" },
+
+                { "exec": "set", "name": "%DBSYSTEMHISTORY_DATABASENAME%", "value": "%SYS_DBSYSTEMHISTORY_DATABASENAME%" },
+				{ "exec": "set", "name": "%DBSYSTEMHISTORY_HOSTNAME%", "value": "%SYS_DBSYSTEMHISTORY_HOSTNAME%" },
+				{ "exec": "set", "name": "%DBSYSTEMHISTORY_LOGIN%", "value": "%SYS_DBSYSTEMHISTORY_LOGIN%" },
+				{ "exec": "set", "name": "%DBSYSTEMHISTORY_PASSWORD%", "value": "%SYS_DBSYSTEMHISTORY_PASSWORD%" },
+
+				{ "exec": "set", "name": "%DBSYSTEMTEMP_DATABASENAME%", "value": "%SYS_DBSYSTEMTEMP_DATABASENAME%" },
+				{ "exec": "set", "name": "%DBSYSTEMTEMP_HOSTNAME%", "value": "%SYS_DBSYSTEMTEMP_HOSTNAME%" },
+				{ "exec": "set", "name": "%DBSYSTEMTEMP_LOGIN%", "value": "%SYS_DBSYSTEMTEMP_LOGIN%" },
+                { "exec": "set", "name": "%DBSYSTEMTEMP_PASSWORD%", "value": "%SYS_DBSYSTEMTEMP_PASSWORD%" },
+                
+				{ "exec": "set", "name": "%PATH_BACKUP%", "value": "%SYS_PATH_CONFIG%/backups" },
+				{ "exec": "set", "name": "%PATH_CONFIGURATIONS_PROD%", "value": "%SYS_PATH_CONFIG%/configurations-prod" },
+				{ "exec": "set", "name": "%PATH_CONFIGURATIONS_UAT%", "value": "%SYS_PATH_CONFIG%/configurations-uat" },
+				{ "exec": "set", "name": "%PATH_CONFIGURATIONS_DEV%", "value": "%SYS_PATH_CONFIG%/configurations-dev" },
+				{ "exec": "set", "name": "%PATH_UPDATE%", "value": "%SYS_PATH_CONFIG%/updates" },
+				{ "exec": "set", "name": "%PATH_TEMP%", "value": "%SYS_PATH_CONFIG%/temp" },
+
+				{ "exec": "deleteFolderContent",
+					"folder": "%PATH_TEMP%",
+					"flags": ["recurse"] },
+
+				{ "exec": "createFolder",
+					"folder": "%PATH_TEMP%/application" },
+
+				{ "exec": "createFolder",
+					"folder": "%PATH_TEMP%/database-system" },
+
+				{ "exec": "createFolder",
+					"folder": "%PATH_TEMP%/database-client" },
+
+				{ "exec": "createFolder",
+					"folder": "%PATH_TEMP%/repository-system" },
+
+				{ "exec": "createFolder",
+					"folder": "%PATH_TEMP%/repository-client" }
+			]
+		},
+		"post":
+		{
+			"description": "finalise changes",
+			"comments": "clean up any temporary files or folders",
+			"tasks":
+			[
+				{ "exec": "deleteFolderContent",
+					"folder": "%PATH_TEMP%",
+					"flags": ["recurse"] }
+			]
+		},
+		"purgeServerTempFiles":
+		{
+			"description": "purge server temporary path",
+			"comments": "purges the server temporary path",
+			"tasks":
+			[
+				{ "exec": "deleteFolderContent",
+					"folder": "%PATH_WS%/temp/pending",
+					"flags": ["recurse"],
+					"exclude": ["readme.txt"] },
+
+				{ "exec": "deleteFolderContent",
+					"folder": "%PATH_WS%/temp/uploads",
+					"flags": ["recurse"],
+					"exclude": ["readme.txt"] }
+			]
+		},
+
+		"applicationBackup":
+		{
+			"description": "backup application",
+			"comments": "put application files into an archive and create the required metadata",
+			"tasks":
+			[
+				{ "exec": "archiveFolder",
+					"folder": "%PATH_APP%",
+					"archive": "%PATH_TEMP%/application.zip",
+					"flags": ["recurse"],
+					"exclude": ["database.json", "database-client.json", "database-system.json", "repository.json", "repository-client.json", "repository-system.json", "config", "repository", "repository-client", "repository-system", ".svn", ".vscode", "_docs", "_resources", "webservices"] },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_APP%/application.json",
+					"destination": "%PATH_TEMP%/application.json",
+					"update": "%FILE_BACKUP%",
+					"filename": "%FILE_BACKUP%-application.zip",
+					"description": "Application Backup as at %TODAY%." },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/application.zip",
+					"destination": "%PATH_BACKUP%/%FILE_BACKUP%-application.zip",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/application.json",
+					"destination": "%PATH_BACKUP%/%FILE_BACKUP%-application.json",
+					"flags": ["replace"] }
+			]
+		},
+		"applicationChooseConfigProd":
+		{
+			"description": "choose application configuration - for production",
+			"comments": "prepares the application configuration",
+			"tasks":
+			[
+				{ "exec": "configureApplication",
+					"folder": "%SYS_PATH_CONFIG%/app",
+					"file": "%PATH_CONFIGURATIONS_PROD%/%FILE_SELECTED%.json" }
+			]
+		},
+		"applicationChooseConfigUAT":
+		{
+			"description": "choose application configuration - for uat",
+			"comments": "prepares the application configuration",
+			"tasks":
+			[
+				{ "exec": "configureApplication",
+					"folder": "%SYS_PATH_CONFIG%/app",
+					"file": "%PATH_CONFIGURATIONS_UAT%/%FILE_SELECTED%.json" }
+			]
+		},
+		"applicationChooseConfigDev":
+		{
+			"description": "choose application configuration - for development",
+			"comments": "prepares the application configuration",
+			"tasks":
+			[
+				{ "exec": "configureApplication",
+					"folder": "%SYS_PATH_CONFIG%/app",
+					"file": "%PATH_CONFIGURATIONS_DEV%/%FILE_SELECTED%.json" }
+			]
+		},
+		"applicationConfigApply":
+		{
+			"description": "configure application",
+			"comments": "configures the application",
+			"tasks":
+			[
+                { "exec": "copyFile",
+                    "source": "%PATH_CONFIG%/app/inc-app-projlyclient.php",
+                    "destination": "%PATH_APP%/inc-app-projlyclient.php",
+                    "flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_CONFIG%/app/inc-constants.php",
+					"destination": "%PATH_APP%/inc-constants.php",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_CONFIG%/app/inc-env.php",
+					"destination": "%PATH_APP%/inc-env.php",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_CONFIG%/app/inc-settings.php",
+					"destination": "%PATH_APP%/inc-settings.php",
+					"flags": ["replace"] },
+
+                { "exec": "copyFile",
+                    "source": "%PATH_CONFIG%/app/ws/inc-app-projlyclient.php",
+                    "destination": "%PATH_WS%/inc-app-projlyclient.php",
+                    "flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_CONFIG%/app/ws/inc-constants.php",
+					"destination": "%PATH_WS%/inc-constants.php",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_CONFIG%/app/ws/inc-env.php",
+					"destination": "%PATH_WS%/inc-env.php",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_CONFIG%/app/ws/inc-settings.php",
+					"destination": "%PATH_WS%/inc-settings.php",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_CONFIG%/app/ws/inc-dbsettings-client.php",
+					"destination": "%PATH_WS%/inc-dbsettings-client.php",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_CONFIG%/app/ws/inc-dbsettings-system.php",
+					"destination": "%PATH_WS%/inc-dbsettings-system.php",
+					"flags": ["replace"] }
+			]
+		},
+		"applicationDelete":
+		{
+			"description": "delete application",
+			"comments": "deletes the application",
+			"tasks":
+			[
+				{ "exec": "deleteFolderContent",
+					"folder": "%PATH_APP%",
+					"flags": ["recurse"],
+					"exclude": ["database.json", "database-client.json", "database-system.json", "repository.json", "repository-client.json", "repository-system.json", "config", "repository", "repository-client", "repository-system", ".svn", ".vscode", "_docs", "_resources", "webservices"] }
+			]
+		},
+		"applicationInstall":
+		{
+			"description": "install application",
+			"comments": "installs application from an archive and create the required metadata",
+			"tasks":
+			[
+				{ "exec": "unarchive",
+					"archive": "%PATH_UPDATE%/%FILE_SELECTED%-application.zip",
+					"folder": "%PATH_TEMP%/application" },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_UPDATE%/%FILE_SELECTED%-application.json",
+					"destination": "%PATH_TEMP%/application.json",
+					"update": "%FILE_SELECTED%",
+					"filename": "%FILE_SELECTED%-application.zip",
+					"description": "Application Install %FILE_SELECTED% as at %TODAY%." },
+
+				{ "exec": "copyFolder",
+					"source": "%PATH_TEMP%/application",
+					"destination": "%PATH_APP%",
+					"flags": ["recurse"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/application.json",
+					"destination": "%PATH_APP%/application.json",
+					"flags": ["replace"] }
+			]
+		},
+		"applicationInstallQuick":
+		{
+			"description": "quick install application",
+			"comments": "installs application quickly by extracting directly to the install location bypassing some safety checks and update the required metadata",
+			"tasks":
+			[
+				{ "exec": "unarchive",
+					"archive": "%PATH_UPDATE%/%FILE_SELECTED%-application.zip",
+					"folder": "%PATH_APP%" },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_UPDATE%/%FILE_SELECTED%-application.json",
+					"destination": "%PATH_APP%/application.json",
+					"update": "%FILE_SELECTED%",
+					"filename": "%FILE_SELECTED%-application.zip",
+					"description": "Application Install %FILE_SELECTED% as at %TODAY%." }
+			]
+		},
+		"applicationPackage":
+		{
+			"description": "package application",
+			"comments": "package the application files into an archive and create the required metadata",
+			"tasks":
+			[
+				{ "exec": "archiveFolder",
+					"folder": "%PATH_APP%",
+					"archive": "%PATH_TEMP%/application.zip",
+					"flags": ["recurse"],
+					"exclude": ["database.json", "database-client.json", "database-system.json", "repository.json", "repository-client.json", "repository-system.json", "config", "repository", ".svn", ".vscode", "_docs", "_resources", "webservices"] },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_APP%/application.json",
+					"destination": "%PATH_TEMP%/application.json",
+					"update": "%FILE_UPDATE%",
+					"filename": "%FILE_UPDATE%-application.zip",
+					"description": "New Application." },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/application.zip",
+					"destination": "%PATH_UPDATE%/%FILE_UPDATE%-application.zip",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/application.json",
+					"destination": "%PATH_UPDATE%/%FILE_UPDATE%-application.json",
+					"flags": ["replace"] }
+			]
+		},
+		"applicationRestore":
+		{
+			"description": "restore application",
+			"comments": "restore application from an archive and create the required metadata",
+			"tasks":
+			[
+				{ "exec": "unarchive",
+					"archive": "%PATH_BACKUP%/%FILE_SELECTED%-application.zip",
+					"folder": "%PATH_TEMP%/application" },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_BACKUP%/%FILE_SELECTED%-application.json",
+					"destination": "%PATH_TEMP%/application.json",
+					"update": "%FILE_SELECTED%",
+					"filename": "%FILE_SELECTED%-application.zip",
+					"description": "Application Install %FILE_SELECTED% as at %TODAY%." },
+
+				{ "exec": "copyFolder",
+					"source": "%PATH_TEMP%/application",
+					"destination": "%PATH_APP%",
+					"flags": ["recurse"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/application.json",
+					"destination": "%PATH_APP%/application.json",
+					"flags": ["replace"] }
+			]
+		},
+
+		"clientDatabaseBackup":
+		{
+			"description": "backup client databases",
+			"comments": "put the client databases into an archive and create the required metadata",
+			"tasks":
+			[
+				{ "exec": "exportData",
+					"description": "main database schema",
+					"database": { "hostname": "%DBCLIENTMAIN_HOSTNAME%", "dbname": "%DBCLIENTMAIN_DATABASENAME%", "login": "%DBCLIENTMAIN_LOGIN%", "password": "%DBCLIENTMAIN_PASSWORD%" },
+					"target": "%PATH_TEMP%/database-client/schema.sql",
+					"chunksize": 1000,
+					"flags": ["schema"] },
+
+				{ "exec": "exportData",
+					"description": "temp database schema",
+					"database": { "hostname": "%DBCLIENTTEMP_HOSTNAME%", "dbname": "%DBCLIENTTEMP_DATABASENAME%", "login": "%DBCLIENTTEMP_LOGIN%", "password": "%DBCLIENTTEMP_PASSWORD%" },
+					"target": "%PATH_TEMP%/database-client/schema-temp.sql",
+					"chunksize": 1000,
+                    "flags": ["schema"] },
+                    
+                { "exec": "exportData",
+                    "description": "history database schema",
+                    "database": { "hostname": "%DBCLIENTHISTORY_HOSTNAME%", "dbname": "%DBCLIENTHISTORY_DATABASENAME%", "login": "%DBCLIENTHISTORY_LOGIN%", "password": "%DBCLIENTHISTORY_PASSWORD%" },
+                    "target": "%PATH_TEMP%/database-client/schema-history.sql",
+                    "chunksize": 1000,
+                    "flags": ["schema"] },
+
+				{ "exec": "exportData",
+					"description": "main database data",
+					"database": { "hostname": "%DBCLIENTMAIN_HOSTNAME%", "dbname": "%DBCLIENTMAIN_DATABASENAME%", "login": "%DBCLIENTMAIN_LOGIN%", "password": "%DBCLIENTMAIN_PASSWORD%" },
+					"target": "%PATH_TEMP%/database-client/data.dat",
+					"chunksize": 1000,
+                    "flags": ["data"] },
+
+                { "exec": "exportData",
+                    "description": "history database data",
+                    "database": { "hostname": "%DBCLIENTHISTORY_HOSTNAME%", "dbname": "%DBCLIENTHISTORY_DATABASENAME%", "login": "%DBCLIENTHISTORY_LOGIN%", "password": "%DBCLIENTHISTORY_PASSWORD%" },
+                    "target": "%PATH_TEMP%/database-client/history.dat",
+                    "chunksize": 1000,
+                    "flags": ["data"] },
+
+				{ "exec": "archiveFolder",
+					"folder": "%PATH_TEMP%/database-client", "archive": "%PATH_TEMP%/database-client.zip",
+					"flags": ["recurse"] },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_APP%/database-client.json",
+					"destination": "%PATH_TEMP%/database-client.json",
+					"update": "%FILE_BACKUP%",
+					"filename": "%FILE_BACKUP%-database-client.zip",
+					"description": "Client Database Backup as at %TODAY%." },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/database-client.zip",
+					"destination": "%PATH_BACKUP%/%FILE_BACKUP%-database-client.zip",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/database-client.json",
+					"destination": "%PATH_BACKUP%/%FILE_BACKUP%-database-client.json",
+					"flags": ["replace"] }
+			]
+		},
+		"clientDatabaseConfigApply":
+		{
+			"description": "configure client database connections",
+			"comments": "configures the client database connections",
+			"tasks":
+			[
+				{ "exec": "createFolder",
+					"folder": "%PATH_WS%" },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_CONFIG%/app/ws/inc-dbsettings-client.php",
+					"destination": "%PATH_WS%/inc-dbsettings-client.php",
+					"flags": ["replace"] }
+			]
+		},
+		"clientDatabaseCreate":
+		{
+			"description": "creates the client databases",
+			"comments": "creates the client databases",
+			"tasks":
+			[
+				{ "exec": "createDatabase",
+					"database": { "hostname": "%DBCLIENTMAIN_HOSTNAME%", "dbname": "%DBCLIENTMAIN_DATABASENAME%", "login": "%DBCLIENTMAIN_LOGIN%", "password": "%DBCLIENTMAIN_PASSWORD%" },
+					"script": "%PATH_TEMP%/database-client/schema.sql" },
+
+                { "exec": "createDatabase",
+                    "database": { "hostname": "%DBCLIENTHISTORY_HOSTNAME%", "dbname": "%DBCLIENTHISTORY_DATABASENAME%", "login": "%DBCLIENTHISTORY_LOGIN%", "password": "%DBCLIENTHISTORY_PASSWORD%" },
+                    "script": "%PATH_TEMP%/database-client/schema-history.sql" },
+
+				{ "exec": "createDatabase",
+					"database": { "hostname": "%DBCLIENTTEMP_HOSTNAME%", "dbname": "%DBCLIENTTEMP_DATABASENAME%", "login": "%DBCLIENTTEMP_LOGIN%", "password": "%DBCLIENTTEMP_PASSWORD%" },
+                    "script": "%PATH_TEMP%/database-client/schema-temp.sql" }
+			]
+		},
+		"clientDatabaseDelete":
+		{
+			"description": "delete client databases",
+			"comments": "drops the client databases",
+			"tasks":
+			[
+				{ "exec": "deleteDatabase",
+					"database": { "hostname": "%DBCLIENTMAIN_HOSTNAME%", "dbname": "%DBCLIENTMAIN_DATABASENAME%", "login": "%DBCLIENTMAIN_LOGIN%", "password": "%DBCLIENTMAIN_PASSWORD%" } },
+
+				{ "exec": "deleteDatabase",
+                    "database": { "hostname": "%DBCLIENTTEMP_HOSTNAME%", "dbname": "%DBCLIENTTEMP_DATABASENAME%", "login": "%DBCLIENTTEMP_LOGIN%", "password": "%DBCLIENTTEMP_PASSWORD%" } },
+                    
+                { "exec": "deleteDatabase",
+                    "database": { "hostname": "%DBCLIENTHISTORY_HOSTNAME%", "dbname": "%DBCLIENTHISTORY_DATABASENAME%", "login": "%DBCLIENTHISTORY_LOGIN%", "password": "%DBCLIENTHISTORY_PASSWORD%" } },
+
+				{ "exec": "deleteFile",
+					"file": "%PATH_APP%/database-client.json" }
+			]
+		},
+		"clientDatabaseExport":
+		{
+			"description": "export client databases",
+			"comments": "export the client databases so that changes can be tracked in SVN.",
+			"tasks":
+			[
+				{ "exec": "deleteFolderContent",
+					"folder": "%SYS_PATH_CONFIG%/database-client",
+					"flags": ["recurse"] },
+					
+				{ "exec": "exportData",
+					"description": "main database schema",
+					"database": { "hostname": "%DBCLIENTMAIN_HOSTNAME%", "dbname": "%DBCLIENTMAIN_DATABASENAME%", "login": "%DBCLIENTMAIN_LOGIN%", "password": "%DBCLIENTMAIN_PASSWORD%" },
+					"target": "%SYS_PATH_CONFIG%/database-client/schema.sql",
+					"chunksize": 1000,
+					"flags": ["schema"] },
+
+				{ "exec": "exportData",
+					"description": "temp database schema",
+					"database": { "hostname": "%DBCLIENTTEMP_HOSTNAME%", "dbname": "%DBCLIENTTEMP_DATABASENAME%", "login": "%DBCLIENTTEMP_LOGIN%", "password": "%DBCLIENTTEMP_PASSWORD%" },
+					"target": "%SYS_PATH_CONFIG%/database-client/schema-temp.sql",
+					"chunksize": 1000,
+                    "flags": ["schema"] },
+                
+                { "exec": "exportData",
+                    "description": "history database schema",
+                    "database": { "hostname": "%DBCLIENTHISTORY_HOSTNAME%", "dbname": "%DBCLIENTHISTORY_DATABASENAME%", "login": "%DBCLIENTHISTORY_LOGIN%", "password": "%DBCLIENTHISTORY_PASSWORD%" },
+                    "target": "%SYS_PATH_CONFIG%/database-client/schema-history.sql",
+                    "chunksize": 1000,
+                    "flags": ["schema"] },
+
+				{ "exec": "exportData",
+					"description": "main database data",
+					"database": { "hostname": "%DBCLIENTMAIN_HOSTNAME%", "dbname": "%DBCLIENTMAIN_DATABASENAME%", "login": "%DBCLIENTMAIN_LOGIN%", "password": "%DBCLIENTMAIN_PASSWORD%" },
+					"target": "%SYS_PATH_CONFIG%/database-client/data.dat",
+					"chunksize": 1000,
+                    "flags": ["data"] },
+                
+                { "exec": "exportData",
+                    "description": "history database data",
+                    "database": { "hostname": "%DBCLIENTHISTORY_HOSTNAME%", "dbname": "%DBCLIENTHISTORY_DATABASENAME%", "login": "%DBCLIENTHISTORY_LOGIN%", "password": "%DBCLIENTHISTORY_PASSWORD%" },
+                    "target": "%SYS_PATH_CONFIG%/database-client/history.dat",
+                    "chunksize": 1000,
+                    "flags": ["data"] },
+
+				{ "exec": "alert",
+					"message": "Don't forget to check in the database folder when you check in the updates folder." }
+			]
+		},
+		"clientDatabaseImport":
+		{
+			"description": "import client databases",
+			"comments": "imports data into the client databases",
+			"tasks":
+			[
+				{ "exec": "importData",
+                    "description": "main database data",
+                    "type" : "data",
+					"database": { "hostname": "%DBCLIENTMAIN_HOSTNAME%", "dbname": "%DBCLIENTMAIN_DATABASENAME%", "login": "%DBCLIENTMAIN_LOGIN%", "password": "%DBCLIENTMAIN_PASSWORD%" },
+					"source": "%PATH_TEMP%/database-client/data.dat" },
+                
+                { "exec": "importData",
+                    "description": "history database data",
+                    "type" : "history",
+                    "database": { "hostname": "%DBCLIENTHISTORY_HOSTNAME%", "dbname": "%DBCLIENTHISTORY_DATABASENAME%", "login": "%DBCLIENTHISTORY_LOGIN%", "password": "%DBCLIENTHISTORY_PASSWORD%" },
+                    "source": "%PATH_TEMP%/database-client/history.dat" },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/database-client.json",
+					"destination": "%PATH_APP%/database-client.json",
+					"flags": ["replace"] }
+			]
+		},
+		"clientDatabaseInstall":
+		{
+			"description": "install client databases",
+			"comments": "installs prepared client databases",
+			"tasks":
+			[
+				{ "exec": "createDatabase",
+					"database": { "hostname": "%DBCLIENTMAIN_HOSTNAME%", "dbname": "%DBCLIENTMAIN_DATABASENAME%", "login": "%DBCLIENTMAIN_LOGIN%", "password": "%DBCLIENTMAIN_PASSWORD%" },
+					"script": "%PATH_TEMP%/database-client/schema.sql" },
+
+				{ "exec": "createDatabase",
+					"database": { "hostname": "%DBCLIENTTEMP_HOSTNAME%", "dbname": "%DBCLIENTTEMP_DATABASENAME%", "login": "%DBCLIENTTEMP_LOGIN%", "password": "%DBCLIENTTEMP_PASSWORD%" },
+                    "script": "%PATH_TEMP%/database-client/schema-temp.sql" },
+                    
+                { "exec": "createDatabase",
+                    "database": { "hostname": "%DBCLIENTHISTORY_HOSTNAME%", "dbname": "%DBCLIENTHISTORY_DATABASENAME%", "login": "%DBCLIENTHISTORY_LOGIN%", "password": "%DBCLIENTHISTORY_PASSWORD%" },
+                    "script": "%PATH_TEMP%/database-client/schema-history.sql" },
+
+				{ "exec": "importData",
+                    "description": "main database data",
+                    "type" : "data",
+					"database": { "hostname": "%DBCLIENTMAIN_HOSTNAME%", "dbname": "%DBCLIENTMAIN_DATABASENAME%", "login": "%DBCLIENTMAIN_LOGIN%", "password": "%DBCLIENTMAIN_PASSWORD%" },
+                    "source": "%PATH_TEMP%/database-client/data.dat" },
+                
+                { "exec": "importData",
+                    "description": "history database data",
+                    "type" : "history",
+                    "database": { "hostname": "%DBCLIENTHISTORY_HOSTNAME%", "dbname": "%DBCLIENTHISTORY_DATABASENAME%", "login": "%DBCLIENTHISTORY_LOGIN%", "password": "%DBCLIENTHISTORY_PASSWORD%" },
+                    "source": "%PATH_TEMP%/database-client/history.dat" },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/database-client.json",
+					"destination": "%PATH_APP%/database-client.json",
+					"flags": ["replace"] }
+			]
+		},
+		"clientDatabasePackageDev":
+		{
+			"description": "package client databases (dev)",
+			"comments": "package the client databases into an archive and create the required metadata, leaves test data in the database.",
+			"tasks":
+			[
+				{ "exec": "executeSQL",
+					"database": { "hostname": "%DBCLIENTMAIN_HOSTNAME%", "dbname": "%DBCLIENTMAIN_DATABASENAME%", "login": "%DBCLIENTMAIN_LOGIN%", "password": "%DBCLIENTMAIN_PASSWORD%" },
+					"script": "%SYS_PATH_CONFIG%/sql/client_package_dev.sql" },
+
+				{ "exec": "exportData",
+					"description": "main database schema",
+					"database": { "hostname": "%DBCLIENTMAIN_HOSTNAME%", "dbname": "%DBCLIENTMAIN_DATABASENAME%", "login": "%DBCLIENTMAIN_LOGIN%", "password": "%DBCLIENTMAIN_PASSWORD%" },
+					"target": "%PATH_TEMP%/database-client/schema.sql",
+					"chunksize": 1000,
+					"flags": ["schema"] },
+
+				{ "exec": "exportData",
+					"description": "temp database schema",
+					"database": { "hostname": "%DBCLIENTTEMP_HOSTNAME%", "dbname": "%DBCLIENTTEMP_DATABASENAME%", "login": "%DBCLIENTTEMP_LOGIN%", "password": "%DBCLIENTTEMP_PASSWORD%" },
+					"target": "%PATH_TEMP%/database-client/schema-temp.sql",
+					"chunksize": 1000,
+                    "flags": ["schema"] },
+                    
+                { "exec": "exportData",
+                    "description": "history database schema",
+                    "database": { "hostname": "%DBCLIENTHISTORY_HOSTNAME%", "dbname": "%DBCLIENTHISTORY_DATABASENAME%", "login": "%DBCLIENTHISTORY_LOGIN%", "password": "%DBCLIENTHISTORY_PASSWORD%" },
+                    "target": "%PATH_TEMP%/database-client/schema-history.sql",
+                    "chunksize": 1000,
+                    "flags": ["schema"] },
+
+				{ "exec": "exportData",
+					"description": "main database data",
+					"database": { "hostname": "%DBCLIENTMAIN_HOSTNAME%", "dbname": "%DBCLIENTMAIN_DATABASENAME%", "login": "%DBCLIENTMAIN_LOGIN%", "password": "%DBCLIENTMAIN_PASSWORD%" },
+					"target": "%PATH_TEMP%/database-client/data.dat",
+					"chunksize": 1000,
+                    "flags": ["data"] },
+                    
+                { "exec": "exportData",
+                    "description": "history database data",
+                    "database": { "hostname": "%DBCLIENTHISTORY_HOSTNAME%", "dbname": "%DBCLIENTHISTORY_DATABASENAME%", "login": "%DBCLIENTHISTORY_LOGIN%", "password": "%DBCLIENTHISTORY_PASSWORD%" },
+                    "target": "%PATH_TEMP%/database-client/history.dat",
+                    "chunksize": 1000,
+                    "flags": ["data"] },
+
+				{ "exec": "archiveFolder",
+					"folder": "%PATH_TEMP%/database-client", "archive": "%PATH_TEMP%/database-client.zip",
+					"flags": ["recurse"] },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_APP%/database-client.json",
+					"destination": "%PATH_TEMP%/database-client.json",
+					"update": "%FILE_UPDATE%",
+					"filename": "%FILE_UPDATE%-database-client.zip",
+					"description": "New Client Databases." },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/database-client.zip",
+					"destination": "%PATH_UPDATE%/%FILE_UPDATE%-database-client.zip",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/database-client.json",
+					"destination": "%PATH_UPDATE%/%FILE_UPDATE%-database-client.json",
+					"flags": ["replace"] }
+			]
+		},
+		"clientDatabasePackageProd":
+		{
+			"description": "package client databases (prod)",
+			"comments": "package the client databases into an archive and create the required metadata, removes test data from the database",
+			"tasks":
+			[
+				{ "exec": "executeSQL",
+					"database": { "hostname": "%DBCLIENTMAIN_HOSTNAME%", "dbname": "%DBCLIENTMAIN_DATABASENAME%", "login": "%DBCLIENTMAIN_LOGIN%", "password": "%DBCLIENTMAIN_PASSWORD%" },
+					"script": "%SYS_PATH_CONFIG%/sql/client_package_prod.sql" },
+
+				{ "exec": "exportData",
+					"description": "main database schema",
+					"database": { "hostname": "%DBCLIENTMAIN_HOSTNAME%", "dbname": "%DBCLIENTMAIN_DATABASENAME%", "login": "%DBCLIENTMAIN_LOGIN%", "password": "%DBCLIENTMAIN_PASSWORD%" },
+					"target": "%PATH_TEMP%/database-client/schema.sql",
+					"chunksize": 1000,
+					"flags": ["schema"] },
+
+				{ "exec": "exportData",
+					"description": "temp database schema",
+					"database": { "hostname": "%DBCLIENTTEMP_HOSTNAME%", "dbname": "%DBCLIENTTEMP_DATABASENAME%", "login": "%DBCLIENTTEMP_LOGIN%", "password": "%DBCLIENTTEMP_PASSWORD%" },
+					"target": "%PATH_TEMP%/database-client/schema-temp.sql",
+					"chunksize": 1000,
+                    "flags": ["schema"] },
+                    
+                { "exec": "exportData",
+                    "description": "history database schema",
+                    "database": { "hostname": "%DBCLIENTHISTORY_HOSTNAME%", "dbname": "%DBCLIENTHISTORY_DATABASENAME%", "login": "%DBCLIENTHISTORY_LOGIN%", "password": "%DBCLIENTHISTORY_PASSWORD%" },
+                    "target": "%PATH_TEMP%/database-client/schema-history.sql",
+                    "chunksize": 1000,
+                    "flags": ["schema"] },
+
+				{ "exec": "exportData",
+					"description": "main database data",
+					"database": { "hostname": "%DBCLIENTMAIN_HOSTNAME%", "dbname": "%DBCLIENTMAIN_DATABASENAME%", "login": "%DBCLIENTMAIN_LOGIN%", "password": "%DBCLIENTMAIN_PASSWORD%" },
+					"target": "%PATH_TEMP%/database-client/data.dat",
+					"chunksize": 1000,
+                    "flags": ["data"] },
+                
+                { "exec": "exportData",
+                    "description": "history database data",
+                    "database": { "hostname": "%DBCLIENTHISTORY_HOSTNAME%", "dbname": "%DBCLIENTHISTORY_DATABASENAME%", "login": "%DBCLIENTHISTORY_LOGIN%", "password": "%DBCLIENTHISTORY_PASSWORD%" },
+                    "target": "%PATH_TEMP%/database-client/history.dat",
+                    "chunksize": 1000,
+                    "flags": ["data"] },
+
+				{ "exec": "archiveFolder",
+					"folder": "%PATH_TEMP%/database-client", "archive": "%PATH_TEMP%/database-client.zip",
+					"flags": ["recurse"] },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_APP%/database-client.json",
+					"destination": "%PATH_TEMP%/database-client.json",
+					"update": "%FILE_UPDATE%",
+					"filename": "%FILE_UPDATE%-database-client.zip",
+					"description": "New Client Databases." },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/database-client.zip",
+					"destination": "%PATH_UPDATE%/%FILE_UPDATE%-database-client.zip",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/database-client.json",
+					"destination": "%PATH_UPDATE%/%FILE_UPDATE%-database-client.json",
+					"flags": ["replace"] }
+			]
+		},
+		"clientDatabasePrepare":
+		{
+			"description": "prepare client databases",
+			"comments": "prepares the client databases from an archive and prepares the required metadata",
+			"tasks":
+			[
+				{ "exec": "unarchive",
+					"archive": "%PATH_UPDATE%/%FILE_SELECTED%-database-client.zip",
+					"folder": "%PATH_TEMP%/database-client" },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_UPDATE%/%FILE_SELECTED%-database-client.json",
+					"destination": "%PATH_TEMP%/database-client.json",
+					"update": "%FILE_SELECTED%",
+					"filename": "%FILE_SELECTED%-database-client.zip",
+					"description": "Client Database Install %FILE_SELECTED% as at %TODAY%." }
+			]
+		},
+		"clientDatabasePurgeClientData":
+		{
+			"description": "client databases purge client data",
+			"comments": "deletes all non-Default clients (batch, default, public, system as well as the systemowner client) within the database",
+			"tasks":
+			[
+				{ "exec": "executeSQL",
+					"database": { "hostname": "%DBCLIENTMAIN_HOSTNAME%", "dbname": "%DBCLIENTMAIN_DATABASENAME%", "login": "%DBCLIENTMAIN_LOGIN%", "password": "%DBCLIENTMAIN_PASSWORD%" },
+					"script": "%SYS_PATH_CONFIG%/sql/client_purgeclients.sql" }
+			]
+		},
+		"clientDatabasePurgeHistoryTables":
+		{
+			"description": "client databases purge history",
+			"comments": "purges all history tables within the client databases",
+			"tasks":
+			[
+				{ "exec": "executeSQL",
+					"database": { "hostname": "%DBCLIENTMAIN_HOSTNAME%", "dbname": "%DBCLIENTMAIN_DATABASENAME%", "login": "%DBCLIENTMAIN_LOGIN%", "password": "%DBCLIENTMAIN_PASSWORD%" },
+					"script": "%SYS_PATH_CONFIG%/sql/client_purgehistory.sql" }
+			]
+		},
+		"clientDatabasePurgeTempTables":
+		{
+			"description": "client databases purge temporary tables",
+			"comments": "purges all temporary tables within the client databases",
+			"tasks":
+			[
+				{ "exec": "executeSQL",
+					"database": { "hostname": "%DBCLIENTMAIN_HOSTNAME%", "dbname": "%DBCLIENTMAIN_DATABASENAME%", "login": "%DBCLIENTMAIN_LOGIN%", "password": "%DBCLIENTMAIN_PASSWORD%" },
+					"script": "%SYS_PATH_CONFIG%/sql/client_purgetemptables.sql" }
+			]
+		},
+		"clientDatabaseRestore":
+		{
+			"description": "restore client databases",
+			"comments": "restore the client databases from an archive and create the required metadata",
+			"tasks":
+			[
+				{ "exec": "unarchive",
+					"archive": "%PATH_BACKUP%/%FILE_SELECTED%-database-client.zip",
+					"folder": "%PATH_TEMP%/database-client" },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_BACKUP%/%FILE_SELECTED%-database-client.json",
+					"destination": "%PATH_TEMP%/database-client.json",
+					"update": "%FILE_SELECTED%",
+					"filename": "%FILE_SELECTED%-database-client.zip",
+					"description": "Client Database Install %FILE_SELECTED% as at %TODAY%." } ,
+
+				{ "exec": "createDatabase",
+					"database": { "hostname": "%DBCLIENTMAIN_HOSTNAME%", "dbname": "%DBCLIENTMAIN_DATABASENAME%", "login": "%DBCLIENTMAIN_LOGIN%", "password": "%DBCLIENTMAIN_PASSWORD%" },
+					"script": "%PATH_TEMP%/database-client/schema.sql" },
+
+				{ "exec": "createDatabase",
+					"database": { "hostname": "%DBCLIENTTEMP_HOSTNAME%", "dbname": "%DBCLIENTTEMP_DATABASENAME%", "login": "%DBCLIENTTEMP_LOGIN%", "password": "%DBCLIENTTEMP_PASSWORD%" },
+                    "script": "%PATH_TEMP%/database-client/schema-temp.sql" },
+                    
+                { "exec": "createDatabase",
+                    "database": { "hostname": "%DBCLIENTHISTORY_HOSTNAME%", "dbname": "%DBCLIENTHISTORY_DATABASENAME%", "login": "%DBCLIENTHISTORY_LOGIN%", "password": "%DBCLIENTHISTORY_PASSWORD%" },
+                    "script": "%PATH_TEMP%/database-client/schema-history.sql" },
+
+				{ "exec": "importData",
+                    "description": "main database data",
+                    "type" : "data",
+					"database": { "hostname": "%DBCLIENTMAIN_HOSTNAME%", "dbname": "%DBCLIENTMAIN_DATABASENAME%", "login": "%DBCLIENTMAIN_LOGIN%", "password": "%DBCLIENTMAIN_PASSWORD%" },
+                    "source": "%PATH_TEMP%/database-client/data.dat" },
+                
+                { "exec": "importData",
+                    "description": "history database data",
+                    "type" : "history",
+                    "database": { "hostname": "%DBCLIENTHISTORY_HOSTNAME%", "dbname": "%DBCLIENTHISTORY_DATABASENAME%", "login": "%DBCLIENTHISTORY_LOGIN%", "password": "%DBCLIENTHISTORY_PASSWORD%" },
+                    "source": "%PATH_TEMP%/database-client/history.dat" },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/database-client.json",
+					"destination": "%PATH_APP%/database-client.json",
+					"flags": ["replace"] }
+			]
+		},
+
+		"clientRepositoryBackup":
+		{
+			"description": "backup client document repository",
+			"comments": "put the client document repository into an archive and create the required metadata",
+			"tasks":
+			[
+				{ "exec": "archiveFolder",
+					"folder": "%PATH_CLIENTREPOSITORY%",
+					"archive": "%PATH_TEMP%/repository-client.zip",
+					"flags": ["recurse"] },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_CLIENTREPOSITORY%/repository.json",
+					"destination": "%PATH_TEMP%/repository-client.json",
+					"update": "%FILE_BACKUP%",
+					"filename": "%FILE_BACKUP%-repository-client.zip",
+					"description": "Client Document Repository Backup as at %TODAY%." },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/repository-client.zip",
+					"destination": "%PATH_BACKUP%/%FILE_BACKUP%-repository-client.zip",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/repository-client.json",
+					"destination": "%PATH_BACKUP%/%FILE_BACKUP%-repository-client.json",
+					"flags": ["replace"] }
+			]
+		},
+		"clientRepositoryDelete":
+		{
+			"description": "delete client document repository",
+			"comments": "delete the client document repository",
+			"tasks":
+			[
+				{ "exec": "deleteFolder",
+					"folder": "%PATH_CLIENTREPOSITORY%",
+					"flags": ["recurse"] },
+
+				{ "exec": "deleteFile",
+					"file": "%PATH_APP%/repository-client.json" }
+			]
+		},
+		"clientRepositoryInstall":
+		{
+			"description": "install client document repository",
+			"comments": "installs the client document repository from an archive and create the required metadata",
+			"tasks":
+			[
+				{ "exec": "unarchive",
+					"archive": "%PATH_UPDATE%/%FILE_SELECTED%-repository-client.zip",
+					"folder": "%PATH_TEMP%/repository-client" },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_UPDATE%/%FILE_SELECTED%-repository-client.json",
+					"destination": "%PATH_TEMP%/repository-client.json",
+					"update": "%FILE_SELECTED%",
+					"filename": "%FILE_SELECTED%-repository-client.zip",
+					"description": "Client Repository Install %FILE_SELECTED% as at %TODAY%." },
+
+				{ "exec": "createFolder",
+					"folder": "%PATH_CLIENTREPOSITORY%" },
+
+				{ "exec": "copyFolder",
+					"source": "%PATH_TEMP%/repository-client",
+					"destination": "%PATH_CLIENTREPOSITORY%",
+					"flags": ["recurse"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/repository-client.json",
+					"destination": "%PATH_CLIENTREPOSITORY%/repository.json",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/repository-client.json",
+					"destination": "%PATH_APP%/repository-client.json",
+					"flags": ["replace"] }
+			]
+		},
+		"clientRepositoryPackage":
+		{
+			"description": "package client document repository",
+			"comments": "package the client document repository into an archive and create the required metadata",
+			"tasks":
+			[
+				{ "exec": "archiveFolder",
+					"folder": "%PATH_CLIENTREPOSITORY%",
+					"archive": "%PATH_TEMP%/repository-client.zip",
+					"flags": ["recurse"] },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_CLIENTREPOSITORY%/repository.json",
+					"destination": "%PATH_TEMP%/repository-client.json",
+					"update": "%FILE_UPDATE%",
+					"filename": "%FILE_UPDATE%-repository-client.zip",
+					"description": "New Client Repository." },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/repository-client.zip",
+					"destination": "%PATH_UPDATE%/%FILE_UPDATE%-repository-client.zip",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/repository-client.json",
+					"destination": "%PATH_UPDATE%/%FILE_UPDATE%-repository-client.json",
+					"flags": ["replace"] }
+			]
+		},
+		"clientRepositoryPurge":
+		{
+			"description": "purge client document repository",
+			"comments": "purges the client document repository",
+			"tasks":
+			[
+				{ "exec": "deleteFolderContent",
+					"folder": "%PATH_CLIENTREPOSITORY%/documents",
+					"flags": ["recurse"] },
+
+				{ "exec": "deleteFolderContent",
+					"folder": "%PATH_CLIENTREPOSITORY%/temporary",
+					"flags": ["recurse"] }
+			]
+		},
+		"clientRepositoryRestore":
+		{
+			"description": "restore client document repository",
+			"comments": "restores the client document repository from an archive and create the required metadata",
+			"tasks":
+			[
+				{ "exec": "unarchive",
+					"archive": "%PATH_BACKUP%/%FILE_SELECTED%-repository-client.zip",
+					"folder": "%PATH_TEMP%/repository-client" },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_BACKUP%/%FILE_SELECTED%-repository-client.json",
+					"destination": "%PATH_TEMP%/repository-client.json",
+					"update": "%FILE_SELECTED%",
+					"filename": "%FILE_SELECTED%-repository-client.zip",
+					"description": "Client Repository Restored %FILE_SELECTED% as at %TODAY%." },
+
+				{ "exec": "createFolder",
+					"folder": "%PATH_CLIENTREPOSITORY%" },
+
+				{ "exec": "copyFolder",
+					"source": "%PATH_TEMP%/repository-client",
+					"destination": "%PATH_CLIENTREPOSITORY%",
+					"flags": ["recurse"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/repository-client.json",
+					"destination": "%PATH_CLIENTREPOSITORY%/repository.json",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/repository-client.json",
+					"destination": "%PATH_APP%/repository-client.json",
+					"flags": ["replace"] }
+			]
+		},
+
+		"systemDatabaseBackup":
+		{
+			"description": "backup system databases",
+			"comments": "put the system databases into an archive and create the required metadata",
+			"tasks":
+			[
+				{ "exec": "exportData",
+					"description": "main database schema",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+					"target": "%PATH_TEMP%/database-system/schema.sql",
+					"chunksize": 1000,
+					"flags": ["schema"] },
+
+				{ "exec": "exportData",
+					"description": "temp database schema",
+					"database": { "hostname": "%DBSYSTEMTEMP_HOSTNAME%", "dbname": "%DBSYSTEMTEMP_DATABASENAME%", "login": "%DBSYSTEMTEMP_LOGIN%", "password": "%DBSYSTEMTEMP_PASSWORD%" },
+					"target": "%PATH_TEMP%/database-system/schema-temp.sql",
+					"chunksize": 1000,
+                    "flags": ["schema"] },
+                    
+                { "exec": "exportData",
+                    "description": "history database schema",
+                    "database": { "hostname": "%DBSYSTEMHISTORY_HOSTNAME%", "dbname": "%DBSYSTEMHISTORY_DATABASENAME%", "login": "%DBSYSTEMHISTORY_LOGIN%", "password": "%DBSYSTEMHISTORY_PASSWORD%" },
+                    "target": "%PATH_TEMP%/database-system/schema-history.sql",
+                    "chunksize": 1000,
+                    "flags": ["schema"] },
+
+				{ "exec": "exportData",
+					"description": "main database data",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+					"target": "%PATH_TEMP%/database-system/data.dat",
+					"chunksize": 1000,
+                    "flags": ["data"] },
+
+                { "exec": "exportData",
+                    "description": "history database data",
+                    "database": { "hostname": "%DBSYSTEMHISTORY_HOSTNAME%", "dbname": "%DBSYSTEMHISTORY_DATABASENAME%", "login": "%DBSYSTEMHISTORY_LOGIN%", "password": "%DBSYSTEMHISTORY_PASSWORD%" },
+                    "target": "%PATH_TEMP%/database-system/history.dat",
+                    "chunksize": 1000,
+                    "flags": ["data"] },
+
+				{ "exec": "archiveFolder",
+					"folder": "%PATH_TEMP%/database-system", "archive": "%PATH_TEMP%/database-system.zip",
+					"flags": ["recurse"] },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_APP%/database-system.json",
+					"destination": "%PATH_TEMP%/database-system.json",
+					"update": "%FILE_BACKUP%",
+					"filename": "%FILE_BACKUP%-database-system.zip",
+					"description": "System Database Backup as at %TODAY%." },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/database-system.zip",
+					"destination": "%PATH_BACKUP%/%FILE_BACKUP%-database-system.zip",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/database-system.json",
+					"destination": "%PATH_BACKUP%/%FILE_BACKUP%-database-system.json",
+					"flags": ["replace"] }
+			]
+		},
+		"systemDatabaseConfigApply":
+		{
+			"description": "configure system database connections",
+			"comments": "configures the system database connections",
+			"tasks":
+			[
+				{ "exec": "createFolder",
+					"folder": "%PATH_WS%" },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_CONFIG%/app/ws/inc-dbsettings-system.php",
+					"destination": "%PATH_WS%/inc-dbsettings-system.php",
+					"flags": ["replace"] }
+			]
+		},
+		"systemDatabaseCreate":
+		{
+			"description": "creates the system databases",
+			"comments": "creates the system databases",
+			"tasks":
+			[
+				{ "exec": "createDatabase",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+					"script": "%PATH_TEMP%/database-system/schema.sql" },
+
+                { "exec": "createDatabase",
+                    "database": { "hostname": "%DBSYSTEMHISTORY_HOSTNAME%", "dbname": "%DBSYSTEMHISTORY_DATABASENAME%", "login": "%DBSYSTEMHISTORY_LOGIN%", "password": "%DBSYSTEMHISTORY_PASSWORD%" },
+                    "script": "%PATH_TEMP%/database-system/schema-history.sql" },
+
+				{ "exec": "createDatabase",
+					"database": { "hostname": "%DBSYSTEMTEMP_HOSTNAME%", "dbname": "%DBSYSTEMTEMP_DATABASENAME%", "login": "%DBSYSTEMTEMP_LOGIN%", "password": "%DBSYSTEMTEMP_PASSWORD%" },
+                    "script": "%PATH_TEMP%/database-system/schema-temp.sql" }
+			]
+		},
+		"systemDatabaseDelete":
+		{
+			"description": "delete system databases",
+			"comments": "drops the system databases",
+			"tasks":
+			[
+				{ "exec": "deleteDatabase",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" } },
+
+				{ "exec": "deleteDatabase",
+                    "database": { "hostname": "%DBSYSTEMTEMP_HOSTNAME%", "dbname": "%DBSYSTEMTEMP_DATABASENAME%", "login": "%DBSYSTEMTEMP_LOGIN%", "password": "%DBSYSTEMTEMP_PASSWORD%" } },
+                    
+                { "exec": "deleteDatabase",
+                    "database": { "hostname": "%DBSYSTEMHISTORY_HOSTNAME%", "dbname": "%DBSYSTEMHISTORY_DATABASENAME%", "login": "%DBSYSTEMHISTORY_LOGIN%", "password": "%DBSYSTEMHISTORY_PASSWORD%" } },
+
+				{ "exec": "deleteFile",
+					"file": "%PATH_APP%/database-system.json" }
+			]
+		},
+		"systemDatabaseExport":
+		{
+			"description": "export system databases",
+			"comments": "export the system databases so that changes can be tracked in SVN.",
+			"tasks":
+			[
+				{ "exec": "deleteFolderContent",
+					"folder": "%SYS_PATH_CONFIG%/database-system",
+					"flags": ["recurse"] },
+					
+				{ "exec": "exportData",
+					"description": "main database schema",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+					"target": "%SYS_PATH_CONFIG%/database-system/schema.sql",
+					"chunksize": 1000,
+					"flags": ["schema"] },
+
+				{ "exec": "exportData",
+					"description": "temp database schema",
+					"database": { "hostname": "%DBSYSTEMTEMP_HOSTNAME%", "dbname": "%DBSYSTEMTEMP_DATABASENAME%", "login": "%DBSYSTEMTEMP_LOGIN%", "password": "%DBSYSTEMTEMP_PASSWORD%" },
+					"target": "%SYS_PATH_CONFIG%/database-system/schema-temp.sql",
+					"chunksize": 1000,
+                    "flags": ["schema"] },
+                
+                { "exec": "exportData",
+                    "description": "history database schema",
+                    "database": { "hostname": "%DBSYSTEMHISTORY_HOSTNAME%", "dbname": "%DBSYSTEMHISTORY_DATABASENAME%", "login": "%DBSYSTEMHISTORY_LOGIN%", "password": "%DBSYSTEMHISTORY_PASSWORD%" },
+                    "target": "%SYS_PATH_CONFIG%/database-system/schema-history.sql",
+                    "chunksize": 1000,
+                    "flags": ["schema"] },
+
+				{ "exec": "exportData",
+					"description": "main database data",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+					"target": "%SYS_PATH_CONFIG%/database-system/data.dat",
+					"chunksize": 1000,
+                    "flags": ["data"] },
+                
+                { "exec": "exportData",
+                    "description": "history database data",
+                    "database": { "hostname": "%DBSYSTEMHISTORY_HOSTNAME%", "dbname": "%DBSYSTEMHISTORY_DATABASENAME%", "login": "%DBSYSTEMHISTORY_LOGIN%", "password": "%DBSYSTEMHISTORY_PASSWORD%" },
+                    "target": "%SYS_PATH_CONFIG%/database-system/history.dat",
+                    "chunksize": 1000,
+                    "flags": ["data"] },
+
+				{ "exec": "alert",
+					"message": "Don't forget to check in the database folder when you check in the updates folder." }
+			]
+		},
+		"systemDatabaseImport":
+		{
+			"description": "import system databases",
+			"comments": "imports data into the system databases",
+			"tasks":
+			[
+				{ "exec": "importData",
+                    "description": "main database data",
+                    "type" : "data",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+					"source": "%PATH_TEMP%/database-system/data.dat" },
+                
+                { "exec": "importData",
+                    "description": "history database data",
+                    "type" : "history",
+                    "database": { "hostname": "%DBSYSTEMHISTORY_HOSTNAME%", "dbname": "%DBSYSTEMHISTORY_DATABASENAME%", "login": "%DBSYSTEMHISTORY_LOGIN%", "password": "%DBSYSTEMHISTORY_PASSWORD%" },
+                    "source": "%PATH_TEMP%/database-system/history.dat" },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/database-system.json",
+					"destination": "%PATH_APP%/database-system.json",
+					"flags": ["replace"] }
+			]
+		},
+		"systemDatabaseInstall":
+		{
+			"description": "install system databases",
+			"comments": "installs prepared system databases",
+			"tasks":
+			[
+				{ "exec": "createDatabase",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+					"script": "%PATH_TEMP%/database-system/schema.sql" },
+
+				{ "exec": "createDatabase",
+					"database": { "hostname": "%DBSYSTEMTEMP_HOSTNAME%", "dbname": "%DBSYSTEMTEMP_DATABASENAME%", "login": "%DBSYSTEMTEMP_LOGIN%", "password": "%DBSYSTEMTEMP_PASSWORD%" },
+                    "script": "%PATH_TEMP%/database-system/schema-temp.sql" },
+                    
+                { "exec": "createDatabase",
+                    "database": { "hostname": "%DBSYSTEMHISTORY_HOSTNAME%", "dbname": "%DBSYSTEMHISTORY_DATABASENAME%", "login": "%DBSYSTEMHISTORY_LOGIN%", "password": "%DBSYSTEMHISTORY_PASSWORD%" },
+                    "script": "%PATH_TEMP%/database-system/schema-history.sql" },
+
+				{ "exec": "importData",
+                    "description": "main database data",
+                    "type" : "data",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+                    "source": "%PATH_TEMP%/database-system/data.dat" },
+                
+                { "exec": "importData",
+                    "description": "history database data",
+                    "type" : "history",
+                    "database": { "hostname": "%DBSYSTEMHISTORY_HOSTNAME%", "dbname": "%DBSYSTEMHISTORY_DATABASENAME%", "login": "%DBSYSTEMHISTORY_LOGIN%", "password": "%DBSYSTEMHISTORY_PASSWORD%" },
+                    "source": "%PATH_TEMP%/database-system/history.dat" },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/database-system.json",
+					"destination": "%PATH_APP%/database-system.json",
+					"flags": ["replace"] }
+			]
+		},
+		"systemDatabasePackageDev":
+		{
+			"description": "package system databases (dev)",
+			"comments": "package the system databases into an archive and create the required metadata, leaves test data in the database.",
+			"tasks":
+			[
+				{ "exec": "executeSQL",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+					"script": "%SYS_PATH_CONFIG%/sql/system_package_dev.sql" },
+
+				{ "exec": "exportData",
+					"description": "main database schema",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+					"target": "%PATH_TEMP%/database-system/schema.sql",
+					"chunksize": 1000,
+					"flags": ["schema"] },
+
+				{ "exec": "exportData",
+					"description": "temp database schema",
+					"database": { "hostname": "%DBSYSTEMTEMP_HOSTNAME%", "dbname": "%DBSYSTEMTEMP_DATABASENAME%", "login": "%DBSYSTEMTEMP_LOGIN%", "password": "%DBSYSTEMTEMP_PASSWORD%" },
+					"target": "%PATH_TEMP%/database-system/schema-temp.sql",
+					"chunksize": 1000,
+                    "flags": ["schema"] },
+                    
+                { "exec": "exportData",
+                    "description": "history database schema",
+                    "database": { "hostname": "%DBSYSTEMHISTORY_HOSTNAME%", "dbname": "%DBSYSTEMHISTORY_DATABASENAME%", "login": "%DBSYSTEMHISTORY_LOGIN%", "password": "%DBSYSTEMHISTORY_PASSWORD%" },
+                    "target": "%PATH_TEMP%/database-system/schema-history.sql",
+                    "chunksize": 1000,
+                    "flags": ["schema"] },
+
+				{ "exec": "exportData",
+					"description": "main database data",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+					"target": "%PATH_TEMP%/database-system/data.dat",
+					"chunksize": 1000,
+                    "flags": ["data"] },
+                    
+                { "exec": "exportData",
+                    "description": "history database data",
+                    "database": { "hostname": "%DBSYSTEMHISTORY_HOSTNAME%", "dbname": "%DBSYSTEMHISTORY_DATABASENAME%", "login": "%DBSYSTEMHISTORY_LOGIN%", "password": "%DBSYSTEMHISTORY_PASSWORD%" },
+                    "target": "%PATH_TEMP%/database-system/history.dat",
+                    "chunksize": 1000,
+                    "flags": ["data"] },
+
+				{ "exec": "archiveFolder",
+					"folder": "%PATH_TEMP%/database-system", "archive": "%PATH_TEMP%/database-system.zip",
+					"flags": ["recurse"] },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_APP%/database-system.json",
+					"destination": "%PATH_TEMP%/database-system.json",
+					"update": "%FILE_UPDATE%",
+					"filename": "%FILE_UPDATE%-database-system.zip",
+					"description": "New System Databases." },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/database-system.zip",
+					"destination": "%PATH_UPDATE%/%FILE_UPDATE%-database-system.zip",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/database-system.json",
+					"destination": "%PATH_UPDATE%/%FILE_UPDATE%-database-system.json",
+					"flags": ["replace"] }
+			]
+		},
+		"systemDatabasePackageProd":
+		{
+			"description": "package system databases (prod)",
+			"comments": "package the system databases into an archive and create the required metadata, removes test data from the database",
+			"tasks":
+			[
+				{ "exec": "executeSQL",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+					"script": "%SYS_PATH_CONFIG%/sql/system_package_prod.sql" },
+
+				{ "exec": "exportData",
+					"description": "main database schema",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+					"target": "%PATH_TEMP%/database-system/schema.sql",
+					"chunksize": 1000,
+					"flags": ["schema"] },
+
+				{ "exec": "exportData",
+					"description": "temp database schema",
+					"database": { "hostname": "%DBSYSTEMTEMP_HOSTNAME%", "dbname": "%DBSYSTEMTEMP_DATABASENAME%", "login": "%DBSYSTEMTEMP_LOGIN%", "password": "%DBSYSTEMTEMP_PASSWORD%" },
+					"target": "%PATH_TEMP%/database-system/schema-temp.sql",
+					"chunksize": 1000,
+                    "flags": ["schema"] },
+                    
+                { "exec": "exportData",
+                    "description": "history database schema",
+                    "database": { "hostname": "%DBSYSTEMHISTORY_HOSTNAME%", "dbname": "%DBSYSTEMHISTORY_DATABASENAME%", "login": "%DBSYSTEMHISTORY_LOGIN%", "password": "%DBSYSTEMHISTORY_PASSWORD%" },
+                    "target": "%PATH_TEMP%/database-system/schema-history.sql",
+                    "chunksize": 1000,
+                    "flags": ["schema"] },
+
+				{ "exec": "exportData",
+					"description": "main database data",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+					"target": "%PATH_TEMP%/database-system/data.dat",
+					"chunksize": 1000,
+                    "flags": ["data"] },
+                
+                { "exec": "exportData",
+                    "description": "history database data",
+                    "database": { "hostname": "%DBSYSTEMHISTORY_HOSTNAME%", "dbname": "%DBSYSTEMHISTORY_DATABASENAME%", "login": "%DBSYSTEMHISTORY_LOGIN%", "password": "%DBSYSTEMHISTORY_PASSWORD%" },
+                    "target": "%PATH_TEMP%/database-system/history.dat",
+                    "chunksize": 1000,
+                    "flags": ["data"] },
+
+				{ "exec": "archiveFolder",
+					"folder": "%PATH_TEMP%/database-system", "archive": "%PATH_TEMP%/database-system.zip",
+					"flags": ["recurse"] },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_APP%/database-system.json",
+					"destination": "%PATH_TEMP%/database-system.json",
+					"update": "%FILE_UPDATE%",
+					"filename": "%FILE_UPDATE%-database-system.zip",
+					"description": "New System Databases." },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/database-system.zip",
+					"destination": "%PATH_UPDATE%/%FILE_UPDATE%-database-system.zip",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/database-system.json",
+					"destination": "%PATH_UPDATE%/%FILE_UPDATE%-database-system.json",
+					"flags": ["replace"] }
+			]
+		},
+		"systemDatabasePrepare":
+		{
+			"description": "prepare system databases",
+			"comments": "prepares the system databases from an archive and prepares the required metadata",
+			"tasks":
+			[
+				{ "exec": "unarchive",
+					"archive": "%PATH_UPDATE%/%FILE_SELECTED%-database-system.zip",
+					"folder": "%PATH_TEMP%/database-system" },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_UPDATE%/%FILE_SELECTED%-database-system.json",
+					"destination": "%PATH_TEMP%/database-system.json",
+					"update": "%FILE_SELECTED%",
+					"filename": "%FILE_SELECTED%-database-system.zip",
+					"description": "System Database Install %FILE_SELECTED% as at %TODAY%." }
+			]
+		},
+		"systemDatabasePurgeClientData":
+		{
+			"description": "system databases purge client data",
+			"comments": "deletes all non-Default clients (batch, default, public, system as well as the systemowner client) within the database",
+			"tasks":
+			[
+				{ "exec": "executeSQL",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+					"script": "%SYS_PATH_CONFIG%/sql/system_purgeclients.sql" }
+			]
+		},
+		"systemDatabasePurgeHistoryTables":
+		{
+			"description": "system databases purge history",
+			"comments": "purges all history tables within the system databases",
+			"tasks":
+			[
+				{ "exec": "executeSQL",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+					"script": "%SYS_PATH_CONFIG%/sql/system_purgehistory.sql" }
+			]
+		},
+		"systemDatabasePurgeTempTables":
+		{
+			"description": "system databases purge temporary tables",
+			"comments": "purges all temporary tables within the system databases",
+			"tasks":
+			[
+				{ "exec": "executeSQL",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+					"script": "%SYS_PATH_CONFIG%/sql/system_purgetemptables.sql" }
+			]
+		},
+		"systemDatabaseRestore":
+		{
+			"description": "restore system databases",
+			"comments": "restore the system databases from an archive and create the required metadata",
+			"tasks":
+			[
+				{ "exec": "unarchive",
+					"archive": "%PATH_BACKUP%/%FILE_SELECTED%-database-system.zip",
+					"folder": "%PATH_TEMP%/database-system" },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_BACKUP%/%FILE_SELECTED%-database-system.json",
+					"destination": "%PATH_TEMP%/database-system.json",
+					"update": "%FILE_SELECTED%",
+					"filename": "%FILE_SELECTED%-database-system.zip",
+					"description": "System Database Install %FILE_SELECTED% as at %TODAY%." } ,
+
+				{ "exec": "createDatabase",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+					"script": "%PATH_TEMP%/database-system/schema.sql" },
+
+				{ "exec": "createDatabase",
+					"database": { "hostname": "%DBSYSTEMTEMP_HOSTNAME%", "dbname": "%DBSYSTEMTEMP_DATABASENAME%", "login": "%DBSYSTEMTEMP_LOGIN%", "password": "%DBSYSTEMTEMP_PASSWORD%" },
+                    "script": "%PATH_TEMP%/database-system/schema-temp.sql" },
+                    
+                { "exec": "createDatabase",
+                    "database": { "hostname": "%DBSYSTEMHISTORY_HOSTNAME%", "dbname": "%DBSYSTEMHISTORY_DATABASENAME%", "login": "%DBSYSTEMHISTORY_LOGIN%", "password": "%DBSYSTEMHISTORY_PASSWORD%" },
+                    "script": "%PATH_TEMP%/database-system/schema-history.sql" },
+
+				{ "exec": "importData",
+                    "description": "main database data",
+                    "type" : "data",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+                    "source": "%PATH_TEMP%/database-system/data.dat" },
+                
+                { "exec": "importData",
+                    "description": "history database data",
+                    "type" : "history",
+                    "database": { "hostname": "%DBSYSTEMHISTORY_HOSTNAME%", "dbname": "%DBSYSTEMHISTORY_DATABASENAME%", "login": "%DBSYSTEMHISTORY_LOGIN%", "password": "%DBSYSTEMHISTORY_PASSWORD%" },
+                    "source": "%PATH_TEMP%/database-system/history.dat" },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/database-system.json",
+					"destination": "%PATH_APP%/database-system.json",
+					"flags": ["replace"] }
+			]
+		},
+
+		"systemRepositoryBackup":
+		{
+			"description": "backup system document repository",
+			"comments": "put the system document repository into an archive and create the required metadata",
+			"tasks":
+			[
+				{ "exec": "archiveFolder",
+					"folder": "%PATH_SYSTEMREPOSITORY%",
+					"archive": "%PATH_TEMP%/repository-system.zip",
+					"flags": ["recurse"] },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_SYSTEMREPOSITORY%/repository.json",
+					"destination": "%PATH_TEMP%/repository-system.json",
+					"update": "%FILE_BACKUP%",
+					"filename": "%FILE_BACKUP%-repository-system.zip",
+					"description": "System Document Repository Backup as at %TODAY%." },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/repository-system.zip",
+					"destination": "%PATH_BACKUP%/%FILE_BACKUP%-repository-system.zip",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/repository-system.json",
+					"destination": "%PATH_BACKUP%/%FILE_BACKUP%-repository-system.json",
+					"flags": ["replace"] }
+			]
+		},
+		"systemRepositoryDelete":
+		{
+			"description": "delete system document repository",
+			"comments": "delete the system document repository",
+			"tasks":
+			[
+				{ "exec": "deleteFolder",
+					"folder": "%PATH_SYSTEMREPOSITORY%",
+					"flags": ["recurse"] },
+
+				{ "exec": "deleteFile",
+					"file": "%PATH_APP%/repository-system.json" }
+			]
+		},
+		"systemRepositoryInstall":
+		{
+			"description": "install system document repository",
+			"comments": "installs the system document repository from an archive and create the required metadata",
+			"tasks":
+			[
+				{ "exec": "unarchive",
+					"archive": "%PATH_UPDATE%/%FILE_SELECTED%-repository-system.zip",
+					"folder": "%PATH_TEMP%/repository-system" },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_UPDATE%/%FILE_SELECTED%-repository-system.json",
+					"destination": "%PATH_TEMP%/repository-system.json",
+					"update": "%FILE_SELECTED%",
+					"filename": "%FILE_SELECTED%-repository-system.zip",
+					"description": "System Repository Install %FILE_SELECTED% as at %TODAY%." },
+
+				{ "exec": "createFolder",
+					"folder": "%PATH_SYSTEMREPOSITORY%" },
+
+				{ "exec": "copyFolder",
+					"source": "%PATH_TEMP%/repository-system",
+					"destination": "%PATH_SYSTEMREPOSITORY%",
+					"flags": ["recurse"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/repository-system.json",
+					"destination": "%PATH_SYSTEMREPOSITORY%/repository.json",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/repository-system.json",
+					"destination": "%PATH_APP%/repository-system.json",
+					"flags": ["replace"] }
+			]
+		},
+		"systemRepositoryPackage":
+		{
+			"description": "package system document repository",
+			"comments": "package the system document repository into an archive and create the required metadata",
+			"tasks":
+			[
+				{ "exec": "archiveFolder",
+					"folder": "%PATH_SYSTEMREPOSITORY%",
+					"archive": "%PATH_TEMP%/repository-system.zip",
+					"flags": ["recurse"] },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_SYSTEMREPOSITORY%/repository.json",
+					"destination": "%PATH_TEMP%/repository-system.json",
+					"update": "%FILE_UPDATE%",
+					"filename": "%FILE_UPDATE%-repository-system.zip",
+					"description": "New System Repository." },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/repository-system.zip",
+					"destination": "%PATH_UPDATE%/%FILE_UPDATE%-repository-system.zip",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/repository-system.json",
+					"destination": "%PATH_UPDATE%/%FILE_UPDATE%-repository-system.json",
+					"flags": ["replace"] }
+			]
+		},
+		"systemRepositoryPurge":
+		{
+			"description": "purge system document repository",
+			"comments": "purges the system document repository",
+			"tasks":
+			[
+				{ "exec": "deleteFolderContent",
+					"folder": "%PATH_SYSTEMREPOSITORY%/documents",
+					"flags": ["recurse"] },
+
+				{ "exec": "deleteFolderContent",
+					"folder": "%PATH_SYSTEMREPOSITORY%/temporary",
+					"flags": ["recurse"] }
+			]
+		},
+		"systemRepositoryRestore":
+		{
+			"description": "restore system document repository",
+			"comments": "restores the system document repository from an archive and create the required metadata",
+			"tasks":
+			[
+				{ "exec": "unarchive",
+					"archive": "%PATH_BACKUP%/%FILE_SELECTED%-repository-system.zip",
+					"folder": "%PATH_TEMP%/repository-system" },
+
+				{ "exec": "createMetaData",
+					"source": "%PATH_BACKUP%/%FILE_SELECTED%-repository-system.json",
+					"destination": "%PATH_TEMP%/repository-system.json",
+					"update": "%FILE_SELECTED%",
+					"filename": "%FILE_SELECTED%-repository-system.zip",
+					"description": "System Repository Restored %FILE_SELECTED% as at %TODAY%." },
+
+				{ "exec": "createFolder",
+					"folder": "%PATH_SYSTEMREPOSITORY%" },
+
+				{ "exec": "copyFolder",
+					"source": "%PATH_TEMP%/repository-system",
+					"destination": "%PATH_SYSTEMREPOSITORY%",
+					"flags": ["recurse"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/repository-system.json",
+					"destination": "%PATH_SYSTEMREPOSITORY%/repository.json",
+					"flags": ["replace"] },
+
+				{ "exec": "copyFile",
+					"source": "%PATH_TEMP%/repository-system.json",
+					"destination": "%PATH_APP%/repository-system.json",
+					"flags": ["replace"] }
+			]
+		},
+
+		"install-CP-BCDACRO":
+		{
+			"description": "installing CP-BCDACRO",
+			"comments": "",
+			"tasks":
+			[
+				{ "exec": "installOption",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+					"file": "%SYS_PATH_CONFIG%/config.json",
+					"code": "CP-BCDACRO" }
+			]
+		},
+		"install-CP-BSDASRO":
+		{
+			"description": "installing CP-BSDASRO",
+			"comments": "",
+			"tasks":
+			[
+				{ "exec": "installOption",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+					"file": "%SYS_PATH_CONFIG%/config.json",
+					"code": "CP-BSDASRO" }
+			]
+		},
+		"install-CP-BCSDO":
+		{
+			"description": "installing CP-BCSDO",
+			"comments": "",
+			"tasks":
+			[
+				{ "exec": "installOption",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+					"file": "%SYS_PATH_CONFIG%/config.json",
+					"code": "CP-BCSDO" }
+			]
+		},
+		"install-CP-CB":
+		{
+			"description": "installing CP-CB",
+			"comments": "",
+			"tasks":
+			[
+				{ "exec": "installOption",
+					"database": { "hostname": "%DBSYSTEMMAIN_HOSTNAME%", "dbname": "%DBSYSTEMMAIN_DATABASENAME%", "login": "%DBSYSTEMMAIN_LOGIN%", "password": "%DBSYSTEMMAIN_PASSWORD%" },
+					"file": "%SYS_PATH_CONFIG%/config.json",
+					"code": "CP-CB" }
+			]
+		}
+	}
+}

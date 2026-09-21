@@ -1,0 +1,20 @@
+{
+  "type": "pie",
+  "data": {
+    "labels": ["Project A", "Project B", "Project C", "Project D"],
+    "datasets": [{
+      "label": "Unresolved Issues",
+      "data": [10, 15, 7, 12],
+      "backgroundColor": ["#36A2EB", "#FF6384", "#FFCE56", "#4BC0C0"]
+    }]
+  },
+  "options": {
+    "responsive": true,
+    "maintainAspectRatio": false,
+    "aspectRatio": 1,
+    "title": {
+      "display": true,
+      "text": "Unresolved Issues per Project"
+    }
+  }
+}

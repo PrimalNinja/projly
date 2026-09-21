@@ -1,0 +1,41 @@
+/* behaviours -------------------------------------------------- */
+
+.gb-button
+{
+	cursor:pointer;
+	border-radius: 4px;
+}
+
+.gb-hidden
+{
+	display:none;
+}
+
+.gb-tabstop
+{
+	left: -10000px;
+	height: 0px;
+	position: absolute;
+	width: 0px;
+}
+
+/* button panels -------------------------------------------------- */
+
+.gb-dropdown-tile 
+{ 
+	cursor: pointer;
+}
+
+/* vertical scrolling panels -------------------------------------------------- */
+
+.gb-scrollable-panel
+{
+	overflow-x:hidden; 
+	overflow-y:auto;
+}
+
+.gb-scrollable-content
+{
+	margin-left:auto; 
+	margin-right:auto;
+}

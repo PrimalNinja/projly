@@ -1,0 +1,6 @@
+/*====================================================================================
+// 3rd Party Copyright ================================================================
+// All parties copyrights to their respective parties where applicable.  See About for
+// for more information. Some minified using Google's closure compiler
+*/
+

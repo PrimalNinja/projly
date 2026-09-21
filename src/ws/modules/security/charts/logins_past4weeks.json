@@ -1,0 +1,19 @@
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Failed Logins", "Successful Logins"],
+    "datasets": [{
+      "label": "Login Attempts",
+      "data": [120, 500],
+      "backgroundColor": ["#FF6384", "#36A2EB"]
+    }]
+  },
+  "options": {
+    "responsive": true,
+    "maintainAspectRatio": false,
+    "title": {
+      "display": true,
+      "text": "Login Attempts Past Month"
+    }
+  }
+}

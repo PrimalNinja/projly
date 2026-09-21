@@ -1,0 +1,35 @@
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Week 1", "Week 2", "Week 3", "Week 4"],
+    "datasets": [{
+      "label": "Confirmed",
+      "data": [50, 60, 70, 80],
+      "backgroundColor": "#36A2EB"
+    }, {
+      "label": "Unconfirmed",
+      "data": [20, 30, 40, 50],
+      "backgroundColor": "#FFCE56"
+    }]
+  },
+  "options": {
+    "responsive": true,
+    "maintainAspectRatio": false,
+	"aspectRatio": 1,
+    "title": {
+      "display": true,
+      "text": "Registrations Over Time"
+    },
+    "scales": {
+      "xAxes": [{
+        "stacked": false
+      }],
+      "yAxes": [{
+        "stacked": false,
+        "ticks": {
+          "beginAtZero": true
+        }
+      }]
+    }
+  }
+}

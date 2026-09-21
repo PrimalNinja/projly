@@ -1,0 +1,17 @@
+/* TimeEntry styles v2.0.0 */
+.timeEntry-control {
+	vertical-align: middle;
+	margin-left: 2px;
+}
+
+/*added for forestwork*/
+.timeEntry-control { 
+    position: absolute;
+    z-index: 100;
+    right: 6px;
+    top: 9px;
+    background:url("spinnerUpDown.png") no-repeat;
+    width:15px!important;
+}
+
+.gs-timeentry-wrap { position:relative; }

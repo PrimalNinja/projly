@@ -1,0 +1,28 @@
+{
+  "type": "line",
+  "data": {
+    "labels": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+    "datasets": [{
+      "label": "Lack of Throughput",
+      "data": [5, 3, 2, 4, 6, 3, 2, 1, 4, 5, 3, 2],
+      "borderColor": "#36A2EB",
+      "pointBackgroundColor": "#36A2EB"
+    }]
+  },
+  "options": {
+    "responsive": true,
+    "maintainAspectRatio": false,
+    "aspectRatio": 1,
+    "title": {
+      "display": true,
+      "text": "Lack of Throughput Past Year"
+    },
+    "scales": {
+      "yAxes": [{
+        "ticks": {
+          "beginAtZero": true
+        }
+      }]
+    }
+  }
+}

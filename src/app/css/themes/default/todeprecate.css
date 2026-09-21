@@ -1,0 +1,242 @@
+/* to deprecate -------------------------------------------------- */
+
+/* cells common -------------------------------------------------- */
+
+.gs-cell-xxx
+{
+	overflow:hidden;
+	xborder:1px solid black;
+	display:block;
+	float: left;
+	padding:0px;
+	position:absolute;
+	text-align:left;
+	vertical-align:top;
+	font:10px;
+}
+
+.gs-cell-content-xxx
+{
+	margin-left:5px;
+	margin-right:5px;
+	margin-top:5px;
+	position:relative;
+}
+
+.gs-cell-contentnotopmargin-xxx
+{
+	margin-left:5px;
+	margin-right:5px;
+	margin-top:0px;
+	position:relative;
+}
+
+.gb-cell-disabled-xxx
+{
+	background: #949191;
+}
+
+/* 1000's -------------------------------------------------- */
+
+.gs-cell-1000x562-xxx		{ width:1000px; height:562px; }
+.gs-cellcontent-1000x562-xxx	{ width:990px; height:552px; }
+.gs-cell-1000x500-xxx		{ width:1000px; height:500px; }
+.gs-cellcontent-1000x500-xxx	{ width:990px; height:490px; }
+.gs-cell-1000x250-xxx		{ width:1000px; height:250px; }
+.gs-cellcontent-1000x250-xxx	{ width:990px; height:240px; }
+.gs-cell-1000x125-xxx		{ width:1000px; height:125px; }
+.gs-cellcontent-1000x125-xxx	{ width:990px; height:115px; }
+
+/* 750's -------------------------------------------------- */
+
+.gs-cell-750x375-xxx		{ width:750px; height:375px; }
+.gs-cellcontent-750x375-xxx		{ width:740px; height:365px; }
+.gs-cell-750x250-xxx		{ width:750px; height:250px; }
+.gs-cellcontent-750x250-xxx		{ width:740px; height:240px; }
+
+/* 500's -------------------------------------------------- */
+
+.gs-cell-500x500-xxx 		{ width:500px; height:500px; }
+.gs-cellcontent-500x500-xxx 		{ width:490px; height:490px; }
+.gs-cell-500x312-xxx		{ width:500px; height:312px; }
+.gs-cellcontent-500x312-xxx		{ width:490px; height:302px; }
+.gs-cell-500x187-xxx		{ width:500px; height:187px; }
+.gs-cellcontent-500x187-xxx		{ width:490px; height:177px; }
+.gs-cell-250x500-xxx		{ width:250px; height:500px; }
+.gs-cellcontent-250x500-xxx		{ width:240px; height:490px; }
+.gs-cell-500x125-xxx		{ width:500px; height:125px; }
+.gs-cellcontent-500x125-xxx		{ width:490px; height:115px; }
+
+/* 125's -------------------------------------------------- */
+
+.gs-cell-125x62-xxx 		{ width:125px; height:62px; }
+.gs-cellcontent-125x62-xxx		{ width:115px; height:52px; }
+
+.gs-grid-headcell-xxx
+{
+	border: none;
+	height: 100%;
+	padding: 0px;
+	width: 100%;
+}
+
+.gs-grid-control-xxx 
+{
+	xbackground: beige;
+	margin: 0;
+	font-size: 12px;
+}
+
+.gs-grid-control-xxx.h2 
+{
+	border-bottom: 1px dotted gray;
+	font-size: 12px;
+}
+
+.gs-grid-control-xxx.li 
+{
+	background: url("../../../slickgrid/images/arrow_right_spearmint.png") no-repeat center left;
+	list-style: none;
+	margin: 0;
+	padding: 0 0 0 14px;
+}
+
+.gs-grid-control-xxx.ul 
+{
+	cursor: default;
+	margin-left: 0;
+	padding: 0;
+}
+
+.gs-gridcell-selection 
+{
+	background: #f5f5f5;
+	border-right-color: silver;
+	border-right-style: solid;
+	color: gray;
+	font-size: 10px;
+	text-align: right;
+}
+
+/* text styles -------------------------------------------------- */
+
+div.gs-cell-xxx div.gs-buttontext
+{
+	color: white;
+	color: #fff;
+	padding-top: 16px;
+	text-align: center;
+	font:12px;
+}
+
+.ge-percentage
+{
+	color:#ffffff;
+}
+
+.ge-criteria-thumb center { position: relative; }
+.ge-criteria-thumb .ge-favcriteria-icon { 
+    position: absolute;
+    z-index: 10;
+    right: -5px;
+    top: 10px;
+    color: #FFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+@media (max-width: 992px) { 
+    .ge-criteria-thumb { text-align: center; }
+    .ge-criteria-thumb center { display:inline-block; }
+    .ge-criteria-thumb .ge-favcriteria-icon { top:20px; right:20px; }
+}
+
+.gs-buttonkeytext
+{
+	color: #000000;
+	font-weight: normal;
+	xpadding-top: 18px;
+	padding-right: 3px;
+	text-align: right;
+}
+
+.gs-buttontext
+{
+	font: 12px/1.6 'arial';
+}
+
+.gs-buttontextbold
+{
+	font: 12px/1.6 'arial';
+	font-weight: bold;
+}
+
+.gs-canvastext
+{
+	color: black;
+	font-weight: bold;
+	padding-top: 18px;
+	text-align: left;
+}
+
+.gs-field-label
+{
+	display:inline;
+	font: 12px/1.6 'arial';
+	padding-left:5px;
+}
+
+.gs-heading1
+{
+	color:white;
+	display:inline;
+	font: 26px/1.6 'arial';
+}
+
+.gs-heading2
+{
+	color:white;
+	display:inline;
+	font: 16px/1.6 'arial';
+	margin-left: 4px;
+}
+
+.gb-zoomedout
+{
+	transform: scale(0.25);
+	transform-origin:0% 0%;
+
+	-ms-transform: scale(0.25); /* IE 9 */
+	-ms-transform-origin:0% 0%; /* IE 9 */
+	-moz-transform: scale(0.25); /* Firefox */
+	-moz-transform-origin:0% 0%; /* Firefox */
+	-o-transform: scale(0.25); /* Opera */
+	-o-transform-origin:0% 0%; /* Opera */
+	-webkit-transform: scale(0.25); /* Safari and Chrome */
+	-webkit-transform-origin:0% 0%; /* Safari and Chrome */
+}
+
+/* for the upload form */
+
+.bs-callout-xxx {
+	padding: 10px 20px;
+	margin: 20px 0;
+	border: 1px solid #eee;
+	border-left-width: 5px;
+	border-radius: 3px;
+	background-color:#CFE8F8;
+}
+
+.bs-callout-xxx.bs-callout-info-xxx {
+	border-left-color: #2B6699;
+}
+
+.ge-customfooter-wrapper-xxx .ge-selectionclear-xxx {
+	float: left;
+	clear: both;
+	margin-left: 15px;
+	margin-right: 10px;
+	padding-top: 0.755em;
+}
+
+.ge-customfooter-wrapper-xxx .dataTables_info { padding-top: 19px!important; clear:none!important; }

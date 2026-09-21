@@ -1,0 +1,12 @@
+﻿// Projly v20260922 =============================================================================
+// Copyright (C) 2024 Projly Pty Ltd. Released under the MIT License.
+//
+// ==============================================================================================
+// AWAF v20260922 ===============================================================================
+// Copyright (C) 2012-2024 Mitsukibo Pty Ltd, Julian Cassin & Francis Weston. Released under the MIT License.
+
+/*jsl:ignore*/
+function core_frmPrintPreview(l,h,k){function m(){var f='<iframe src="'+e+'" width="100%" height="100%" id="'+g+'" name="'+g+'"></iframe>';a.element(b,".ge-pdf-panel").html(f);c.hidden&&a.after(500,function(){d.FormPrint_onClick();a.after(500,function(){a.closeForm(b)})})}var a=l,d=this,b=h,c=k,g=getGUID(),n=c.title,e=c.url;l=c.barcodetype;h=c.barcodeaction;k=c.barcodecontent;"barcode"===c.type&&(e=str_replace(e,"URL_2DBARCODE_GENERATOR",URL_2DBARCODE_GENERATOR),"default"===l&&(0<h.length?e+="?action="+
+h:0<k.length&&(e+="?content="+k)));void 0===c.hidden&&(c.hidden=!1);this.Form_isDirty=function(){return!1};this.Form_onClick=function(){a.setFormFocus(d,b)};this.Form_onDblClick=function(){a.formToFront(b)};this.Form_onLoad=function(){c.hidden||a.element(b,".gb-form").removeClass("gb-hidden");var f=n;if(void 0===f||0===f.length)f=e;a.element(b,".ge-form-title").text(f);a.unbindEvents(b,"gb-form-close,gb-form-print,gb-form,gb-formtitle-inner-panel");a.bindEvent(d,b,".gb-form-close","FormClose","onClick");
+a.bindEvent(d,b,".gb-form-print","FormPrint","onClick");a.bindEvent(d,b,".cmdClose","cmdClose","onClick");a.bindEvent(d,b,".cmdClose","cmdClose","onEnterKey");a.bindEvent(d,b,".gb-form","Form","onClick");a.bindEvent(d,b,".gb-form","Form","onDblClick");a.bindEvent(d,b,".gb-formtitle-inner-panel","FormTitle","onClick");a.showTip(b,".cmdClose","top left","bottom right",1,"Click here to close the form.");m()};this.Form_onPermissionCheck=function(){return!0};this.Form_onResize=function(c,d){a.element(b,
+".ge-pdf-panel").width(c+"px");a.element(b,".ge-pdf-panel").height(d-60+"px");a.element(b,".ge-formprint-panel").css("left",c-30+"px")};this.FormTitle_onClick=function(){a.formToFront(b)};this.FormClose_onClick=function(){a.closeForm(b)};this.FormPrint_onClick=function(){"Microsoft Edge"==a.getBrowser().name?parent.document.getElementsByName(g)[0].contentWindow.document.execCommand("print",!1,null):(window.frames[g].focus(),window.frames[g].print())}};

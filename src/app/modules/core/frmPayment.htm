@@ -1,0 +1,153 @@
+<div id="core_frmPaymentTemplate" class="gb-hidden">
+	<div class="xgb-dockable gb-form gb-resizable gi-background-form gs-form-standard gs-shadow gs-content-panel">
+
+        <input class="ge-tab-start gb-tabstop" type="text" />
+                        
+        <div class="gb-formtitle-panel gs-cell-xxx gs-formtitle-panel">
+            <div class="gb-form-handle gb-formtitle-inner-panel gs-black-background-colour gs-cell-content-xxx gs-formtitle-inner-panel">
+                <div class="ge-form-title gs-heading1">Submit & Pay</div>
+            </div>
+        </div>
+
+        <div class="gb-formclose-panel gs-cell-xxx gs-formclose-panel">
+            <div class="gb-form-close gb-hidden gi-form-close"></div>
+        </div>
+        
+        <div class="col-md-8 col-xs-12" style="padding-top:5px">
+            <!-- button bar -->
+            <div class="ge-button-panel gs-button-panel btn-group"></div>
+        </div>
+        
+        <div class="gb-overflow" style="width:100%;">
+            <table width="100%">
+				<tbody>
+					<!-- start -->
+					<tr>
+						<td>&nbsp;</td>
+						<td class="wr-pagecontent">
+                                                        
+							<div class="container-fluid" style="max-width:600px">
+								<div class="row spacer">&nbsp;</div>
+
+                                <div class="row">
+
+									<div class="ge-step-products gb-hidden">
+										<h3 class="ge-producttypeheading"></h3>
+										<span class="ge-cartmessage-wrapper">
+											<span class="ge-cartmessage"></span><h4>If you would like to check out your cart, click Next.</h4>
+											(You will still have the opportunity to chancel later if you change your mind)<br><br>
+											<div class="buttons-set clearfix">
+												<button class="ge-productnext-button btn btn-default">Next</button>
+											</div><br><br>
+										</span>
+
+										<div class="ge-step-addproducts gb-hidden">
+											<h4>If you would like to purchase a <span class="ge-producttype"></span> for <span class="ge-applicantname-header"></span>,<br> please select one of the following and Add to Cart.</h4><br>
+											<div class="ge-productscontent"></div><br>
+											
+											<div class="buttons-set clearfix">
+												<button class="ge-productaddtocart-button btn btn-default">Add to Cart</button>
+											</div><br><br>
+										</div>
+
+										<h3>Your Cart</h3>
+										<div class="ge-cartcontent1"></div>
+									</div>
+									
+									<div class="ge-step-payer gb-hidden">
+										<h3>Payer Invoice Details</h3>
+										<h4>Please confirm your payer invoice details before proceeding.</h4><br>
+										<div class="ge-payercontent">
+											<div class="form-group">
+												<label>Payer Name:</label>
+												<input type="text" class="form-control ge-payername-field" placeholder="Payer Name">
+											</div>
+											<div class="form-group">
+												<label>Address Line 1:</label>
+												<input type="text" class="form-control ge-payeraddressline1-field" placeholder="Address Line 1">
+											</div>
+											<div class="form-group">
+												<label>Address Line 2:</label>
+												<input type="text" class="form-control ge-payeraddressline2-field" placeholder="Address Line 2">
+											</div>
+											<div class="form-group">
+												<label>Suburb:</label>
+												<input type="text" class="form-control ge-payersuburb-field" placeholder="Suburb">
+											</div>
+											<div class="form-group">
+												<label>State:</label>
+												<input type="text" class="form-control ge-payerstate-field" placeholder="State">
+											</div>
+											<div class="form-group">
+												<label>Postcode:</label>
+												<input type="text" class="form-control ge-payerpostcode-field" placeholder="Postcode">
+											</div>
+											<div class="form-group">
+												<label>Notes:</label>
+												<textarea class="form-control ge-payernotes-field" placeholder="Notes" cols="20" rows="5"></textarea>
+											</div>
+										</div><br>
+										
+										<div class="buttons-set clearfix">
+											<button class="ge-payerproceed-button btn btn-default">View Your Cart</button>
+										</div><br><br>
+										
+									</div>
+									
+									<div class="ge-step-cart gb-hidden">
+										<h3>Your Cart</h3>
+										<div class="ge-cartcontent2"></div>
+										
+										<div class="buttons-set clearfix">
+											<button class="ge-cartnext-button btn btn-default" style="margin-left:10px">Choose Payment Method</button>                                                
+											<button class="ge-cartpayer-button btn btn-default" style="margin-left:10px">Return to Payer Invoice Details</button>
+											<button class="ge-cartviewreceipt-button btn btn-default" style="margin-left:10px">View Tax Invoice</button>
+										</div><br>
+										<table style="border: 1px solid #cccccc; cellpadding:5px;"><tr style="border: 1px solid #cccccc;"><td style="border: 1px solid #cccccc; padding: 10px;"><h5><b>Can't view your tax invoice?<br/><br/></b>You may not be able to view your Tax Invoice because your browser is 'blocking pop-ups'.<br/><br/>Please disable your pop-up blocker <a class="ge-popupblockerurl" href="" target="_blank">using these instructions</a>.</h5></td></tr></table><br>
+										<h4>If you would like to clear your cart, please click Clear Cart.</h4><br>
+										<div class="buttons-set clearfix">
+											<button class="ge-cartcancel-button btn btn-default">Clear Cart</button>
+										</div>
+									</div>
+									
+									<div class="ge-step-paymentmethods gb-hidden">
+										<h3>Choose Payment Method</h3>
+										<div class="ge-paymentmethodscontent"></div>
+										<div class="ge-paymentmethodfields"></div>
+
+										<div class="buttons-set clearfix">
+											<button class="ge-paymentmethodsconfirm-button btn btn-default" style="margin-left:10px">Confirm Purchase</button>                                                    
+											<button class="ge-paymentmethodscart-button btn btn-default" style="margin-left:10px">Return to Cart</button>
+											<button class="ge-paymentmethodsviewreceipt-button btn btn-default">View Tax Invoice</button>
+										</div><br>
+										<table style="border: 1px solid #cccccc; cellpadding:5px;"><tr style="border: 1px solid #cccccc;"><td style="border: 1px solid #cccccc; padding: 10px;"><h5><b>Can't view your tax invoice?<br/><br/></b>You may not be able to view your Tax Invoice because your browser is 'blocking pop-ups'.<br/><br/>Please disable your pop-up blocker <a class="ge-popupblockerurl" href="" target="_blank">using these instructions</a>.</h5></td></tr></table><br>
+										<h4>If you would like to clear your cart, please click Clear Cart.</h4><br>
+										<div class="buttons-set clearfix">
+											<button class="ge-cartcancel-button btn btn-default">Clear Cart</button>
+										</div>
+									</div>                                        
+									
+									<div class="ge-step-thankyou gb-hidden">
+										<div class="ge-thankyoucontent"></div>
+									</div>
+									
+									<div class="ge-step-checkouterror gb-hidden">
+										<div class="ge-errorcontent"></div>
+									</div>
+
+								</div>
+							</div>
+						</td>
+						<td>&nbsp;</td>
+					</tr>
+				</tbody>
+            </table>
+
+            <!-- end -->
+            <br>
+        </div>
+		
+        <input class="ge-tab-end gb-tabstop" type="text" />
+    </div>
+</div>
+

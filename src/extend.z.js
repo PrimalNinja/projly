@@ -1,0 +1,14 @@
+﻿// Projly v20260922 =============================================================================
+// Copyright (C) 2024 Projly Pty Ltd. Released under the MIT License.
+//
+// ==============================================================================================
+// AWAF v20260922 ===============================================================================
+// Copyright (C) 2012-2024 Mitsukibo Pty Ltd, Julian Cassin & Francis Weston. Released under the MIT License.
+
+/*jsl:ignore*/
+var g_strMyTabID=location.search.replace("?tabid=","");
+$(document).ready(function(){var b=!1;os({progresscolour:PROGRESSCOLOUR,progress:"ge-progress",percentage:"ge-percentage",container:"ge-form-container",orientation:function(a){os().initialiseViewPort()},dependencies:"osfull",keepalive:!1,unloadprompt:!0,child:!0,tabID:g_strMyTabID},function(){getUserInfo()});getUserInfo=function(){var a=os().ajaxRequestCreate("security_userinfo",[]);os().ajaxCall(URL_WEBSERVICE,a,userInfoFetched,os().ajaxError,doNothing,!0)};userInfoFetched=function(a){setDesktopRegions(a.desktopregions);
+setPermissions(a.permissions);setProducts(a.products);os().setProperty("clientdb",a.clientdb);os().setProperty("loginas",a.loginas);os().setProperty("client",a.clientid);os().setProperty("clientname",a.clientname);os().setProperty("businessname",a.businessname);os().setProperty("login",a.login);os().setProperty("username",a.username);os().setProperty("sysadmin",a.sysadmin);os().setProperty("developer",a.developer);os().setProperty("public",a.ispublic);os().setProperty("batch",a.isbatch);os().setProperty("default",
+a.isdefault);os().setProperty("owner",a.isowner);os().setProperty("licensed",a.licensed);os().setProperty("expirydate",a.expirydate);os().setProperty("expirydays",a.expirydays);os().setProperty("selectedtheme",SELECTED_THEME);os().setProperty("isextend",!0);os().setProperty("ismdi",a.ismdi);b="TRUE"==TESTSCROLL&&!os().hasCapability("regionscroll")&&os().hasCapability("mobile");os().initialiseScrollbars(b);os().setProperty("defaultcountry",a.defaultcountry);os().setProperty("devicename",a.devicename);
+os().setProperty("theme",a.theme);os().setProperty("isemployer",a.isemployer);os().setProperty("isindividual",a.isindividual);os().setProperty("isrto",a.isrto);os().setProperty("isvalidassessor",a.isvalidassessor);os().setProperty("enablebranches",a.enablebranches);os().setProperty("branchid",a.branchid);os().setProperty("branchname",a.branchname);a=os().toBoolean(a.displaytooltips);os().enableTips(a);os().toBoolean(os().getProperty("sysadmin"))?os().setBackground("gi-sysadmin-background"):os().setBackground("gi-desktop-background");
+$(window).hashchange(function(a){os().hashChange(location.hash)});a=os().hashChange(location.hash);os().toBoolean(a.fullscreen)||os().showTaskbar("core.frmTaskbarExtend","",!1,function(){initialiseStartupItems(os())})}});

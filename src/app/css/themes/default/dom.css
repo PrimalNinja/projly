@@ -1,0 +1,99 @@
+/* dom overrides -------------------------------------------------- */
+
+button:focus
+input:focus,
+select:focus,
+textarea:focus
+{
+    outline: none;
+}
+
+a
+{
+	xfont: 12pt/1.6 'arial';
+}
+
+body
+{
+	background-color: transparent;
+	color: #000000;
+	xfont-size:12pt;
+	height:auto;
+	margin:0px;
+	padding:0px;
+	width:100%;
+}
+
+button
+{
+	border: 0px;
+	border-style: none;
+	background: inherit;
+	color: blue;
+	cursor: hand;
+	cursor: pointer;
+	xfont: 12px/1.6 'arial';
+	padding: 0px;
+}
+
+div
+{
+	xcolor: #000000;
+	xfont:10px;
+}
+
+div.row
+{
+    xfont: 12pt/1.6 'arial';
+}
+
+html
+{
+	padding:0px;
+	-webkit-text-size-adjust:none;
+	color: #000000;
+}
+
+iframe
+{
+	border: 0px;
+	border-style:none
+}
+
+image
+{
+	border:none;
+}
+
+input
+{
+	xfont: 12px/1.6 'arial';
+}
+
+label
+{
+	text-align:left;
+}
+
+h1
+{
+	text-align:left;
+}
+
+p
+{
+	xfont: 12pt/1.6 'arial';
+}
+
+ul
+{
+	padding-left: 5px;
+}
+
+ul.ui-autocomplete
+{
+	z-index: 99999;
+}
+
+/* tinymce full screen fix -------------------------------------------------- */
+body.mce-fullscreen .navbar { display:none; }

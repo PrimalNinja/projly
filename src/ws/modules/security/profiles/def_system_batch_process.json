@@ -1,0 +1,9 @@
+{
+    "permissions": [
+		"VW_CMS",
+		"VW_REGISTRATIONTYPE",
+        "VW_STARTUPITEM",
+		"VW_STATE",
+		"VW_SUBURB"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "permissions": [
+		"ADD_REMINDER",
+		"EDT_REMINDER",
+		"DEL_REMINDER",
+		"VW_REMINDER"
+    ]
+}

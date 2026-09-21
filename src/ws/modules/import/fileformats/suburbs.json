@@ -1,0 +1,11 @@
+{
+	"description": "Standard Suburb File",
+	"formattype": "CSV",
+	"headerrows": 1,
+	"fields": [
+		{ "position": 1, "fieldname": "suburb", "datatype": "S" },
+		{ "position": 2, "fieldname": "state", "datatype": "S" },
+		{ "position": 3, "fieldname": "postcode", "datatype": "S" },
+		{ "position": 0, "fieldname": "country", "datatype": "S", "defaultvalue": "AUSTRALIA" }
+	]
+}
