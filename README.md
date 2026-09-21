@@ -1,4 +1,4 @@
-# Projly
+# Projly v20260922
 
 > **Now open source.** Both AWAF and Projly have been open sourced. Some functionality had to be removed to do this, so you may hit bugs where something depended on a part that was taken out.
 >
